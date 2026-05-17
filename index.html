@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전북 문해력 인프라 취약지수(초등)</title>
+    <meta name="description" content="전북특별자치도 초등학교 문해력 인프라 취약지수를 지도 위에 시각화하는 웹앱">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --bg-dark: #0f1923;
+            --bg-card: #1a2736;
+            --bg-card-hover: #223344;
+            --accent: #4fc3f7;
+            --accent-glow: rgba(79, 195, 247, 0.3);
+            --danger: #ef5350;
+            --safe: #66bb6a;
+            --text: #e0e6ed;
+            --text-dim: #8899aa;
+            --border: #2a3a4a;
+        }
+
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background: var(--bg-dark);
+            color: var(--text);
+            overflow: hidden;
+            height: 100vh;
+        }
+
+        /* 헤더 */
+        .header {
+            background: linear-gradient(135deg, #1a2736 0%, #0d2137 100%);
+            padding: 12px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid var(--border);
+            z-index: 1000;
+            position: relative;
+        }
+
+        .header h1 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--accent), #81d4fa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -0.5px;
+        }
+
+        .header .subtitle {
+            font-size: 0.75rem;
+            color: var(--text-dim);
+            margin-top: 2px;
+        }
+
+        .badge {
+            background: rgba(79, 195, 247, 0.15);
+            color: var(--accent);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.7rem;
+            font-weight: 500;
+            border: 1px solid rgba(79, 195, 247, 0.3);
+        }
+
+        /* 메인 레이아웃 */
+        .main {
+            display: flex;
+            height: calc(100vh - 60px);
+        }
+
+        /* 지도 */
+        #map {
+            flex: 1;
+            z-index: 1;
+        }
+
+        .leaflet-popup-content-wrapper {
+            background: var(--bg-card) !important;
+            color: var(--text) !important;
+            border: 1px solid var(--border) !important;
+            border-radius: 12px !important;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.5) !important;
+        }
+        .leaflet-popup-tip { background: var(--bg-card) !important; }
+        .leaflet-popup-content { margin: 12px 16px !important; font-size: 13px !important; }
+
+        .popup-title {
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: var(--accent);
+        }
+        .popup-score {
+            font-size: 1.8rem;
+            font-weight: 900;
+            margin: 4px 0 8px;
+        }
+        .popup-detail {
+            display: flex;
+            justify-content: space-between;
+            padding: 4px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            font-size: 0.8rem;
+        }
+        .popup-detail span:first-child { color: var(--text-dim); }
+
+        /* 사이드 패널 */
+        .sidebar {
+            width: 320px;
+            background: var(--bg-card);
+            border-left: 1px solid var(--border);
+            overflow-y: auto;
+            padding: 16px;
+            z-index: 500;
+        }
+
+        .panel-title {
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .stat-cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            margin-bottom: 16px;
+        }
+
+        .stat-card {
+            background: var(--bg-dark);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 12px;
+            text-align: center;
+            transition: all 0.2s;
+        }
+        .stat-card:hover {
+            border-color: var(--accent);
+            box-shadow: 0 0 12px var(--accent-glow);
+        }
+        .stat-card .value {
+            font-size: 1.4rem;
+            font-weight: 900;
+        }
+        .stat-card .label {
+            font-size: 0.65rem;
+            color: var(--text-dim);
+            margin-top: 4px;
+        }
+
+        /* 순위 리스트 */
+        .rank-list { list-style: none; }
+        .rank-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 12px;
+            margin-bottom: 6px;
+            background: var(--bg-dark);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .rank-item:hover {
+            background: var(--bg-card-hover);
+            border-color: var(--accent);
+            transform: translateX(4px);
+        }
+        .rank-num {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7rem;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+        .rank-num.top3 { background: var(--danger); color: white; }
+        .rank-num.normal { background: var(--border); color: var(--text-dim); }
+
+        .rank-info { flex: 1; }
+        .rank-name { font-size: 0.85rem; font-weight: 600; }
+        .rank-detail { font-size: 0.65rem; color: var(--text-dim); margin-top: 2px; }
+
+        .rank-score {
+            font-size: 1rem;
+            font-weight: 800;
+            min-width: 50px;
+            text-align: right;
+        }
+
+        /* 범례 */
+        .legend-bar {
+            height: 12px;
+            border-radius: 6px;
+            background: linear-gradient(to right, #66bb6a, #ffee58, #ff9800, #ef5350, #b71c1c);
+            margin: 8px 0 4px;
+        }
+        .legend-labels {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.65rem;
+            color: var(--text-dim);
+        }
+
+        .divider {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 16px 0;
+        }
+
+        /* 반응형 */
+        @media (max-width: 768px) {
+            .main { flex-direction: column; }
+            .sidebar { width: 100%; height: 40vh; }
+            #map { height: 60vh; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div>
+            <h1>📚 전북 문해력 인프라 취약지수(초등)</h1>
+            <div class="subtitle">공공도서관 접근성 × 학교도서관 대출량 × 다문화가구 밀도 | 읍면동 단위 분석</div>
+        </div>
+        <span class="badge">제8회 교육 공공데이터 AI 대회</span>
+    </div>
+
+    <div class="main">
+        <div id="map"></div>
+        <div class="sidebar" id="sidebar">
+            <div class="panel-title">📊 전북 전체 요약</div>
+            <div class="stat-cards" id="statCards"></div>
+
+            <hr class="divider">
+
+            <div class="panel-title">🏆 범례</div>
+            <div class="legend-bar"></div>
+            <div class="legend-labels">
+                <span>0.0 양호</span>
+                <span>0.5 보통</span>
+                <span>1.0 취약</span>
+            </div>
+
+            <hr class="divider">
+
+            <div class="panel-title">📋 취약지수 순위 (취약 → 양호)</div>
+            <ul class="rank-list" id="rankList"></ul>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        // 데이터 로드
+        let riskData = null;
+        let geoData = null;
+        let geoLayer = null;
+
+        // 분위수 기반 색상 (절대값 기준 → 데이터 내 상대 분포 기준)
+        // riskData 로드 후 computeQuantiles()로 임계값 설정
+        let qThresholds = [0.6, 0.7, 0.8, 0.9]; // 기본값, 데이터 로드 후 갱신
+
+        function computeQuantiles(dataMap) {
+            const vals = Object.values(dataMap)
+                .filter(d => d.has_school)
+                .map(d => d.risk_index)
+                .sort((a, b) => a - b);
+            const q = p => vals[Math.floor(p * vals.length)];
+            qThresholds = [q(0.2), q(0.4), q(0.6), q(0.8)];
+        }
+
+        function getColor(score) {
+            if (score >= qThresholds[3]) return '#b71c1c'; // 상위 20% 매우취약
+            if (score >= qThresholds[2]) return '#ef5350'; // 20~40%
+            if (score >= qThresholds[1]) return '#ff9800'; // 40~60%
+            if (score >= qThresholds[0]) return '#ffee58'; // 60~80%
+            return '#66bb6a';                               // 하위 20% 양호
+        }
+
+        function getTextColor(score) {
+            return score >= qThresholds[1] ? '#ffffff' : '#1a1a1a';
+        }
+
+        // 지도 초기화
+        const map = L.map('map', {
+            zoomControl: false
+        }).setView([35.82, 127.15], 8);
+
+        L.control.zoom({ position: 'topright' }).addTo(map);
+
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+            attribution: '&copy; OpenStreetMap, &copy; CARTO',
+            maxZoom: 19
+        }).addTo(map);
+
+        // 데이터 로드 및 렌더링
+        Promise.all([
+            fetch('data/used/risk_data.json').then(r => r.json()),
+            fetch('data/used/전북특별자치도 bnd_dong_35_2025_2Q.json').then(r => r.json())
+        ]).then(([risk, geo]) => {
+            riskData = risk.data;
+            geoData = geo;
+            computeQuantiles(riskData); // 분위수 임계값 계산 후 색상 함수에 반영
+            renderMap();
+            renderSidebar();
+        }).catch(err => {
+            console.error('데이터 로드 실패:', err);
+            document.getElementById('sidebar').innerHTML = '<p style="padding:20px;color:#ef5350;">데이터 로드 실패. 로컬 서버가 필요합니다.</p>';
+        });
+
+        function renderMap() {
+            geoLayer = L.geoJSON(geoData, {
+                style: function(feature) {
+                    const adm_cd = feature.properties.ADM_CD;
+                    const data = riskData[adm_cd];
+                    if (!data) return { fillColor: '#2a3a4a', weight: 0.5, opacity: 0.5, color: '#ffffff22', fillOpacity: 0.4 };
+                    const score = data.risk_index;
+                    return {
+                        fillColor: getColor(score),
+                        weight: 0.8,
+                        opacity: 0.8,
+                        color: '#ffffff33',
+                        fillOpacity: 0.65
+                    };
+                },
+                onEachFeature: function(feature, layer) {
+                    const adm_cd = feature.properties.ADM_CD;
+                    const adm_nm = feature.properties.ADM_NM;
+                    const data = riskData[adm_cd];
+
+                    layer.on({
+                        mouseover: function(e) {
+                            e.target.setStyle({ weight: 2.5, color: '#4fc3f7', fillOpacity: 0.85 });
+                            e.target.bringToFront();
+                        },
+                        mouseout: function(e) {
+                            geoLayer.resetStyle(e.target);
+                        },
+                        click: function(e) {
+                            if (!data) {
+                                L.popup().setLatLng(e.latlng)
+                                    .setContent(`<div class="popup-title">${adm_nm}</div><div style="color:var(--text-dim);font-size:0.8rem;">학교·데이터 없음</div>`)
+                                    .openOn(map);
+                                return;
+                            }
+                            const scoreColor = getColor(data.risk_index);
+                            const mcLabel = data.school_count > 0 ? `${data.multicultural_count}가구` : `${data.multicultural_count}가구`;
+                            const popup = `
+                                <div class="popup-title">${data.sgg} ${adm_nm}</div>
+                                <div class="popup-score" style="color:${scoreColor}">
+                                    ${(data.risk_index * 100).toFixed(0)}점
+                                </div>
+                                <div class="popup-detail"><span>공공도서관</span><span>${data.publib_count}개 · 어린이대출자 ${(data.publib_child_borrowers ?? 0).toLocaleString()}명</span></div>
+                                <div class="popup-detail"><span>초등학교</span><span>${data.school_count}개 (학생 ${data.total_students}명)</span></div>
+                                <div class="popup-detail"><span>학교도서관 대출자비율</span><span>${data.median_borrower_rate != null ? (data.median_borrower_rate * 100).toFixed(1) + '%' : '-'}</span></div>
+                                <div class="popup-detail"><span>다문화가구</span><span>${mcLabel} (비율 ${(data.multicultural_ratio * 100).toFixed(1)}%)</span></div>
+                                <hr style="border-color:rgba(255,255,255,0.1);margin:6px 0">
+                                <div class="popup-detail"><span>접근성 점수</span><span>${(data.access_score*100).toFixed(0)}</span></div>
+                                <div class="popup-detail"><span>대출부족 점수</span><span>${(data.loan_score*100).toFixed(0)}</span></div>
+                                <div class="popup-detail"><span>다문화 점수</span><span>${(data.multicultural_score*100).toFixed(0)}</span></div>
+                            `;
+                            L.popup()
+                                .setLatLng(e.latlng)
+                                .setContent(popup)
+                                .openOn(map);
+                        }
+                    });
+                }
+            }).addTo(map);
+
+            // 읍면동별 라벨 (학교 있는 곳만, 점수 표시)
+            geoData.features.forEach(feat => {
+                const adm_cd = feat.properties.ADM_CD;
+                const adm_nm = feat.properties.ADM_NM;
+                const data = riskData[adm_cd];
+                if (!data || !data.has_school) return;
+
+                const coords = getAllCoords(feat.geometry);
+                if (coords.length === 0) return;
+                const lat = coords.reduce((s,c) => s+c[1], 0) / coords.length;
+                const lng = coords.reduce((s,c) => s+c[0], 0) / coords.length;
+                const score = data.risk_index;
+
+                const icon = L.divIcon({
+                    className: '',
+                    html: `<div style="text-align:center;font-family:'Noto Sans KR',sans-serif;pointer-events:none;">
+                        <div style="font-size:11px;font-weight:900;color:${getTextColor(score)};
+                            text-shadow:0 0 6px rgba(0,0,0,0.9),0 0 2px rgba(0,0,0,1);">
+                            ${(score * 100).toFixed(0)}
+                        </div>
+                    </div>`,
+                    iconSize: [36, 18],
+                    iconAnchor: [18, 9]
+                });
+                L.marker([lat, lng], { icon, interactive: false }).addTo(map);
+            });
+        }
+
+        function getAllCoords(geometry) {
+            const coords = [];
+            function extract(arr) {
+                if (typeof arr[0] === 'number') {
+                    coords.push(arr);
+                } else {
+                    arr.forEach(extract);
+                }
+            }
+            extract(geometry.coordinates);
+            return coords;
+        }
+
+        function renderSidebar() {
+            const ranked = Object.values(riskData)
+                .filter(d => d.has_school)
+                .sort((a, b) => b.risk_index - a.risk_index);
+
+            const avg = ranked.reduce((s, d) => s + d.risk_index, 0) / ranked.length;
+            const maxR = ranked[0];
+            const minR = ranked[ranked.length - 1];
+            const totalSchools = ranked.reduce((s, d) => s + d.school_count, 0);
+
+            // 요약 카드
+            document.getElementById('statCards').innerHTML = `
+                <div class="stat-card">
+                    <div class="value" style="color:${getColor(avg)}">${(avg*100).toFixed(0)}</div>
+                    <div class="label">전북 평균 취약지수</div>
+                </div>
+                <div class="stat-card">
+                    <div class="value" style="font-size:0.9rem;color:var(--danger)">${maxR.sgg} ${maxR.adm_nm}</div>
+                    <div class="label">가장 취약한 읍면동</div>
+                </div>
+                <div class="stat-card">
+                    <div class="value" style="font-size:0.9rem;color:var(--safe)">${minR.sgg} ${minR.adm_nm}</div>
+                    <div class="label">가장 양호한 읍면동</div>
+                </div>
+                <div class="stat-card">
+                    <div class="value" style="color:var(--accent)">${totalSchools}</div>
+                    <div class="label">분석 초등학교 수</div>
+                </div>
+            `;
+
+            // 순위 리스트
+            const rankHtml = ranked.map((d, i) => `
+                <li class="rank-item" data-adm="${d.adm_cd}">
+                    <div class="rank-num ${i < 3 ? 'top3' : 'normal'}">${i + 1}</div>
+                    <div class="rank-info">
+                        <div class="rank-name">${d.sgg} ${d.adm_nm}</div>
+                        <div class="rank-detail">도서관 ${d.publib_count}개 · 학교대출자 ${d.median_borrower_rate != null ? (d.median_borrower_rate*100).toFixed(0)+'%' : '-'} · 다문화 ${(d.multicultural_ratio*100).toFixed(1)}%</div>
+                    </div>
+                    <div class="rank-score" style="color:${getColor(d.risk_index)}">${(d.risk_index * 100).toFixed(0)}</div>
+                </li>
+            `).join('');
+            document.getElementById('rankList').innerHTML = rankHtml;
+
+            // 순위 클릭 시 해당 읍면동으로 이동
+            document.querySelectorAll('.rank-item').forEach(item => {
+                item.addEventListener('click', () => {
+                    const adm = item.dataset.adm;
+                    geoLayer.eachLayer(layer => {
+                        if (layer.feature && layer.feature.properties.ADM_CD === adm) {
+                            map.fitBounds(layer.getBounds(), { padding: [80, 80] });
+                            layer.fire('click', { latlng: layer.getBounds().getCenter() });
+                        }
+                    });
+                });
+            });
+        }
+    </script>
+</body>
+</html>
