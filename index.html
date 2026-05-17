@@ -367,10 +367,12 @@
                                 <div class="popup-detail"><span>공공도서관</span><span>${data.publib_count}개 · 어린이대출자 ${(data.publib_child_borrowers ?? 0).toLocaleString()}명</span></div>
                                 <div class="popup-detail"><span>초등학교</span><span>${data.school_count}개 (학생 ${data.total_students}명)</span></div>
                                 <div class="popup-detail"><span>학교도서관 1인당 연간대출</span><span>${data.median_loans_per_student != null ? data.median_loans_per_student.toFixed(1) + '권' : '-'}</span></div>
+                                <div class="popup-detail"><span>학교도서관 1인당 장서</span><span>${data.median_books_per_student != null ? data.median_books_per_student.toFixed(0) + '권' : '-'}</span></div>
+                                <div class="popup-detail"><span>학교도서관 1인당 자료구입예산</span><span>${data.median_budget_per_student != null ? Math.round(data.median_budget_per_student).toLocaleString() + '원' : '-'}</span></div>
                                 <div class="popup-detail"><span>다문화가구</span><span>${mcLabel} (비율 ${(data.multicultural_ratio * 100).toFixed(1)}%)</span></div>
                                 <hr style="border-color:rgba(255,255,255,0.1);margin:6px 0">
                                 <div class="popup-detail"><span>접근성 점수</span><span>${(data.access_score*100).toFixed(0)}</span></div>
-                                <div class="popup-detail"><span>대출부족 점수</span><span>${(data.loan_score*100).toFixed(0)}</span></div>
+                                <div class="popup-detail"><span>학교도서관 취약점수</span><span>${(data.loan_score*100).toFixed(0)}</span></div>
                                 <div class="popup-detail"><span>다문화 점수</span><span>${(data.multicultural_score*100).toFixed(0)}</span></div>
                             `;
                             L.popup()

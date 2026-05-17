@@ -268,6 +268,64 @@ adm_median_loans_per_student = {
 }
 print(f"  읍면동 학교도서관 1인당대출 데이터 있는 곳: {len(adm_median_loans_per_student)}개")
 
+# --- 학교도서관 콘텐츠: 1인당 장서수 (자료보유 현황 2024) ---
+collect_file = os.path.join(DATA_DIR, 'used',
+                            '2024년도_학교도서관 현황(자료 보유)(초)_전북특별자치도교육청.csv')
+adm_books_per_student = defaultdict(list)
+school_students = {}  # 학교코드 → 전체학생수 (운영현황 1인당 예산 산출용)
+with open(collect_file, encoding='utf-8-sig') as f:
+    for row in csv.DictReader(f):
+        if row.get('제외여부', '') == 'Y':
+            continue
+        code = row.get('정보공시 학교코드', '').strip()
+        info = school_info.get(code)
+        if not info or not info['adm_cd']:
+            continue
+        try:
+            school_students[code] = int(row.get('전체학생수', '0') or '0')
+        except ValueError:
+            pass
+        raw = (row.get('1인당장서수', '') or '').strip()
+        if raw == '':
+            continue
+        try:
+            adm_books_per_student[info['adm_cd']].append(float(raw))
+        except ValueError:
+            continue
+adm_median_books_per_student = {
+    adm: statistics.median(v) for adm, v in adm_books_per_student.items() if v
+}
+print(f"  읍면동 1인당장서수 데이터 있는 곳: {len(adm_median_books_per_student)}개")
+
+# --- 학교도서관 투자: 1인당 자료구입비예산액 (운영현황 2024) ---
+# 사서자격증보유는 전북 초등 232곳 중 229곳이 0이라 변별력 無 → 채택하지 않음.
+# 자료구입비예산액/전체학생수: 결측·0원 없음, 5천~175만원 범위로 변별력 우수.
+oper_file = os.path.join(DATA_DIR, 'used',
+                         '2024년도_학교도서관 현황(운영 현황)(초)_전북특별자치도교육청.csv')
+adm_budget_per_student = defaultdict(list)
+with open(oper_file, encoding='utf-8-sig') as f:
+    for row in csv.DictReader(f):
+        if row.get('제외여부', '') == 'Y':
+            continue
+        code = row.get('정보공시 학교코드', '').strip()
+        info = school_info.get(code)
+        if not info or not info['adm_cd']:
+            continue
+        s = school_students.get(code, 0)
+        if s <= 0:
+            continue
+        raw = (row.get('자료구입비예산액', '') or '').strip()
+        if raw == '':
+            continue
+        try:
+            adm_budget_per_student[info['adm_cd']].append(float(raw) / s)
+        except ValueError:
+            continue
+adm_median_budget_per_student = {
+    adm: statistics.median(v) for adm, v in adm_budget_per_student.items() if v
+}
+print(f"  읍면동 1인당 자료구입예산 데이터 있는 곳: {len(adm_median_budget_per_student)}개")
+
 # ============================================================
 # 4. 공공도서관 접근성 (읍면동별) - 2025년 실적 통계 활용
 # ============================================================
@@ -457,10 +515,26 @@ def percentile_rank_normalize(values_dict, invert=False):
         result[k] = round(1.0 - p if invert else p, 4)
     return result
 
-# 대출 점수: 읍면동 내 학교 1인당대출권수 중앙값 (낮을수록 취약).
-# 분포가 심하게 우편향이라 min-max 대신 순위백분위로 정규화(이상치 압축 방지).
-loan_for_norm = dict(adm_median_loans_per_student)  # 학교데이터 있는 읍면동만
-loan_score = percentile_rank_normalize(loan_for_norm, invert=True)
+# 학교도서관 취약 복합점수 = 이용(0.40) + 콘텐츠(0.35) + 투자(0.25).
+# 세 지표 모두 우편향이라 순위백분위(이상치 면역)로 정규화, 낮을수록 취약(invert).
+W_SL_USE, W_SL_BOOK, W_SL_BUDGET = 0.40, 0.35, 0.25
+use_norm    = percentile_rank_normalize(dict(adm_median_loans_per_student), invert=True)
+book_norm   = percentile_rank_normalize(dict(adm_median_books_per_student), invert=True)
+budget_norm = percentile_rank_normalize(dict(adm_median_budget_per_student), invert=True)
+
+sl_adms = set(adm_median_loans_per_student) | set(adm_median_books_per_student) | set(adm_median_budget_per_student)
+loan_score = {}
+for adm in sl_adms:
+    parts, wsum = [], 0.0
+    if adm in use_norm:
+        parts.append(use_norm[adm] * W_SL_USE);      wsum += W_SL_USE
+    if adm in book_norm:
+        parts.append(book_norm[adm] * W_SL_BOOK);    wsum += W_SL_BOOK
+    if adm in budget_norm:
+        parts.append(budget_norm[adm] * W_SL_BUDGET); wsum += W_SL_BUDGET
+    loan_score[adm] = round(sum(parts) / wsum, 4) if wsum > 0 else 0.5
+print(f"  학교도서관 복합점수 산출 읍면동: {len(loan_score)}개 "
+      f"(이용{W_SL_USE}+장서{W_SL_BOOK}+예산{W_SL_BUDGET})")
 
 # 다문화 복합 취약 점수 (2개 하위지표)
 # ① 다문화 가구 비율 (수요측) — 높을수록 취약
@@ -575,6 +649,8 @@ for adm_cd in sorted(all_adm_cds):
         'school_count': n_school,
         'total_students': adm_students.get(adm_cd, 0),
         'median_loans_per_student': round(adm_median_loans_per_student.get(adm_cd, 0), 2),
+        'median_books_per_student': round(adm_median_books_per_student.get(adm_cd, 0), 1),
+        'median_budget_per_student': round(adm_median_budget_per_student.get(adm_cd, 0)),
         # 다문화
         'multicultural_count': adm_mc_count.get(adm_cd, 0),
         'multicultural_ratio': round(mc_ratio_map.get(adm_cd, 0), 4),
@@ -603,7 +679,7 @@ output = {
         'year': 2024,
         'unit': '읍면동',
         'weights': {'access': W_ACCESS, 'loan': W_LOAN, 'multicultural': W_MC},
-        'description': '공공도서관접근성복합(0.35)[도서관수0.15+어린이대출자비율0.25+장서수0.20+독서프로그램0.20+회원등록률0.20] + 학교도서관 1인당대출권수 중앙값(0.25, 순위백분위 정규화) + 다문화복합(0.40)[가구비율0.50+서비스미도달률0.50]'
+        'description': '공공도서관접근성복합(0.35)[도서관수0.15+어린이대출자비율0.25+장서수0.20+독서프로그램0.20+회원등록률0.20] + 학교도서관복합(0.25)[1인당대출0.40+1인당장서0.35+1인당자료구입예산0.25, 순위백분위 정규화] + 다문화복합(0.40)[가구비율0.50+서비스미도달률0.50]'
     },
     'data': results
 }
