@@ -365,6 +365,7 @@
                                     ${(data.risk_index * 100).toFixed(0)}점
                                 </div>
                                 <div class="popup-detail"><span>공공도서관</span><span>${data.publib_count}개 · 어린이대출자 ${(data.publib_child_borrowers ?? 0).toLocaleString()}명</span></div>
+                                <div class="popup-detail"><span>초등연령 아동인구(7~12세)</span><span>${data.child_pop != null ? data.child_pop.toLocaleString() + '명' : '-'}</span></div>
                                 <div class="popup-detail"><span>초등학교</span><span>${data.school_count}개 (학생 ${data.total_students}명)</span></div>
                                 <div class="popup-detail"><span>학교도서관 1인당 연간대출</span><span>${data.median_loans_per_student != null ? data.median_loans_per_student.toFixed(1) + '권' : '-'}</span></div>
                                 <div class="popup-detail"><span>학교도서관 1인당 장서</span><span>${data.median_books_per_student != null ? data.median_books_per_student.toFixed(0) + '권' : '-'}</span></div>

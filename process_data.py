@@ -473,6 +473,68 @@ for row in hh_rows[2:]:
 
 print(f"  총 가구수 매칭 읍면동: {len(adm_households)}개")
 
+# 초등연령(7~12세) 아동인구 로드 — 공공도서관 접근성의 '수요' 분모로 사용.
+# 라이브러리 자체보고 '봉사대상자수_어린이'(노이즈·결측多) 대신 객관적 통계청 인구로 대체.
+# 형식: col[0]=읍면동명, col[1]=연령별(합계/7세..12세), col[4]=2024 총인구. '합계'는 전연령 → 7~12 행 합산.
+print("👶 초등연령(7~12세) 아동인구 로드 중...")
+POP_FILE = os.path.join(DATA_DIR, 'used', '7세 ~ 12세 연령_및_성별_인구_–_읍면동(UTF-8).csv')
+_CHILD_AGES = {'7세', '8세', '9세', '10세', '11세', '12세'}
+with open(POP_FILE, encoding='utf-8-sig') as f:
+    pop_rows = list(csv.reader(f))
+
+# 읍면동 블록(합계,7세..12세 연속)을 파일 순서대로 누적 → 행순서 문맥으로 중복명 구분.
+# GeoJSON에 없는 분할 행정동(금암1동/금암2동)은 숫자 제거한 기본명(금암동)으로도 합산.
+def _base_dong(nm):
+    return re.sub(r'\d+(동|가)$', r'\g<1>', nm) if re.search(r'\d', nm) else nm
+
+_blocks = []  # [(dong_nm, child_sum), ...] 파일 등장 순서
+_cur_nm, _cur_sum = None, 0
+for row in pop_rows[2:]:
+    if len(row) < 5:
+        continue
+    dong_nm = row[0].strip().strip('"')
+    age = row[1].strip()
+    if not dong_nm:
+        continue
+    if age == '합계':
+        if _cur_nm is not None:
+            _blocks.append((_cur_nm, _cur_sum))
+        _cur_nm, _cur_sum = dong_nm, 0
+    elif age in _CHILD_AGES and _cur_nm == dong_nm:
+        # 2024년(col[4])만 사용. 'X'는 인구감소로 실제 0일 수 있어 과거연도로 메우지 않음
+        # (사용자 지침). X/결측 연령은 미합산(0 기여).
+        v = row[4].strip().replace(',', '')
+        if v not in ('', 'X', '-'):
+            try:
+                _cur_sum += int(v)
+            except ValueError:
+                pass
+if _cur_nm is not None:
+    _blocks.append((_cur_nm, _cur_sum))
+
+adm_child_pop = _dd(int)
+_prev_sgg = None
+for dong_nm, child_sum in _blocks:
+    candidates = _dong_to_adm_list.get(dong_nm) or _dong_to_adm_list.get(_base_dong(dong_nm), [])
+    matched = None
+    if len(candidates) == 1:
+        matched = candidates[0]
+    elif len(candidates) > 1:
+        if _prev_sgg:
+            for _c in candidates:
+                if adm_to_props[_c]['sgg'] == _prev_sgg:
+                    matched = _c
+                    break
+        if not matched:
+            matched = candidates[0]
+    if matched:
+        adm_child_pop[matched] += child_sum  # 분할동 합산 누적
+        _prev_sgg = adm_to_props[matched]['sgg']
+adm_child_pop = dict(adm_child_pop)
+
+print(f"  초등연령 아동인구 매칭 읍면동: {len(adm_child_pop)}개 "
+      f"(총 {sum(adm_child_pop.values()):,}명)")
+
 # ============================================================
 # 6. 취약지수 산출
 # ============================================================
@@ -583,7 +645,8 @@ for adm_cd in all_adm_cds:
     n_student = adm_students.get(adm_cd, 0)
     denom_s   = max(n_student, 1)
     denom_sc  = max(n_school, 1)
-    target    = max(adm_child_target.get(adm_cd, 0), 1)
+    # 분모: 실제 초등연령 아동인구(객관적). 결측 시 봉사대상자수로 fallback.
+    target    = adm_child_pop.get(adm_cd) or adm_child_target.get(adm_cd, 0) or 1
     adm_access_lib_ratio[adm_cd]      = adm_publib.get(adm_cd, 0) / denom_sc
     adm_access_borrower_ratio[adm_cd] = adm_child_borrowers.get(adm_cd, 0) / target
     adm_access_collection[adm_cd]     = adm_child_collection.get(adm_cd, 0) / denom_s
@@ -637,6 +700,8 @@ for adm_cd in sorted(all_adm_cds):
         'access_score': a,
         'loan_score': l,
         'multicultural_score': m,
+        # 인구
+        'child_pop': adm_child_pop.get(adm_cd, 0),  # 초등연령(7~12세) 아동인구
         # 공공도서관 상세
         'publib_count': adm_publib.get(adm_cd, 0),
         'publib_child_borrowers': adm_child_borrowers.get(adm_cd, 0),
@@ -679,7 +744,7 @@ output = {
         'year': 2024,
         'unit': '읍면동',
         'weights': {'access': W_ACCESS, 'loan': W_LOAN, 'multicultural': W_MC},
-        'description': '공공도서관접근성복합(0.35)[도서관수0.15+어린이대출자비율0.25+장서수0.20+독서프로그램0.20+회원등록률0.20] + 학교도서관복합(0.25)[1인당대출0.40+1인당장서0.35+1인당자료구입예산0.25, 순위백분위 정규화] + 다문화복합(0.40)[가구비율0.50+서비스미도달률0.50]'
+        'description': '공공도서관접근성복합(0.35)[도서관수0.15+어린이대출자비율0.25+장서수0.20+독서프로그램0.20+회원등록률0.20, 대출/회원 분모는 통계청 7~12세 아동인구] + 학교도서관복합(0.25)[1인당대출0.40+1인당장서0.35+1인당자료구입예산0.25, 순위백분위 정규화] + 다문화복합(0.40)[가구비율0.50+서비스미도달률0.50]'
     },
     'data': results
 }
