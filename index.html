@@ -310,7 +310,7 @@
         // 데이터 로드 및 렌더링
         Promise.all([
             fetch('data/used/risk_data.json').then(r => r.json()),
-            fetch('https://cdn.jsdelivr.net/gh/ongoel/hyetae@main/data/used/%EC%A0%84%EB%B6%81%ED%8A%B9%EB%B3%84%EC%9E%90%EC%B9%98%EB%8F%84%20bnd_dong_35_2025_2Q.json').then(r => r.json())
+            fetch('data/used/전북특별자치도 bnd_dong_35_2025_2Q.json').then(r => r.json())
         ]).then(([risk, geo]) => {
             riskData = risk.data;
             geoData = geo;
