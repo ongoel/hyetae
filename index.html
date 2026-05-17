@@ -366,7 +366,7 @@
                                 </div>
                                 <div class="popup-detail"><span>공공도서관</span><span>${data.publib_count}개 · 어린이대출자 ${(data.publib_child_borrowers ?? 0).toLocaleString()}명</span></div>
                                 <div class="popup-detail"><span>초등학교</span><span>${data.school_count}개 (학생 ${data.total_students}명)</span></div>
-                                <div class="popup-detail"><span>학교도서관 대출자비율</span><span>${data.median_borrower_rate != null ? (data.median_borrower_rate * 100).toFixed(1) + '%' : '-'}</span></div>
+                                <div class="popup-detail"><span>학교도서관 1인당 연간대출</span><span>${data.median_loans_per_student != null ? data.median_loans_per_student.toFixed(1) + '권' : '-'}</span></div>
                                 <div class="popup-detail"><span>다문화가구</span><span>${mcLabel} (비율 ${(data.multicultural_ratio * 100).toFixed(1)}%)</span></div>
                                 <hr style="border-color:rgba(255,255,255,0.1);margin:6px 0">
                                 <div class="popup-detail"><span>접근성 점수</span><span>${(data.access_score*100).toFixed(0)}</span></div>
@@ -459,7 +459,7 @@
                     <div class="rank-num ${i < 3 ? 'top3' : 'normal'}">${i + 1}</div>
                     <div class="rank-info">
                         <div class="rank-name">${d.sgg} ${d.adm_nm}</div>
-                        <div class="rank-detail">도서관 ${d.publib_count}개 · 학교대출자 ${d.median_borrower_rate != null ? (d.median_borrower_rate*100).toFixed(0)+'%' : '-'} · 다문화 ${(d.multicultural_ratio*100).toFixed(1)}%</div>
+                        <div class="rank-detail">도서관 ${d.publib_count}개 · 1인당대출 ${d.median_loans_per_student != null ? d.median_loans_per_student.toFixed(1)+'권' : '-'} · 다문화 ${(d.multicultural_ratio*100).toFixed(1)}%</div>
                     </div>
                     <div class="rank-score" style="color:${getColor(d.risk_index)}">${(d.risk_index * 100).toFixed(0)}</div>
                 </li>

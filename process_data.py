@@ -4,7 +4,7 @@
 - 학교기본정보 주소 활용 → 읍면동 단위 집계
 - 지도: 전북특별자치도 bnd_dong_35_2025_2Q.json 사용
 """
-import csv, json, os, sys, io, re, statistics
+import csv, json, os, sys, io, re, statistics, bisect
 from collections import defaultdict
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
@@ -229,9 +229,11 @@ print("\n📚 학교도서관 대출 데이터 로드 중...")
 lib_file = os.path.join(DATA_DIR, 'used',
                         '2024년도_학교도서관 현황(이용 현황)(초)_전북특별자치도교육청.csv')
 
-# 대출자 비율 = 연간학생대출자수/전년도전체학생수 — 1인당 대출권수보다 학교 간 편차 적음
-# 읍면동 내 복수 학교는 중앙값(median)으로 집계 → 극단값 학교 영향 차단
-adm_borrower_rates = defaultdict(list)  # adm_cd → [borrower_rate per school, ...]
+# 지표 = '1인당대출자료수'(= 연간학생대출자료수/전년도전체학생수, CSV 제공) — 표준 도서관 KPI.
+# '연간학생대출자수'는 고유 학생 수가 아니라 누적 대출자(거래성) 수라, 학생수로 나누면
+# 0~1 참여율이 아니라 수백 %가 나와 지표가 오염됨 → 사용하지 않음.
+# 읍면동 내 복수 학교는 중앙값(median)으로 집계 → 극단값 학교 영향 차단.
+adm_loans_per_student = defaultdict(list)  # adm_cd → [1인당 대출권수 per school, ...]
 adm_students = defaultdict(int)
 school_count_by_adm = defaultdict(int)
 
@@ -245,24 +247,26 @@ with open(lib_file, encoding='utf-8-sig') as f:
         if not info or not info['adm_cd']:
             continue
         adm_cd = info['adm_cd']
+        raw = (row.get('1인당대출자료수', '') or '').strip()
+        if raw == '':
+            continue  # 결측 — 0으로 채우면 invert 후 최대취약으로 오염되므로 제외
         try:
-            borrowers = int(row.get('연간학생대출자수', '0') or '0')
-        except:
-            borrowers = 0
+            lps = float(raw)
+        except ValueError:
+            continue
         try:
             students = int(row.get('전년도전체학생수', '0') or '0')
-        except:
+        except ValueError:
             students = 0
         school_count_by_adm[adm_cd] += 1
         adm_students[adm_cd] += students
-        rate = borrowers / students if students > 0 else 0.0
-        adm_borrower_rates[adm_cd].append(rate)
+        adm_loans_per_student[adm_cd].append(lps)
 
 # 읍면동 대표값: 중앙값
-adm_median_borrower_rate = {
-    adm: statistics.median(v) for adm, v in adm_borrower_rates.items() if v
+adm_median_loans_per_student = {
+    adm: statistics.median(v) for adm, v in adm_loans_per_student.items() if v
 }
-print(f"  읍면동 대출자 비율 데이터 있는 곳: {len(adm_median_borrower_rate)}개")
+print(f"  읍면동 학교도서관 1인당대출 데이터 있는 곳: {len(adm_median_loans_per_student)}개")
 
 # ============================================================
 # 4. 공공도서관 접근성 (읍면동별) - 2025년 실적 통계 활용
@@ -433,9 +437,30 @@ def min_max_normalize(values_dict, invert=False):
         result[k] = round(max(0.0, min(1.0, norm)), 4)
     return result
 
-# 대출 점수: 읍면동 내 학교들의 대출자 비율 중앙값 (낮을수록 취약)
-loan_for_norm = {adm: adm_median_borrower_rate.get(adm, 0) for adm in all_adm_cds}
-loan_score = min_max_normalize(loan_for_norm, invert=True)
+
+def percentile_rank_normalize(values_dict, invert=False):
+    # 순위 백분위(동순위 평균) 정규화 — 값 간 거리가 아닌 상대순위만 사용하므로
+    # 우편향·이상치(최대/중앙값 15배 등)에 면역. 우편향 도서관 지표에 적합.
+    items = list(values_dict.items())
+    n = len(items)
+    if n == 0:
+        return {}
+    if n == 1:
+        return {items[0][0]: 0.5}
+    svals = sorted(v for _, v in items)
+    result = {}
+    for k, v in items:
+        lo = bisect.bisect_left(svals, v)
+        hi = bisect.bisect_right(svals, v)
+        avg_rank = (lo + hi - 1) / 2.0          # 동일값은 동일 백분위
+        p = avg_rank / (n - 1)
+        result[k] = round(1.0 - p if invert else p, 4)
+    return result
+
+# 대출 점수: 읍면동 내 학교 1인당대출권수 중앙값 (낮을수록 취약).
+# 분포가 심하게 우편향이라 min-max 대신 순위백분위로 정규화(이상치 압축 방지).
+loan_for_norm = dict(adm_median_loans_per_student)  # 학교데이터 있는 읍면동만
+loan_score = percentile_rank_normalize(loan_for_norm, invert=True)
 
 # 다문화 복합 취약 점수 (2개 하위지표)
 # ① 다문화 가구 비율 (수요측) — 높을수록 취약
@@ -549,7 +574,7 @@ for adm_cd in sorted(all_adm_cds):
         # 학교도서관 상세
         'school_count': n_school,
         'total_students': adm_students.get(adm_cd, 0),
-        'median_borrower_rate': round(adm_median_borrower_rate.get(adm_cd, 0), 4),
+        'median_loans_per_student': round(adm_median_loans_per_student.get(adm_cd, 0), 2),
         # 다문화
         'multicultural_count': adm_mc_count.get(adm_cd, 0),
         'multicultural_ratio': round(mc_ratio_map.get(adm_cd, 0), 4),
@@ -578,7 +603,7 @@ output = {
         'year': 2024,
         'unit': '읍면동',
         'weights': {'access': W_ACCESS, 'loan': W_LOAN, 'multicultural': W_MC},
-        'description': '공공도서관접근성복합(0.35)[도서관수0.15+어린이대출자비율0.25+장서수0.20+독서프로그램0.20+회원등록률0.20] + 학교도서관대출자비율중앙값(0.25) + 다문화복합(0.40)[가구비율0.50+서비스미도달률0.50]'
+        'description': '공공도서관접근성복합(0.35)[도서관수0.15+어린이대출자비율0.25+장서수0.20+독서프로그램0.20+회원등록률0.20] + 학교도서관 1인당대출권수 중앙값(0.25, 순위백분위 정규화) + 다문화복합(0.40)[가구비율0.50+서비스미도달률0.50]'
     },
     'data': results
 }
