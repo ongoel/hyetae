@@ -852,7 +852,7 @@ for s, b in sgg_summary.items():
 # ============================================================
 output = {
     'metadata': {
-        'title': '전북 문해력 인프라 취약지수',
+        'title': '데이터 기반 문해력 취약지수 플랫폼(Literacy Map)',
         'year': 2024,
         'unit': '읍면동',
         'weights': {'access': W_ACCESS, 'loan': W_LOAN, 'multicultural': W_MC},
