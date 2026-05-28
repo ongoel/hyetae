@@ -135,6 +135,34 @@
         .tab-btn.active            { background: #b8f5c8; color: #004b1e; }
         .tab-btn:not(.active):hover{ background: #e6e8ea; color: #191c1e; }
 
+        /* ─── Persona tabs (header) ─── */
+        .persona-tabs {
+            display: flex; gap: 4px;
+            background: #f2f4f6;
+            padding: 4px;
+            border-radius: 10px;
+            border: 1px solid #bccbb9;
+        }
+        .persona-btn {
+            display: flex; align-items: center; gap: 6px;
+            padding: 7px 14px;
+            border-radius: 7px;
+            font-size: 0.78rem; font-weight: 700;
+            border: none; cursor: pointer; white-space: nowrap;
+            transition: all 0.15s;
+            font-family: 'Plus Jakarta Sans','Noto Sans KR',sans-serif;
+            background: transparent; color: #6d7b6c;
+        }
+        .persona-btn.active {
+            background: #006e2f; color: #ffffff;
+            box-shadow: 0 1px 3px rgba(0,110,47,0.25);
+        }
+        .persona-btn:not(.active):hover { background: #e6e8ea; color: #191c1e; }
+
+        /* ─── Persona section visibility ─── */
+        .persona-section        { display: none; }
+        .persona-section.active { display: block; }
+
         /* ─── Tab content ─── */
         .tab-section        { display: none; }
         .tab-section.active { display: block; }
@@ -160,17 +188,25 @@
 
     <!-- ══════════════════ HEADER ══════════════════ -->
     <header style="background:#ffffff;border-bottom:1px solid #bccbb9;z-index:1000;flex-shrink:0;">
-        <div style="display:flex;justify-content:space-between;align-items:flex-end;padding:10px 24px 0;">
-            <div style="display:flex;align-items:center;gap:12px;padding-bottom:8px;">
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:10px 24px;">
+            <div style="display:flex;align-items:center;gap:12px;">
                 <span class="material-symbols-outlined" style="font-size:2rem;color:#006e2f;">book</span>
-                <div>
-                    <h1 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:1.2rem;font-weight:700;color:#191c1e;line-height:1.2;">전북 문해력 인프라 취약지수(초등)</h1>
-                    <p style="font-size:0.73rem;color:#6d7b6c;margin-top:3px;">공공도서관 접근성 × 학교도서관 대출량 × 다문화가구 밀도 | 읍면동 단위 분석</p>
-                </div>
+                <h1 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:1.2rem;font-weight:700;color:#191c1e;line-height:1.2;margin:0;">전북 문해력 인프라 취약지수</h1>
             </div>
-            <div style="background:#b8f5c8;color:#004b1e;padding:5px 16px;border-radius:8px 8px 0 0;font-size:0.7rem;font-weight:700;border:1px solid #bccbb9;border-bottom:none;font-family:'Inter',sans-serif;letter-spacing:0.02em;">
-                제8회 교육 공공데이터 AI 대회
-            </div>
+            <nav class="persona-tabs" id="personaTabs" aria-label="사용자 페르소나">
+                <button class="persona-btn active" data-persona="officer" type="button">
+                    <span class="material-symbols-outlined" style="font-size:18px;">policy</span>
+                    <span>장학사</span>
+                </button>
+                <button class="persona-btn" data-persona="teacher" type="button">
+                    <span class="material-symbols-outlined" style="font-size:18px;">school</span>
+                    <span>교사</span>
+                </button>
+                <button class="persona-btn" data-persona="student" type="button">
+                    <span class="material-symbols-outlined" style="font-size:18px;">videogame_asset</span>
+                    <span>학생</span>
+                </button>
+            </nav>
         </div>
     </header>
 
@@ -183,29 +219,41 @@
         </section>
 
         <!-- 사이드바 -->
-        <aside id="sidebar" style="width:380px;background:#f2f4f6;border-left:1px solid #bccbb9;display:flex;flex-direction:column;flex-shrink:0;z-index:500;">
+        <aside id="sidebar" class="persona-officer" style="width:380px;background:#f2f4f6;border-left:1px solid #bccbb9;display:flex;flex-direction:column;flex-shrink:0;z-index:500;">
 
             <!-- 사이드바 헤더 + 탭 -->
             <div style="padding:14px 16px 0;background:#f2f4f6;border-bottom:1px solid #bccbb9;flex-shrink:0;">
                 <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;">
-                    <span class="material-symbols-outlined" style="font-size:20px;color:#6d7b6c;">analytics</span>
+                    <span class="material-symbols-outlined" id="personaIcon" style="font-size:20px;color:#006e2f;">policy</span>
                     <div>
-                        <div style="font-family:'Plus Jakarta Sans',sans-serif;font-size:0.95rem;font-weight:700;color:#191c1e;">분석 지표</div>
-                        <div style="font-size:0.68rem;color:#6d7b6c;">초등 교육 공공데이터 기반</div>
+                        <div style="font-family:'Plus Jakarta Sans',sans-serif;font-size:0.95rem;font-weight:700;color:#191c1e;" id="personaTitle">장학사 콘솔</div>
+                        <div style="font-size:0.68rem;color:#6d7b6c;" id="personaSubtitle">정책 핫스팟 · 사각지대 분석</div>
                     </div>
                 </div>
-                <div style="display:flex;gap:2px;overflow-x:auto;">
-                    <button class="tab-btn active" data-tab="summary">
+                <div style="display:flex;gap:2px;overflow-x:auto;" id="subTabs">
+                    <button class="tab-btn active" data-tab="summary" data-personas="officer">
                         <span class="material-symbols-outlined" style="font-size:14px;">dashboard</span>종합 요약
                     </button>
-                    <button class="tab-btn" data-tab="legend">
-                        <span class="material-symbols-outlined" style="font-size:14px;">legend_toggle</span>범례
-                    </button>
-                    <button class="tab-btn" data-tab="ranking">
+                    <button class="tab-btn" data-tab="ranking" data-personas="officer">
                         <span class="material-symbols-outlined" style="font-size:14px;">format_list_numbered</span>취약 순위
                     </button>
-                    <button class="tab-btn" data-tab="datasource">
-                        <span class="material-symbols-outlined" style="font-size:14px;">database</span>데이터 소스
+                    <button class="tab-btn" data-tab="sgg-deadzone" data-personas="officer">
+                        <span class="material-symbols-outlined" style="font-size:14px;">flag</span>사각지대
+                    </button>
+                    <button class="tab-btn" data-tab="school-search" data-personas="teacher">
+                        <span class="material-symbols-outlined" style="font-size:14px;">search</span>학교 검색
+                    </button>
+                    <button class="tab-btn" data-tab="school-nearby" data-personas="teacher">
+                        <span class="material-symbols-outlined" style="font-size:14px;">explore</span>주변 분석
+                    </button>
+                    <button class="tab-btn" data-tab="dong-level" data-personas="student">
+                        <span class="material-symbols-outlined" style="font-size:14px;">stars</span>우리 동네 레벨
+                    </button>
+                    <button class="tab-btn" data-tab="treasure-hunt" data-personas="student">
+                        <span class="material-symbols-outlined" style="font-size:14px;">map</span>보물찾기
+                    </button>
+                    <button class="tab-btn" data-tab="legend" data-personas="officer,teacher,student">
+                        <span class="material-symbols-outlined" style="font-size:14px;">legend_toggle</span>범례
                     </button>
                 </div>
             </div>
@@ -261,6 +309,65 @@
                     <ul class="rank-list" id="rankList"></ul>
                 </div>
 
+                <!-- 탭: 시군 사각지대 (장학사) -->
+                <div class="tab-section" id="tab-sgg-deadzone">
+                    <div class="section-header">
+                        <span class="material-symbols-outlined" style="font-size:18px;color:#6d7b6c;">flag</span>
+                        <span class="lbl">시군별 도서관 사각지대</span>
+                    </div>
+                    <p style="font-size:0.72rem;color:#6d7b6c;margin:0 0 10px;">시군을 클릭하면 해당 시군의 공공도서관이 없는 행정동 리스트를 확인할 수 있습니다.</p>
+                    <div id="sggList"></div>
+                    <div id="deadZonePanel" style="margin-top:14px;"></div>
+                </div>
+
+                <!-- 탭: 학교 검색 (교사) -->
+                <div class="tab-section" id="tab-school-search">
+                    <div class="section-header">
+                        <span class="material-symbols-outlined" style="font-size:18px;color:#6d7b6c;">search</span>
+                        <span class="lbl">내 학교 찾기</span>
+                    </div>
+                    <p style="font-size:0.72rem;color:#6d7b6c;margin:0 0 10px;">학교명을 입력하거나 목록에서 선택하면 지도에 위치가 표시되고 주변 환경이 분석됩니다.</p>
+                    <input type="search" id="schoolSearch" list="schoolList" placeholder="예: 전주안동초"
+                        style="width:100%;padding:10px 12px;font-size:0.85rem;border:1px solid #bccbb9;border-radius:8px;background:#fff;font-family:'Noto Sans KR',sans-serif;box-sizing:border-box;">
+                    <datalist id="schoolList"></datalist>
+                    <div id="schoolSearchHint" style="margin-top:8px;font-size:0.7rem;color:#6d7b6c;"></div>
+                </div>
+
+                <!-- 탭: 학교 주변 분석 (교사) -->
+                <div class="tab-section" id="tab-school-nearby">
+                    <div class="section-header">
+                        <span class="material-symbols-outlined" style="font-size:18px;color:#6d7b6c;">explore</span>
+                        <span class="lbl">우리 학교 주변 환경</span>
+                    </div>
+                    <div id="schoolNearbyPanel">
+                        <p style="font-size:0.78rem;color:#6d7b6c;background:#fff;border:1px dashed #bccbb9;border-radius:8px;padding:14px;text-align:center;">학교 검색 탭에서 학교를 먼저 선택하세요.</p>
+                    </div>
+                </div>
+
+                <!-- 탭: 우리 동네 레벨 (학생) -->
+                <div class="tab-section" id="tab-dong-level">
+                    <div class="section-header">
+                        <span class="material-symbols-outlined" style="font-size:18px;color:#6d7b6c;">stars</span>
+                        <span class="lbl">우리 동네 문해력 레벨</span>
+                    </div>
+                    <p style="font-size:0.72rem;color:#6d7b6c;margin:0 0 10px;">우리 동네를 선택해서 문해력 환경 레벨을 확인해 보세요.</p>
+                    <select id="dongSelect" style="width:100%;padding:10px 12px;font-size:0.85rem;border:1px solid #bccbb9;border-radius:8px;background:#fff;font-family:'Noto Sans KR',sans-serif;box-sizing:border-box;">
+                        <option value="">— 동네 선택 —</option>
+                    </select>
+                    <div id="dongLevelCard" style="margin-top:14px;"></div>
+                </div>
+
+                <!-- 탭: 도서관 보물찾기 (학생) -->
+                <div class="tab-section" id="tab-treasure-hunt">
+                    <div class="section-header">
+                        <span class="material-symbols-outlined" style="font-size:18px;color:#6d7b6c;">map</span>
+                        <span class="lbl">도서관 보물찾기</span>
+                    </div>
+                    <p style="font-size:0.72rem;color:#6d7b6c;margin:0 0 10px;">지도의 도서관 핀을 클릭해서 방문 체크! 우리 동네 도서관을 다 찾아봐요.</p>
+                    <div id="treasureProgress"></div>
+                    <div id="treasureList" style="margin-top:12px;"></div>
+                </div>
+
                 <!-- 탭: 데이터 소스 -->
                 <div class="tab-section" id="tab-datasource">
                     <div class="section-header">
@@ -273,32 +380,114 @@
                     <div class="info-card"><div class="ic-title">법정동-행정동 연계 코드</div><div class="ic-desc">행정안전부 (data.go.kr) | 공공데이터 자유이용허락</div></div>
                     <div class="info-card"><div class="ic-title">다문화가구 현황</div><div class="ic-desc">행정안전부 지방행정인허가 (2023년) | 공공데이터 자유이용허락</div></div>
                     <div class="info-card"><div class="ic-title">가구원수별 가구 (읍면동)</div><div class="ic-desc">통계청 국가통계포털 (2024년) | 공공데이터 자유이용허락</div></div>
+                    <div class="info-card"><div class="ic-title">7~12세 연령·성별 인구</div><div class="ic-desc">통계청 국가통계포털 (2024년) | 공공도서관 접근성 분모로 사용</div></div>
                 </div>
 
+            </div>
+
+            <!-- 사이드바 푸터: 데이터 소스 링크 -->
+            <div style="padding:10px 16px;border-top:1px solid #bccbb9;background:#f2f4f6;flex-shrink:0;">
+                <button id="dataSourceLink" type="button"
+                    style="width:100%;padding:8px;font-size:0.72rem;font-weight:600;color:#006e2f;background:transparent;border:1px solid #bccbb9;border-radius:6px;cursor:pointer;font-family:'Inter','Noto Sans KR',sans-serif;display:flex;align-items:center;justify-content:center;gap:6px;">
+                    <span class="material-symbols-outlined" style="font-size:14px;">database</span>활용 데이터 출처 보기
+                </button>
             </div>
         </aside>
     </div>
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
-        // ─── 탭 전환 ───
-        document.querySelectorAll('.tab-btn').forEach(btn => {
-            btn.addEventListener('click', () => {
-                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-                document.querySelectorAll('.tab-section').forEach(s => s.classList.remove('active'));
-                btn.classList.add('active');
-                document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
-            });
-        });
-
-        // ─── 데이터 로드 ───
+        // ─── 전역 상태 ───
         let riskData = null;
         let geoData  = null;
         let geoLayer = null;
-
-        // 분위수 기반 색상 (데이터 로드 후 computeQuantiles()로 갱신)
+        let schoolsData    = [];
+        let librariesData  = [];
+        let sggSummaryData = {};
+        let dongCentroids  = {};
+        let schoolMarker   = null;
+        let nearbyLibMarkers = [];
+        let treasureLibMarkers = [];
+        let allSchoolMarkers = [];
+        let map = null;
         let qThresholds = [0.6, 0.7, 0.8, 0.9];
 
+        // ─── 페르소나별 기본 탭 ───
+        const PERSONA_DEFAULT_TAB = {
+            officer: 'summary',
+            teacher: 'school-search',
+            student: 'dong-level'
+        };
+        const PERSONA_META = {
+            officer: { icon: 'policy',         title: '장학사 콘솔',  subtitle: '정책 핫스팟 · 사각지대 분석' },
+            teacher: { icon: 'school',         title: '교사 도구',    subtitle: '우리 학교 주변 문해력 환경' },
+            student: { icon: 'videogame_asset',title: '문해력 챌린지', subtitle: '우리 동네 레벨 · 도서관 보물찾기' }
+        };
+
+        let currentPersona = 'officer';
+
+        function applyPersona(persona) {
+            currentPersona = persona;
+            // 헤더 버튼 active
+            document.querySelectorAll('.persona-btn').forEach(b => {
+                b.classList.toggle('active', b.dataset.persona === persona);
+            });
+            // 사이드바 메타 갱신
+            const meta = PERSONA_META[persona];
+            document.getElementById('personaIcon').textContent = meta.icon;
+            document.getElementById('personaTitle').textContent = meta.title;
+            document.getElementById('personaSubtitle').textContent = meta.subtitle;
+            document.getElementById('sidebar').className = 'persona-' + persona;
+            // 서브탭 표시 필터
+            document.querySelectorAll('#subTabs .tab-btn').forEach(b => {
+                const personas = (b.dataset.personas || '').split(',');
+                b.style.display = personas.includes(persona) ? '' : 'none';
+            });
+            // 기본 탭 활성화
+            activateSubTab(PERSONA_DEFAULT_TAB[persona]);
+            // 지도 마커 페르소나별 가시성
+            syncPersonaMapMarkers();
+        }
+
+        function syncPersonaMapMarkers() {
+            // 교사 마커: 교사 페르소나에서만 (모든 학교 + 검색된 학교 + 주변 도서관)
+            const showTeacher = currentPersona === 'teacher';
+            allSchoolMarkers.forEach(m => showTeacher ? m.addTo(map) : map.removeLayer(m));
+            if (schoolMarker) showTeacher ? schoolMarker.addTo(map) : map.removeLayer(schoolMarker);
+            nearbyLibMarkers.forEach(m => showTeacher ? m.addTo(map) : map.removeLayer(m));
+            // 학생 보물찾기 핀: 학생 페르소나에서만
+            const showStudent = currentPersona === 'student';
+            treasureLibMarkers.forEach(m => showStudent ? m.addTo(map) : map.removeLayer(m));
+        }
+
+        function activateSubTab(tab) {
+            document.querySelectorAll('#subTabs .tab-btn').forEach(b => b.classList.remove('active'));
+            document.querySelectorAll('.tab-section').forEach(s => s.classList.remove('active'));
+            const btn = document.querySelector(`#subTabs .tab-btn[data-tab="${tab}"]`);
+            const sec = document.getElementById('tab-' + tab);
+            if (btn) btn.classList.add('active');
+            if (sec) sec.classList.add('active');
+        }
+
+        // ─── 페르소나 전환 ───
+        document.querySelectorAll('.persona-btn').forEach(btn => {
+            btn.addEventListener('click', () => applyPersona(btn.dataset.persona));
+        });
+
+        // ─── 서브탭 전환 ───
+        document.querySelectorAll('#subTabs .tab-btn').forEach(btn => {
+            btn.addEventListener('click', () => activateSubTab(btn.dataset.tab));
+        });
+
+        // ─── 데이터 소스 푸터 링크 → 데이터 소스 탭 열기 ───
+        document.getElementById('dataSourceLink').addEventListener('click', () => {
+            activateSubTab('datasource');
+        });
+
+        // 초기 페르소나 적용 (장학사)
+        applyPersona('officer');
+
+        // ─── 분위수 기반 색상 (데이터 로드 후 computeQuantiles()로 갱신) ───
         function computeQuantiles(dataMap) {
             const vals = Object.values(dataMap)
                 .filter(d => d.has_school)
@@ -321,7 +510,7 @@
         }
 
         // ─── 지도 초기화 ───
-        const map = L.map('map', { zoomControl: false }).setView([35.82, 127.15], 8);
+        map = L.map('map', { zoomControl: false }).setView([35.82, 127.15], 8);
         L.control.zoom({ position: 'topright' }).addTo(map);
         L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
             attribution: '&copy; OpenStreetMap, &copy; CARTO',
@@ -333,11 +522,18 @@
             fetch('data/used/risk_data.json').then(r => r.json()),
             fetch('data/used/전북특별자치도 bnd_dong_35_2025_2Q.json').then(r => r.json())
         ]).then(([risk, geo]) => {
-            riskData = risk.data;
-            geoData  = geo;
+            riskData       = risk.data;
+            schoolsData    = risk.schools     || [];
+            librariesData  = risk.libraries   || [];
+            sggSummaryData = risk.sgg_summary || {};
+            geoData        = geo;
             computeQuantiles(riskData);
+            buildDongCentroids();
             renderMap();
             renderSidebar();
+            renderOfficerView();
+            renderTeacherView();
+            renderStudentView();
         }).catch(err => {
             console.error('데이터 로드 실패:', err);
             document.getElementById('sidebar').innerHTML =
@@ -480,16 +676,345 @@
 
             // 순위 클릭 → 지도 이동
             document.querySelectorAll('.rank-item').forEach(item => {
-                item.addEventListener('click', () => {
-                    const adm = item.dataset.adm;
-                    geoLayer.eachLayer(layer => {
-                        if (layer.feature && layer.feature.properties.ADM_CD === adm) {
-                            map.fitBounds(layer.getBounds(), { padding: [80, 80] });
-                            layer.fire('click', { latlng: layer.getBounds().getCenter() });
-                        }
-                    });
+                item.addEventListener('click', () => gotoDong(item.dataset.adm));
+            });
+        }
+
+        // ═══════════════════ 공통 헬퍼 ═══════════════════
+        function buildDongCentroids() {
+            dongCentroids = {};
+            geoData.features.forEach(feat => {
+                const cd = feat.properties.ADM_CD;
+                const coords = getAllCoords(feat.geometry);
+                if (!coords.length) return;
+                const lat = coords.reduce((s,c) => s+c[1], 0) / coords.length;
+                const lon = coords.reduce((s,c) => s+c[0], 0) / coords.length;
+                dongCentroids[cd] = [lat, lon];
+            });
+        }
+
+        function gotoDong(adm_cd) {
+            if (!geoLayer) return;
+            geoLayer.eachLayer(layer => {
+                if (layer.feature && layer.feature.properties.ADM_CD === adm_cd) {
+                    map.fitBounds(layer.getBounds(), { padding: [80, 80] });
+                    layer.fire('click', { latlng: layer.getBounds().getCenter() });
+                }
+            });
+        }
+
+        function gotoSgg(sggName) {
+            // 시군 내 모든 동의 bounds 합산해서 fitBounds
+            let bounds = null;
+            geoData.features.forEach(feat => {
+                const cd = feat.properties.ADM_CD;
+                const r = riskData[cd];
+                if (!r || r.sgg !== sggName) return;
+                const layer = L.geoJSON(feat);
+                bounds = bounds ? bounds.extend(layer.getBounds()) : layer.getBounds();
+            });
+            if (bounds) map.fitBounds(bounds, { padding: [40, 40] });
+        }
+
+        // 거리(km) — Haversine 근사
+        function haversineKm(lat1, lon1, lat2, lon2) {
+            const R = 6371;
+            const toRad = d => d * Math.PI / 180;
+            const dLat = toRad(lat2 - lat1), dLon = toRad(lon2 - lon1);
+            const a = Math.sin(dLat/2)**2 + Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.sin(dLon/2)**2;
+            return 2 * R * Math.asin(Math.sqrt(a));
+        }
+
+        // ═══════════════════ 페르소나 1: 장학사 ═══════════════════
+        function renderOfficerView() {
+            const sggs = Object.values(sggSummaryData).sort((a, b) => b.avg_risk - a.avg_risk);
+            const sggHtml = sggs.map(s => `
+                <div class="sgg-card" data-sgg="${s.sgg}" style="background:#fff;border:1px solid #bccbb9;border-radius:10px;padding:12px;margin-bottom:8px;cursor:pointer;transition:all 0.15s;">
+                    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;">
+                        <div style="font-size:0.88rem;font-weight:700;color:#191c1e;">${s.sgg}</div>
+                        <div style="font-size:1.1rem;font-weight:800;color:${getColor(s.avg_risk)};font-family:'Inter',sans-serif;">${(s.avg_risk*100).toFixed(0)}</div>
+                    </div>
+                    <div style="font-size:0.7rem;color:#6d7b6c;display:flex;gap:10px;">
+                        <span>동 ${s.dong_count}개</span>
+                        <span style="color:#b61722;font-weight:600;">사각지대 ${s.dead_zone_count}개</span>
+                        <span>도서관 ${s.total_libraries}개</span>
+                    </div>
+                </div>
+            `).join('');
+            document.getElementById('sggList').innerHTML = sggHtml;
+            document.querySelectorAll('.sgg-card').forEach(card => {
+                card.addEventListener('click', () => {
+                    document.querySelectorAll('.sgg-card').forEach(c => c.style.borderColor = '#bccbb9');
+                    card.style.borderColor = '#006e2f';
+                    showDeadZonePanel(card.dataset.sgg);
+                    gotoSgg(card.dataset.sgg);
                 });
             });
+        }
+
+        function showDeadZonePanel(sggName) {
+            const s = sggSummaryData[sggName];
+            const panel = document.getElementById('deadZonePanel');
+            if (!s || s.dead_zone_count === 0) {
+                panel.innerHTML = `<div style="background:#e8f5ea;border:1px solid #b8f5c8;border-radius:8px;padding:14px;font-size:0.78rem;color:#004b1e;">✅ <b>${sggName}</b> 은(는) 공공도서관 사각지대 행정동이 없습니다.</div>`;
+                return;
+            }
+            const items = s.dead_zone_dongs.map(d => `
+                <li class="deadzone-item" data-adm="${d.adm_cd}" style="background:#fff;border:1px solid #bccbb9;border-radius:8px;padding:10px 12px;margin-bottom:6px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;">
+                    <div>
+                        <div style="font-size:0.82rem;font-weight:700;color:#191c1e;">${d.adm_nm}</div>
+                        <div style="font-size:0.68rem;color:#6d7b6c;margin-top:2px;">학교 ${d.school_count}개 · 아동인구 ${(d.child_pop ?? 0).toLocaleString()}명</div>
+                    </div>
+                    <div style="font-size:1.05rem;font-weight:800;color:${getColor(d.risk_index)};font-family:'Inter',sans-serif;">${(d.risk_index*100).toFixed(0)}</div>
+                </li>
+            `).join('');
+            panel.innerHTML = `
+                <div style="background:#fff7f7;border-left:3px solid #b61722;padding:8px 12px;margin-bottom:8px;font-size:0.78rem;color:#3d4a3d;">
+                    <b style="color:#b61722;">${sggName}</b> 공공도서관 사각지대 <b>${s.dead_zone_count}개</b> 행정동
+                </div>
+                <ul style="list-style:none;padding:0;margin:0;">${items}</ul>
+            `;
+            panel.querySelectorAll('.deadzone-item').forEach(li => {
+                li.addEventListener('click', () => gotoDong(li.dataset.adm));
+            });
+        }
+
+        // ═══════════════════ 페르소나 2: 교사 ═══════════════════
+        function renderTeacherView() {
+            // 자동완성 datalist 채우기
+            const list = document.getElementById('schoolList');
+            list.innerHTML = schoolsData.map(s => `<option value="${s.name}">${s.sgg}</option>`).join('');
+            const search = document.getElementById('schoolSearch');
+            search.addEventListener('change', () => onSchoolSelected(search.value.trim()));
+            search.addEventListener('input', () => {
+                const hit = schoolsData.find(s => s.name === search.value.trim());
+                if (hit) onSchoolSelected(hit.name);
+            });
+            document.getElementById('schoolSearchHint').textContent = `전북 초등학교 ${schoolsData.length}개교 검색 가능`;
+            renderAllSchoolMarkers();
+        }
+
+        function renderAllSchoolMarkers() {
+            allSchoolMarkers.forEach(m => map.removeLayer(m));
+            allSchoolMarkers = [];
+            schoolsData.forEach(s => {
+                if (s.lat == null || s.lon == null) return;
+                const mk = L.marker([s.lat, s.lon], {
+                    icon: L.divIcon({
+                        className: '',
+                        html: `<div style="width:16px;height:16px;background:#006e2f;color:#fff;font-size:10px;display:flex;align-items:center;justify-content:center;border-radius:50%;border:1.5px solid #fff;box-shadow:0 1px 2px rgba(0,0,0,0.3);cursor:pointer;">🏫</div>`,
+                        iconSize: [16, 16],
+                        iconAnchor: [8, 8],
+                    }),
+                    title: s.name,
+                });
+                mk.on('click', () => {
+                    document.getElementById('schoolSearch').value = s.name;
+                    onSchoolSelected(s.name);
+                });
+                allSchoolMarkers.push(mk);
+            });
+            syncPersonaMapMarkers();
+        }
+
+        function onSchoolSelected(name) {
+            const s = schoolsData.find(x => x.name === name);
+            if (!s || s.lat == null || s.lon == null) return;
+            // 지도 마커
+            if (schoolMarker) map.removeLayer(schoolMarker);
+            schoolMarker = L.marker([s.lat, s.lon], {
+                icon: L.divIcon({
+                    className: '',
+                    html: `<div style="background:#006e2f;color:#fff;font-size:11px;font-weight:800;padding:4px 8px;border-radius:14px;border:2px solid #fff;box-shadow:0 2px 4px rgba(0,0,0,0.3);white-space:nowrap;">🏫 ${name}</div>`,
+                    iconSize: [null, 26],
+                    iconAnchor: [0, 13],
+                })
+            }).addTo(map);
+            map.setView([s.lat, s.lon], 14);
+
+            // 반경 2km 도서관 (좌표 보유 도서관만)
+            nearbyLibMarkers.forEach(m => map.removeLayer(m));
+            nearbyLibMarkers = [];
+            const RADIUS_KM = 2;
+            const near = librariesData
+                .filter(l => l.lat != null && l.lon != null)
+                .map(l => ({ ...l, dist: haversineKm(s.lat, s.lon, l.lat, l.lon) }))
+                .filter(l => l.dist <= RADIUS_KM)
+                .sort((a, b) => a.dist - b.dist);
+            near.forEach(l => {
+                const mk = L.marker([l.lat, l.lon], {
+                    icon: L.divIcon({
+                        className: '',
+                        html: `<div style="background:#1565c0;color:#fff;font-size:11px;font-weight:700;padding:3px 7px;border-radius:11px;border:2px solid #fff;white-space:nowrap;">📚 ${l.name}</div>`,
+                        iconSize: [null, 22],
+                        iconAnchor: [0, 11],
+                    })
+                }).addTo(map);
+                nearbyLibMarkers.push(mk);
+            });
+            // 반경 원
+            const circle = L.circle([s.lat, s.lon], { radius: RADIUS_KM*1000, color: '#006e2f', weight: 1.5, fillOpacity: 0.05 }).addTo(map);
+            nearbyLibMarkers.push(circle);
+
+            // 사이드바 패널
+            const dongData = riskData[s.adm_cd] || {};
+            const panel = document.getElementById('schoolNearbyPanel');
+            panel.innerHTML = `
+                <div style="background:#fff;border:1px solid #bccbb9;border-radius:10px;padding:14px;margin-bottom:10px;">
+                    <div style="font-size:0.7rem;color:#6d7b6c;margin-bottom:4px;">${s.sgg} ${dongData.adm_nm || ''}</div>
+                    <div style="font-size:0.95rem;font-weight:700;color:#191c1e;margin-bottom:10px;">🏫 ${s.name}</div>
+                    <div class="popup-detail"><span>동 취약지수</span><span style="color:${getColor(dongData.risk_index || 0)};font-weight:700;">${dongData.risk_index ? (dongData.risk_index*100).toFixed(0) : '-'}점</span></div>
+                    <div class="popup-detail"><span>반경 2km 공공도서관</span><span>${near.length}곳</span></div>
+                    <div class="popup-detail"><span>동 내 공공도서관</span><span>${dongData.publib_count ?? '-'}곳</span></div>
+                    <div class="popup-detail"><span>아동인구(7~12세)</span><span>${(dongData.child_pop ?? 0).toLocaleString()}명</span></div>
+                    <div class="popup-detail"><span>다문화가구비율</span><span>${dongData.multicultural_ratio ? (dongData.multicultural_ratio*100).toFixed(1)+'%' : '-'}</span></div>
+                </div>
+                ${near.length === 0
+                    ? `<div style="background:#fff7f7;border-left:3px solid #b61722;padding:10px 12px;font-size:0.75rem;color:#3d4a3d;">⚠️ 반경 2km 이내에 좌표가 등록된 공공도서관이 없습니다. ${librariesData.every(l => l.lat == null) ? '(도서관 좌표 데이터 준비 중)' : ''}</div>`
+                    : `<div style="font-size:0.72rem;font-weight:700;color:#3d4a3d;margin-bottom:6px;">가까운 도서관</div>
+                       <ul style="list-style:none;padding:0;margin:0;">
+                           ${near.map(l => `
+                               <li style="background:#fff;border:1px solid #bccbb9;border-radius:8px;padding:8px 10px;margin-bottom:5px;display:flex;justify-content:space-between;align-items:center;">
+                                   <div>
+                                       <div style="font-size:0.78rem;font-weight:600;color:#191c1e;">${l.name}</div>
+                                       <div style="font-size:0.65rem;color:#6d7b6c;">${l.adm_nm || ''}</div>
+                                   </div>
+                                   <div style="font-size:0.72rem;font-weight:700;color:#1565c0;font-family:'Inter',sans-serif;">${l.dist.toFixed(2)}km</div>
+                               </li>`).join('')}
+                       </ul>`
+                }
+            `;
+            activateSubTab('school-nearby');
+        }
+
+        // ═══════════════════ 페르소나 3: 학생 ═══════════════════
+        const STUDENT_LEVELS = [
+            { min: 0.0, max: 0.2, label: '우수',           emoji: '⭐', color: '#006e2f', msg: '우리 동네는 도서관·학교 환경이 정말 좋아!' },
+            { min: 0.2, max: 0.4, label: '괜찮음',         emoji: '✨', color: '#66bb6a', msg: '꽤 좋은 환경이에요. 도서관에 자주 놀러 가요!' },
+            { min: 0.4, max: 0.6, label: '보통',           emoji: '🙂', color: '#ffa726', msg: '평균 수준이에요. 더 많이 책 읽으러 가볼까요?' },
+            { min: 0.6, max: 0.8, label: '조금 부족',      emoji: '⚠️', color: '#ef5350', msg: '주변에 도서관 자원이 조금 부족해요.' },
+            { min: 0.8, max: 1.01, label: '도서관이 필요해', emoji: '🚨', color: '#b71c1c', msg: '도서관·책 자원이 많이 부족한 동네예요.' },
+        ];
+        function getLevel(score) {
+            return STUDENT_LEVELS.find(l => score >= l.min && score < l.max) || STUDENT_LEVELS[2];
+        }
+
+        function getVisited() {
+            try { return JSON.parse(localStorage.getItem('visited_libraries') || '[]'); }
+            catch { return []; }
+        }
+        function setVisited(arr) {
+            localStorage.setItem('visited_libraries', JSON.stringify(arr));
+        }
+        function toggleVisit(libName) {
+            const v = getVisited();
+            const i = v.indexOf(libName);
+            if (i >= 0) v.splice(i, 1); else v.push(libName);
+            setVisited(v);
+            return v.includes(libName);
+        }
+
+        function renderStudentView() {
+            // 동 선택 드롭다운
+            const sel = document.getElementById('dongSelect');
+            const dongs = Object.values(riskData)
+                .filter(d => d.has_school)
+                .sort((a, b) => a.sgg.localeCompare(b.sgg) || a.adm_nm.localeCompare(b.adm_nm));
+            sel.innerHTML = '<option value="">— 우리 동네 선택 —</option>' +
+                dongs.map(d => `<option value="${d.adm_cd}">${d.sgg} ${d.adm_nm}</option>`).join('');
+            sel.addEventListener('change', () => onStudentDongSelected(sel.value));
+
+            // 도서관 보물찾기 핀(전체)
+            renderTreasurePins();
+            renderTreasureProgress();
+        }
+
+        function onStudentDongSelected(adm_cd) {
+            if (!adm_cd) {
+                document.getElementById('dongLevelCard').innerHTML = '';
+                return;
+            }
+            const d = riskData[adm_cd];
+            if (!d) return;
+            const lvl = getLevel(d.risk_index);
+            document.getElementById('dongLevelCard').innerHTML = `
+                <div style="background:linear-gradient(135deg, ${lvl.color}25, ${lvl.color}08);border:2px solid ${lvl.color};border-radius:14px;padding:18px;text-align:center;">
+                    <div style="font-size:3rem;line-height:1;">${lvl.emoji}</div>
+                    <div style="font-size:1.05rem;font-weight:800;color:${lvl.color};margin-top:8px;font-family:'Plus Jakarta Sans',sans-serif;">${lvl.label}</div>
+                    <div style="font-size:0.7rem;color:#6d7b6c;margin-top:4px;">${d.sgg} ${d.adm_nm}</div>
+                    <div style="font-size:0.78rem;color:#3d4a3d;margin-top:10px;line-height:1.4;">${lvl.msg}</div>
+                </div>
+                <div style="background:#fff;border:1px solid #bccbb9;border-radius:10px;padding:12px;margin-top:10px;">
+                    <div style="font-size:0.7rem;color:#6d7b6c;margin-bottom:6px;">우리 동네 자세히 보기</div>
+                    <div class="popup-detail"><span>공공도서관</span><span>${d.publib_count}곳</span></div>
+                    <div class="popup-detail"><span>초등학교</span><span>${d.school_count}곳 (학생 ${d.total_students}명)</span></div>
+                    <div class="popup-detail"><span>학교도서관 1인당 대출</span><span>${d.median_loans_per_student != null ? d.median_loans_per_student.toFixed(1)+'권' : '-'}</span></div>
+                    <div class="popup-detail"><span>아동인구(7~12세)</span><span>${(d.child_pop ?? 0).toLocaleString()}명</span></div>
+                </div>
+            `;
+            gotoDong(adm_cd);
+        }
+
+        function renderTreasurePins() {
+            treasureLibMarkers.forEach(m => map.removeLayer(m));
+            treasureLibMarkers = [];
+            const visited = getVisited();
+            const located = librariesData.filter(l => l.lat != null && l.lon != null);
+            located.forEach(l => {
+                const isVisited = visited.includes(l.name);
+                const mk = L.marker([l.lat, l.lon], {
+                    icon: L.divIcon({
+                        className: '',
+                        html: `<div style="font-size:1.6rem;text-shadow:0 2px 4px rgba(0,0,0,0.4);cursor:pointer;">${isVisited ? '🏆' : '📖'}</div>`,
+                        iconSize: [28, 28],
+                        iconAnchor: [14, 14],
+                    })
+                }).addTo(map);
+                mk.on('click', () => {
+                    const nowVisited = toggleVisit(l.name);
+                    L.popup({ offset: [0, -10] }).setLatLng([l.lat, l.lon])
+                        .setContent(`<div class="popup-title">${l.name}</div>
+                            <div style="font-size:0.72rem;color:#6d7b6c;margin-bottom:6px;">${l.sgg} ${l.adm_nm || ''}</div>
+                            <div class="popup-detail"><span>어린이 장서</span><span>${(l.child_collection ?? 0).toLocaleString()}권</span></div>
+                            <div class="popup-detail"><span>어린이 대출자</span><span>${(l.child_borrowers ?? 0).toLocaleString()}명</span></div>
+                            <div style="margin-top:8px;padding:8px;background:${nowVisited ? '#e8f5ea' : '#fff7f7'};border-radius:6px;font-size:0.78rem;text-align:center;font-weight:700;color:${nowVisited ? '#004b1e' : '#b61722'};">${nowVisited ? '🏆 방문 체크 완료!' : '클릭하면 방문 체크할 수 있어요'}</div>`)
+                        .openOn(map);
+                    renderTreasurePins();
+                    renderTreasureProgress();
+                });
+                treasureLibMarkers.push(mk);
+            });
+            syncPersonaMapMarkers();
+        }
+
+        function renderTreasureProgress() {
+            const visited = getVisited();
+            const total = librariesData.filter(l => l.lat != null && l.lon != null).length;
+            const done  = visited.length;
+            const pct   = total > 0 ? (done / total) * 100 : 0;
+            const noCoords = total === 0;
+            document.getElementById('treasureProgress').innerHTML = `
+                <div style="background:#fff;border:1px solid #bccbb9;border-radius:10px;padding:14px;">
+                    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                        <span style="font-size:0.85rem;font-weight:700;color:#191c1e;">🏆 보물찾기 진행도</span>
+                        <span style="font-size:0.95rem;font-weight:800;color:#006e2f;font-family:'Inter',sans-serif;">${done}/${total}</span>
+                    </div>
+                    <div style="height:10px;background:#eceef0;border-radius:5px;overflow:hidden;">
+                        <div style="height:100%;background:linear-gradient(90deg,#66bb6a,#006e2f);width:${pct}%;transition:width 0.4s;"></div>
+                    </div>
+                    ${noCoords ? '<div style="margin-top:8px;font-size:0.7rem;color:#b61722;">⚠️ 도서관 좌표 데이터 준비 중입니다.</div>' : ''}
+                </div>
+            `;
+            const listHtml = librariesData.filter(l => l.lat != null && l.lon != null).slice(0, 30).map(l => {
+                const v = visited.includes(l.name);
+                return `<li style="background:${v?'#e8f5ea':'#fff'};border:1px solid ${v?'#b8f5c8':'#bccbb9'};border-radius:8px;padding:8px 10px;margin-bottom:5px;display:flex;justify-content:space-between;align-items:center;">
+                    <div style="font-size:0.74rem;color:#191c1e;${v?'font-weight:700;':''}">${v?'🏆 ':'📖 '}${l.name}</div>
+                    <div style="font-size:0.65rem;color:#6d7b6c;">${l.sgg}</div>
+                </li>`;
+            }).join('');
+            document.getElementById('treasureList').innerHTML = listHtml
+                ? `<div style="font-size:0.72rem;font-weight:700;color:#3d4a3d;margin-bottom:6px;">전북 공공도서관 (${total}곳)</div><ul style="list-style:none;padding:0;margin:0;">${listHtml}</ul>`
+                : '';
         }
     </script>
 </body>

@@ -212,11 +212,18 @@ for row in all_school_rows:
     if not adm_cd:
         # 주소 파싱 fallback
         adm_cd = addr_to_adm_cd(addr) or addr_to_adm_cd(row.get('학교도로명 주소', ''))
+    try:
+        lat_f = float(lat_s) if lat_s else None
+        lon_f = float(lng_s) if lng_s else None
+    except ValueError:
+        lat_f = lon_f = None
     school_info[code] = {
         'adm_cd': adm_cd,
         'addr': addr,
         'name': row.get('학교명', ''),
-        'sgg': normalize_sgg(row.get('지역', ''))
+        'sgg': normalize_sgg(row.get('지역', '')),
+        'lat': lat_f,
+        'lon': lon_f,
     }
 
 matched = sum(1 for v in school_info.values() if v['adm_cd'])
@@ -348,7 +355,21 @@ HARDCODED_LIB_ADM = {
     '정읍기적의도서관': sgg_dong_to_adm.get(('정읍시', '수성동')),
 }
 
+# 지오코딩 좌표 사전 로드 (도서관 → adm_cd 정확 매칭용 1차 키)
+_geocode_path = os.path.join(DATA_DIR, 'used', '공공도서관_좌표.json')
+_lib_coords = {}
+if os.path.exists(_geocode_path):
+    try:
+        with open(_geocode_path, encoding='utf-8') as _f:
+            for _e in json.load(_f):
+                if _e.get('lat') is not None and _e.get('lon') is not None:
+                    _lib_coords[_e['name']] = (float(_e['lat']), float(_e['lon']))
+        print(f"  📍 도서관 좌표 로드: {len(_lib_coords)}건 (정확 매칭용)")
+    except Exception as _e:
+        print(f"  ⚠️ 좌표 파일 로드 실패: {_e}")
+
 unmatched_libs = []
+library_records = []  # 페르소나 뷰용 도서관 객체 목록 (좌표는 별도 지오코딩 파일과 join)
 with open(lib_stat_file, encoding='utf-8-sig') as f:
     reader = csv.DictReader(f)
     for row in reader:
@@ -356,12 +377,32 @@ with open(lib_stat_file, encoding='utf-8-sig') as f:
             continue
         lib_nm = row.get('도서관명', '')
         addr = row.get('주소', '')
-        # 하드코딩 예외 우선 적용, 없으면 주소 파싱
-        adm_cd = HARDCODED_LIB_ADM.get(lib_nm) or addr_to_adm_cd(addr)
+        # 우선순위: ① 지오코딩 좌표(폴리곤 정확 매칭) → ② 하드코딩 예외 → ③ 주소 파싱
+        adm_cd = None
+        if lib_nm in _lib_coords:
+            try:
+                adm_cd = coord_to_adm_cd(*_lib_coords[lib_nm])
+            except Exception:
+                adm_cd = None
+        if not adm_cd:
+            adm_cd = HARDCODED_LIB_ADM.get(lib_nm) or addr_to_adm_cd(addr)
         if not adm_cd:
             unmatched_libs.append(lib_nm)
             continue
         adm_publib[adm_cd] += 1
+        try:
+            _child_coll = int(row.get('어린이 자료(인쇄)수', 0) or 0)
+        except: _child_coll = 0
+        try:
+            _child_borr = int(row.get('인쇄자료_대출자_어린이', 0) or 0)
+        except: _child_borr = 0
+        library_records.append({
+            'name': lib_nm,
+            'addr': addr,
+            'adm_cd': adm_cd,
+            'child_collection': _child_coll,
+            'child_borrowers': _child_borr,
+        })
         try:
             adm_child_loans[adm_cd] += int(row.get('인쇄자료대출_어린이_합계', 0) or 0)
         except: pass
@@ -736,17 +777,91 @@ for i, r in enumerate(school_ranked[:20], 1):
           f"{r['school_count']:>4}")
 
 # ============================================================
-# 7. JSON 저장
+# 7. 페르소나 뷰용 부가 산출물 (schools, libraries, sgg_summary)
+# ============================================================
+# 학교 좌표 목록 (교사 페르소나 자동완성·지도 마커용)
+schools_out = []
+for code, info in school_info.items():
+    if info.get('lat') is None or info.get('lon') is None:
+        continue
+    schools_out.append({
+        'code': code,
+        'name': info.get('name', ''),
+        'sgg': info.get('sgg', ''),
+        'adm_cd': info.get('adm_cd'),
+        'lat': info['lat'],
+        'lon': info['lon'],
+    })
+
+# 공공도서관 좌표 join (지오코딩 결과 파일이 있으면 흡수)
+geocode_path = os.path.join(DATA_DIR, 'used', '공공도서관_좌표.json')
+geocoded = {}
+if os.path.exists(geocode_path):
+    try:
+        with open(geocode_path, encoding='utf-8') as f:
+            for entry in json.load(f):
+                geocoded[entry['name']] = entry
+        print(f"\n📍 공공도서관 지오코딩 결과 로드: {len(geocoded)}건")
+    except Exception as e:
+        print(f"\n⚠️ 지오코딩 파일 로드 실패: {e}")
+
+libraries_out = []
+for lib in library_records:
+    g = geocoded.get(lib['name'])
+    libraries_out.append({
+        'name': lib['name'],
+        'addr': lib['addr'],
+        'adm_cd': lib['adm_cd'],
+        'sgg': adm_to_props.get(lib['adm_cd'], {}).get('sgg', ''),
+        'adm_nm': adm_to_props.get(lib['adm_cd'], {}).get('ADM_NM', ''),
+        'lat': g.get('lat') if g else None,
+        'lon': g.get('lon') if g else None,
+        'child_collection': lib['child_collection'],
+        'child_borrowers': lib['child_borrowers'],
+    })
+
+# 시군별 집계 (장학사 페르소나용)
+sgg_summary = {}
+for r in results.values():
+    s = r['sgg']
+    if not s:
+        continue
+    bucket = sgg_summary.setdefault(s, {'sgg': s, 'dong_count': 0, 'dead_zone_count': 0,
+                                        'risk_sum': 0.0, 'total_schools': 0, 'total_libraries': 0,
+                                        'dead_zone_dongs': []})
+    bucket['dong_count'] += 1
+    bucket['risk_sum'] += r['risk_index']
+    bucket['total_schools'] += r['school_count']
+    bucket['total_libraries'] += r['publib_count']
+    if r['publib_count'] == 0:
+        bucket['dead_zone_count'] += 1
+        bucket['dead_zone_dongs'].append({
+            'adm_cd': r['adm_cd'],
+            'adm_nm': r['adm_nm'],
+            'risk_index': r['risk_index'],
+            'school_count': r['school_count'],
+            'child_pop': r['child_pop'],
+        })
+for s, b in sgg_summary.items():
+    b['avg_risk'] = round(b['risk_sum'] / b['dong_count'], 4) if b['dong_count'] else 0
+    del b['risk_sum']
+    b['dead_zone_dongs'].sort(key=lambda x: -x['risk_index'])
+
+# ============================================================
+# 8. JSON 저장
 # ============================================================
 output = {
     'metadata': {
-        'title': '전북 문해력 인프라 취약지수(초등)',
+        'title': '전북 문해력 인프라 취약지수',
         'year': 2024,
         'unit': '읍면동',
         'weights': {'access': W_ACCESS, 'loan': W_LOAN, 'multicultural': W_MC},
         'description': '공공도서관접근성복합(0.35)[도서관수0.15+어린이대출자비율0.25+장서수0.20+독서프로그램0.20+회원등록률0.20, 대출/회원 분모는 통계청 7~12세 아동인구] + 학교도서관복합(0.25)[1인당대출0.40+1인당장서0.35+1인당자료구입예산0.25, 순위백분위 정규화] + 다문화복합(0.40)[가구비율0.50+서비스미도달률0.50]'
     },
-    'data': results
+    'data': results,
+    'schools': schools_out,
+    'libraries': libraries_out,
+    'sgg_summary': sgg_summary,
 }
 
 out_path = os.path.join(DATA_DIR, 'used', 'risk_data.json')
@@ -755,3 +870,4 @@ with open(out_path, 'w', encoding='utf-8') as f:
 
 print(f"\n✅ 저장 완료: {out_path}")
 print(f"   총 읍면동: {len(results)}개 (학교 있는 곳: {sum(1 for r in results.values() if r['has_school'])}개)")
+print(f"   학교 좌표: {len(schools_out)}개 · 도서관: {len(libraries_out)}개 (좌표 보유 {sum(1 for l in libraries_out if l['lat'])}건) · 시군: {len(sgg_summary)}개")

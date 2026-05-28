@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "title": "전북 문해력 인프라 취약지수(초등)",
+    "title": "전북 문해력 인프라 취약지수",
     "year": 2024,
     "unit": "읍면동",
     "weights": {
@@ -96,8 +96,8 @@
       "adm_cd": "35011630",
       "adm_nm": "중화산2동",
       "sgg": "전주시완산구",
-      "risk_index": 0.5075,
-      "access_score": 0.8351,
+      "risk_index": 0.4947,
+      "access_score": 0.7986,
       "loan_score": 0.7663,
       "multicultural_score": 0.059,
       "child_pop": 1062,
@@ -150,8 +150,8 @@
       "adm_cd": "35011650",
       "adm_nm": "평화2동",
       "sgg": "전주시완산구",
-      "risk_index": 0.5307,
-      "access_score": 0.9802,
+      "risk_index": 0.5305,
+      "access_score": 0.9796,
       "loan_score": 0.6139,
       "multicultural_score": 0.0853,
       "child_pop": 2619,
@@ -177,8 +177,8 @@
       "adm_cd": "35011660",
       "adm_nm": "서신동",
       "sgg": "전주시완산구",
-      "risk_index": 0.5548,
-      "access_score": 0.9764,
+      "risk_index": 0.554,
+      "access_score": 0.9742,
       "loan_score": 0.7021,
       "multicultural_score": 0.0938,
       "child_pop": 2249,
@@ -204,8 +204,8 @@
       "adm_cd": "35011670",
       "adm_nm": "삼천1동",
       "sgg": "전주시완산구",
-      "risk_index": 0.5573,
-      "access_score": 0.8901,
+      "risk_index": 0.5537,
+      "access_score": 0.8797,
       "loan_score": 0.8249,
       "multicultural_score": 0.0989,
       "child_pop": 470,
@@ -312,18 +312,18 @@
       "adm_cd": "35011710",
       "adm_nm": "효자2동",
       "sgg": "전주시완산구",
-      "risk_index": 0.5075,
-      "access_score": 0.8764,
+      "risk_index": 0.7508,
+      "access_score": 1.0,
       "loan_score": 0.634,
-      "multicultural_score": 0.1056,
+      "multicultural_score": 0.6057,
       "child_pop": 315,
-      "publib_count": 1,
-      "publib_child_borrowers": 1364,
-      "publib_child_target": 62665,
-      "publib_child_collection": 35820,
-      "publib_reading_program": 3511,
-      "publib_child_loans": 4356,
-      "publib_service_area": 1161,
+      "publib_count": 0,
+      "publib_child_borrowers": 0,
+      "publib_child_target": 0,
+      "publib_child_collection": 0,
+      "publib_reading_program": 0,
+      "publib_child_loans": 0,
+      "publib_service_area": 0,
       "school_count": 2,
       "total_students": 537,
       "median_loans_per_student": 10.05,
@@ -332,25 +332,25 @@
       "multicultural_count": 167,
       "multicultural_ratio": 0.0403,
       "multicultural_service": 0,
-      "multicultural_unreached": 0.5,
+      "multicultural_unreached": 1.0,
       "has_school": true
     },
     "35011720": {
       "adm_cd": "35011720",
       "adm_nm": "효자3동",
       "sgg": "전주시완산구",
-      "risk_index": 0.5503,
-      "access_score": 0.9545,
+      "risk_index": 0.7662,
+      "access_score": 1.0,
       "loan_score": 0.7584,
-      "multicultural_score": 0.0665,
+      "multicultural_score": 0.5665,
       "child_pop": 568,
-      "publib_count": 1,
-      "publib_child_borrowers": 122,
-      "publib_child_target": 62665,
-      "publib_child_collection": 18018,
+      "publib_count": 0,
+      "publib_child_borrowers": 0,
+      "publib_child_target": 0,
+      "publib_child_collection": 0,
       "publib_reading_program": 0,
-      "publib_child_loans": 3109,
-      "publib_service_area": 578,
+      "publib_child_loans": 0,
+      "publib_service_area": 0,
       "school_count": 2,
       "total_students": 610,
       "median_loans_per_student": 7.9,
@@ -358,8 +358,8 @@
       "median_budget_per_student": 28302,
       "multicultural_count": 149,
       "multicultural_ratio": 0.0254,
-      "multicultural_service": 28,
-      "multicultural_unreached": 0.5,
+      "multicultural_service": 0,
+      "multicultural_unreached": 1.0,
       "has_school": true
     },
     "35011740": {
@@ -447,8 +447,8 @@
       "adm_cd": "35011770",
       "adm_nm": "완산동",
       "sgg": "전주시완산구",
-      "risk_index": 0.5548,
-      "access_score": 0.9117,
+      "risk_index": 0.5533,
+      "access_score": 0.9074,
       "loan_score": 0.7669,
       "multicultural_score": 0.11,
       "child_pop": 179,
@@ -474,18 +474,18 @@
       "adm_cd": "35011780",
       "adm_nm": "효자4동",
       "sgg": "전주시완산구",
-      "risk_index": 0.7861,
-      "access_score": 1.0,
+      "risk_index": 0.5748,
+      "access_score": 0.9677,
       "loan_score": 0.8026,
-      "multicultural_score": 0.5887,
+      "multicultural_score": 0.0887,
       "child_pop": 3089,
-      "publib_count": 0,
-      "publib_child_borrowers": 0,
-      "publib_child_target": 0,
-      "publib_child_collection": 0,
-      "publib_reading_program": 0,
-      "publib_child_loans": 0,
-      "publib_service_area": 0,
+      "publib_count": 1,
+      "publib_child_borrowers": 1364,
+      "publib_child_target": 62665,
+      "publib_child_collection": 35820,
+      "publib_reading_program": 3511,
+      "publib_child_loans": 4356,
+      "publib_service_area": 1161,
       "school_count": 4,
       "total_students": 3311,
       "median_loans_per_student": 9.75,
@@ -494,25 +494,25 @@
       "multicultural_count": 587,
       "multicultural_ratio": 0.0338,
       "multicultural_service": 0,
-      "multicultural_unreached": 1.0,
+      "multicultural_unreached": 0.5,
       "has_school": true
     },
     "35011790": {
       "adm_cd": "35011790",
       "adm_nm": "효자5동",
       "sgg": "전주시완산구",
-      "risk_index": 0.7753,
-      "access_score": 1.0,
+      "risk_index": 0.5649,
+      "access_score": 0.9702,
       "loan_score": 0.7948,
-      "multicultural_score": 0.5665,
+      "multicultural_score": 0.0665,
       "child_pop": 1773,
-      "publib_count": 0,
-      "publib_child_borrowers": 0,
-      "publib_child_target": 0,
-      "publib_child_collection": 0,
+      "publib_count": 1,
+      "publib_child_borrowers": 122,
+      "publib_child_target": 62665,
+      "publib_child_collection": 18018,
       "publib_reading_program": 0,
-      "publib_child_loans": 0,
-      "publib_service_area": 0,
+      "publib_child_loans": 3109,
+      "publib_service_area": 578,
       "school_count": 3,
       "total_students": 1615,
       "median_loans_per_student": 8.8,
@@ -520,26 +520,26 @@
       "median_budget_per_student": 20830,
       "multicultural_count": 452,
       "multicultural_ratio": 0.0254,
-      "multicultural_service": 0,
-      "multicultural_unreached": 1.0,
+      "multicultural_service": 28,
+      "multicultural_unreached": 0.5,
       "has_school": true
     },
     "35012540": {
       "adm_cd": "35012540",
       "adm_nm": "인후1동",
       "sgg": "전주시덕진구",
-      "risk_index": 0.5229,
-      "access_score": 0.9025,
+      "risk_index": 0.5374,
+      "access_score": 0.9441,
       "loan_score": 0.6723,
       "multicultural_score": 0.0973,
       "child_pop": 996,
-      "publib_count": 2,
-      "publib_child_borrowers": 1057,
-      "publib_child_target": 125330,
-      "publib_child_collection": 73051,
-      "publib_reading_program": 12728,
-      "publib_child_loans": 12896,
-      "publib_service_area": 3955,
+      "publib_count": 1,
+      "publib_child_borrowers": 658,
+      "publib_child_target": 62665,
+      "publib_child_collection": 21280,
+      "publib_reading_program": 11331,
+      "publib_child_loans": 7979,
+      "publib_service_area": 1516,
       "school_count": 2,
       "total_students": 1129,
       "median_loans_per_student": 16.3,
@@ -582,18 +582,18 @@
       "adm_cd": "35012560",
       "adm_nm": "인후3동",
       "sgg": "전주시덕진구",
-      "risk_index": 0.7905,
-      "access_score": 1.0,
+      "risk_index": 0.5786,
+      "access_score": 0.9658,
       "loan_score": 0.7508,
-      "multicultural_score": 0.6321,
+      "multicultural_score": 0.1321,
       "child_pop": 1716,
-      "publib_count": 0,
-      "publib_child_borrowers": 0,
-      "publib_child_target": 0,
-      "publib_child_collection": 0,
-      "publib_reading_program": 0,
-      "publib_child_loans": 0,
-      "publib_service_area": 0,
+      "publib_count": 1,
+      "publib_child_borrowers": 399,
+      "publib_child_target": 62665,
+      "publib_child_collection": 51771,
+      "publib_reading_program": 1397,
+      "publib_child_loans": 4917,
+      "publib_service_area": 2439,
       "school_count": 3,
       "total_students": 2183,
       "median_loans_per_student": 10.7,
@@ -602,7 +602,7 @@
       "multicultural_count": 693,
       "multicultural_ratio": 0.0504,
       "multicultural_service": 0,
-      "multicultural_unreached": 1.0,
+      "multicultural_unreached": 0.5,
       "has_school": true
     },
     "35012570": {
@@ -663,38 +663,11 @@
       "adm_cd": "35012610",
       "adm_nm": "우아1동",
       "sgg": "전주시덕진구",
-      "risk_index": 0.5612,
-      "access_score": 0.9178,
-      "loan_score": 0.7855,
-      "multicultural_score": 0.1089,
-      "child_pop": 560,
-      "publib_count": 1,
-      "publib_child_borrowers": 349,
-      "publib_child_target": 62665,
-      "publib_child_collection": 4423,
-      "publib_reading_program": 0,
-      "publib_child_loans": 982,
-      "publib_service_area": 537,
-      "school_count": 1,
-      "total_students": 521,
-      "median_loans_per_student": 9.4,
-      "median_books_per_student": 37.5,
-      "median_budget_per_student": 22328,
-      "multicultural_count": 227,
-      "multicultural_ratio": 0.0415,
-      "multicultural_service": 0,
-      "multicultural_unreached": 0.5,
-      "has_school": true
-    },
-    "35012620": {
-      "adm_cd": "35012620",
-      "adm_nm": "우아2동",
-      "sgg": "전주시덕진구",
-      "risk_index": 0.7655,
+      "risk_index": 0.7899,
       "access_score": 1.0,
-      "loan_score": 0.6535,
-      "multicultural_score": 0.6302,
-      "child_pop": 483,
+      "loan_score": 0.7855,
+      "multicultural_score": 0.6089,
+      "child_pop": 560,
       "publib_count": 0,
       "publib_child_borrowers": 0,
       "publib_child_target": 0,
@@ -703,6 +676,33 @@
       "publib_child_loans": 0,
       "publib_service_area": 0,
       "school_count": 1,
+      "total_students": 521,
+      "median_loans_per_student": 9.4,
+      "median_books_per_student": 37.5,
+      "median_budget_per_student": 22328,
+      "multicultural_count": 227,
+      "multicultural_ratio": 0.0415,
+      "multicultural_service": 0,
+      "multicultural_unreached": 1.0,
+      "has_school": true
+    },
+    "35012620": {
+      "adm_cd": "35012620",
+      "adm_nm": "우아2동",
+      "sgg": "전주시덕진구",
+      "risk_index": 0.5363,
+      "access_score": 0.9166,
+      "loan_score": 0.6535,
+      "multicultural_score": 0.1303,
+      "child_pop": 483,
+      "publib_count": 1,
+      "publib_child_borrowers": 349,
+      "publib_child_target": 62665,
+      "publib_child_collection": 4423,
+      "publib_reading_program": 0,
+      "publib_child_loans": 982,
+      "publib_service_area": 537,
+      "school_count": 1,
       "total_students": 201,
       "median_loans_per_student": 9.2,
       "median_books_per_student": 96.3,
@@ -710,15 +710,15 @@
       "multicultural_count": 349,
       "multicultural_ratio": 0.0497,
       "multicultural_service": 0,
-      "multicultural_unreached": 1.0,
+      "multicultural_unreached": 0.5,
       "has_school": true
     },
     "35012630": {
       "adm_cd": "35012630",
       "adm_nm": "호성동",
       "sgg": "전주시덕진구",
-      "risk_index": 0.5653,
-      "access_score": 0.959,
+      "risk_index": 0.5629,
+      "access_score": 0.9524,
       "loan_score": 0.7621,
       "multicultural_score": 0.0977,
       "child_pop": 977,
@@ -744,18 +744,18 @@
       "adm_cd": "35012650",
       "adm_nm": "송천1동",
       "sgg": "전주시덕진구",
-      "risk_index": 0.7487,
-      "access_score": 1.0,
+      "risk_index": 0.5419,
+      "access_score": 0.9808,
       "loan_score": 0.669,
-      "multicultural_score": 0.5786,
+      "multicultural_score": 0.0785,
       "child_pop": 5886,
-      "publib_count": 0,
-      "publib_child_borrowers": 0,
-      "publib_child_target": 0,
-      "publib_child_collection": 0,
-      "publib_reading_program": 0,
-      "publib_child_loans": 0,
-      "publib_service_area": 0,
+      "publib_count": 1,
+      "publib_child_borrowers": 1360,
+      "publib_child_target": 62665,
+      "publib_child_collection": 39733,
+      "publib_reading_program": 11942,
+      "publib_child_loans": 37759,
+      "publib_service_area": 1927,
       "school_count": 5,
       "total_students": 5499,
       "median_loans_per_student": 21.9,
@@ -764,25 +764,25 @@
       "multicultural_count": 706,
       "multicultural_ratio": 0.0299,
       "multicultural_service": 0,
-      "multicultural_unreached": 1.0,
+      "multicultural_unreached": 0.5,
       "has_school": true
     },
     "35012660": {
       "adm_cd": "35012660",
       "adm_nm": "송천2동",
       "sgg": "전주시덕진구",
-      "risk_index": 0.5842,
-      "access_score": 0.9671,
+      "risk_index": 0.7957,
+      "access_score": 1.0,
       "loan_score": 0.8578,
-      "multicultural_score": 0.0781,
+      "multicultural_score": 0.5781,
       "child_pop": 1410,
-      "publib_count": 1,
-      "publib_child_borrowers": 1360,
-      "publib_child_target": 62665,
-      "publib_child_collection": 39733,
-      "publib_reading_program": 11942,
-      "publib_child_loans": 37759,
-      "publib_service_area": 1927,
+      "publib_count": 0,
+      "publib_child_borrowers": 0,
+      "publib_child_target": 0,
+      "publib_child_collection": 0,
+      "publib_reading_program": 0,
+      "publib_child_loans": 0,
+      "publib_service_area": 0,
       "school_count": 4,
       "total_students": 1638,
       "median_loans_per_student": 4.1,
@@ -791,25 +791,25 @@
       "multicultural_count": 317,
       "multicultural_ratio": 0.0298,
       "multicultural_service": 0,
-      "multicultural_unreached": 0.5,
+      "multicultural_unreached": 1.0,
       "has_school": true
     },
     "35012670": {
       "adm_cd": "35012670",
       "adm_nm": "조촌동",
       "sgg": "전주시덕진구",
-      "risk_index": 0.5177,
-      "access_score": 0.8556,
+      "risk_index": 0.7683,
+      "access_score": 1.0,
       "loan_score": 0.5848,
-      "multicultural_score": 0.1802,
+      "multicultural_score": 0.6803,
       "child_pop": 493,
-      "publib_count": 1,
-      "publib_child_borrowers": 4925,
-      "publib_child_target": 62665,
-      "publib_child_collection": 21084,
-      "publib_reading_program": 222,
-      "publib_child_loans": 5481,
-      "publib_service_area": 1424,
+      "publib_count": 0,
+      "publib_child_borrowers": 0,
+      "publib_child_target": 0,
+      "publib_child_collection": 0,
+      "publib_reading_program": 0,
+      "publib_child_loans": 0,
+      "publib_service_area": 0,
       "school_count": 3,
       "total_students": 660,
       "median_loans_per_student": 14.7,
@@ -817,16 +817,16 @@
       "median_budget_per_student": 55000,
       "multicultural_count": 397,
       "multicultural_ratio": 0.0687,
-      "multicultural_service": 891,
-      "multicultural_unreached": 0.5,
+      "multicultural_service": 0,
+      "multicultural_unreached": 1.0,
       "has_school": true
     },
     "35012690": {
       "adm_cd": "35012690",
       "adm_nm": "진북동",
       "sgg": "전주시덕진구",
-      "risk_index": 0.3892,
-      "access_score": 0.6176,
+      "risk_index": 0.3497,
+      "access_score": 0.5047,
       "loan_score": 0.5597,
       "multicultural_score": 0.0828,
       "child_pop": 334,
@@ -879,18 +879,18 @@
       "adm_cd": "35012710",
       "adm_nm": "여의동",
       "sgg": "전주시덕진구",
-      "risk_index": 0.8235,
-      "access_score": 1.0,
+      "risk_index": 0.5896,
+      "access_score": 0.9031,
       "loan_score": 0.8318,
-      "multicultural_score": 0.6638,
+      "multicultural_score": 0.1638,
       "child_pop": 872,
-      "publib_count": 0,
-      "publib_child_borrowers": 0,
-      "publib_child_target": 0,
-      "publib_child_collection": 0,
-      "publib_reading_program": 0,
-      "publib_child_loans": 0,
-      "publib_service_area": 0,
+      "publib_count": 1,
+      "publib_child_borrowers": 4925,
+      "publib_child_target": 62665,
+      "publib_child_collection": 21084,
+      "publib_reading_program": 222,
+      "publib_child_loans": 5481,
+      "publib_service_area": 1424,
       "school_count": 3,
       "total_students": 922,
       "median_loans_per_student": 2.0,
@@ -898,16 +898,16 @@
       "median_budget_per_student": 67228,
       "multicultural_count": 414,
       "multicultural_ratio": 0.0624,
-      "multicultural_service": 0,
-      "multicultural_unreached": 1.0,
+      "multicultural_service": 891,
+      "multicultural_unreached": 0.5,
       "has_school": true
     },
     "35012721": {
       "adm_cd": "35012721",
       "adm_nm": "금암동",
       "sgg": "전주시덕진구",
-      "risk_index": 0.48,
-      "access_score": 0.7848,
+      "risk_index": 0.4774,
+      "access_score": 0.7774,
       "loan_score": 0.8214,
       "multicultural_score": 0.0,
       "child_pop": 407,
@@ -933,8 +933,8 @@
       "adm_cd": "35020110",
       "adm_nm": "옥구읍",
       "sgg": "군산시",
-      "risk_index": 0.5136,
-      "access_score": 0.7838,
+      "risk_index": 0.4985,
+      "access_score": 0.7408,
       "loan_score": 0.6978,
       "multicultural_score": 0.162,
       "child_pop": 55,
@@ -1014,8 +1014,8 @@
       "adm_cd": "35020330",
       "adm_nm": "임피면",
       "sgg": "군산시",
-      "risk_index": 0.4445,
-      "access_score": 0.9506,
+      "risk_index": 0.4432,
+      "access_score": 0.947,
       "loan_score": 0.2394,
       "multicultural_score": 0.1298,
       "child_pop": 39,
@@ -1068,8 +1068,8 @@
       "adm_cd": "35020350",
       "adm_nm": "대야면",
       "sgg": "군산시",
-      "risk_index": 0.475,
-      "access_score": 0.865,
+      "risk_index": 0.4736,
+      "access_score": 0.8612,
       "loan_score": 0.3756,
       "multicultural_score": 0.1958,
       "child_pop": 100,
@@ -1392,8 +1392,8 @@
       "adm_cd": "35020650",
       "adm_nm": "조촌동",
       "sgg": "군산시",
-      "risk_index": 0.5773,
-      "access_score": 0.8864,
+      "risk_index": 0.5747,
+      "access_score": 0.879,
       "loan_score": 0.8719,
       "multicultural_score": 0.1226,
       "child_pop": 2214,
@@ -1500,8 +1500,8 @@
       "adm_cd": "35020690",
       "adm_nm": "수송동",
       "sgg": "군산시",
-      "risk_index": 0.5791,
-      "access_score": 0.9826,
+      "risk_index": 0.5783,
+      "access_score": 0.9803,
       "loan_score": 0.7526,
       "multicultural_score": 0.1176,
       "child_pop": 4593,
@@ -1527,18 +1527,18 @@
       "adm_cd": "35020700",
       "adm_nm": "나운1동",
       "sgg": "군산시",
-      "risk_index": 0.5696,
-      "access_score": 0.9331,
+      "risk_index": 0.793,
+      "access_score": 1.0,
       "loan_score": 0.7541,
-      "multicultural_score": 0.1361,
+      "multicultural_score": 0.6361,
       "child_pop": 466,
-      "publib_count": 1,
-      "publib_child_borrowers": 831,
-      "publib_child_target": 23946,
+      "publib_count": 0,
+      "publib_child_borrowers": 0,
+      "publib_child_target": 0,
       "publib_child_collection": 0,
-      "publib_reading_program": 13436,
-      "publib_child_loans": 19700,
-      "publib_service_area": 1054,
+      "publib_reading_program": 0,
+      "publib_child_loans": 0,
+      "publib_service_area": 0,
       "school_count": 2,
       "total_students": 490,
       "median_loans_per_student": 5.95,
@@ -1546,8 +1546,8 @@
       "median_budget_per_student": 32502,
       "multicultural_count": 322,
       "multicultural_ratio": 0.0519,
-      "multicultural_service": 13,
-      "multicultural_unreached": 0.5,
+      "multicultural_service": 0,
+      "multicultural_unreached": 1.0,
       "has_school": true
     },
     "35020710": {
@@ -1581,8 +1581,8 @@
       "adm_cd": "35020720",
       "adm_nm": "소룡동",
       "sgg": "군산시",
-      "risk_index": 0.6355,
-      "access_score": 0.9422,
+      "risk_index": 0.6348,
+      "access_score": 0.9402,
       "loan_score": 0.7987,
       "multicultural_score": 0.2651,
       "child_pop": 686,
@@ -1635,18 +1635,18 @@
       "adm_cd": "35020740",
       "adm_nm": "나운3동",
       "sgg": "군산시",
-      "risk_index": 0.7671,
-      "access_score": 1.0,
+      "risk_index": 0.5544,
+      "access_score": 0.9637,
       "loan_score": 0.6286,
-      "multicultural_score": 0.6498,
+      "multicultural_score": 0.1498,
       "child_pop": 1602,
-      "publib_count": 0,
-      "publib_child_borrowers": 0,
-      "publib_child_target": 0,
+      "publib_count": 1,
+      "publib_child_borrowers": 831,
+      "publib_child_target": 23946,
       "publib_child_collection": 0,
-      "publib_reading_program": 0,
-      "publib_child_loans": 0,
-      "publib_service_area": 0,
+      "publib_reading_program": 13436,
+      "publib_child_loans": 19700,
+      "publib_service_area": 1054,
       "school_count": 3,
       "total_students": 1507,
       "median_loans_per_student": 18.3,
@@ -1654,16 +1654,16 @@
       "median_budget_per_student": 28216,
       "multicultural_count": 814,
       "multicultural_ratio": 0.0571,
-      "multicultural_service": 0,
-      "multicultural_unreached": 1.0,
+      "multicultural_service": 13,
+      "multicultural_unreached": 0.5,
       "has_school": true
     },
     "35030110": {
       "adm_cd": "35030110",
       "adm_nm": "함열읍",
       "sgg": "익산시",
-      "risk_index": 0.5319,
-      "access_score": 0.9513,
+      "risk_index": 0.5287,
+      "access_score": 0.942,
       "loan_score": 0.3401,
       "multicultural_score": 0.2849,
       "child_pop": 204,
@@ -1716,8 +1716,8 @@
       "adm_cd": "35030320",
       "adm_nm": "황등면",
       "sgg": "익산시",
-      "risk_index": 0.6162,
-      "access_score": 0.9463,
+      "risk_index": 0.6144,
+      "access_score": 0.9414,
       "loan_score": 0.6563,
       "multicultural_score": 0.3022,
       "child_pop": 168,
@@ -1932,8 +1932,8 @@
       "adm_cd": "35030400",
       "adm_nm": "금마면",
       "sgg": "익산시",
-      "risk_index": 0.4621,
-      "access_score": 0.8905,
+      "risk_index": 0.4605,
+      "access_score": 0.886,
       "loan_score": 0.4214,
       "multicultural_score": 0.1126,
       "child_pop": 177,
@@ -2148,8 +2148,8 @@
       "adm_cd": "35030570",
       "adm_nm": "동산동",
       "sgg": "익산시",
-      "risk_index": 0.6033,
-      "access_score": 0.9716,
+      "risk_index": 0.6032,
+      "access_score": 0.9712,
       "loan_score": 0.7325,
       "multicultural_score": 0.2003,
       "child_pop": 1010,
@@ -2175,8 +2175,8 @@
       "adm_cd": "35030580",
       "adm_nm": "마동",
       "sgg": "익산시",
-      "risk_index": 0.514,
-      "access_score": 0.7856,
+      "risk_index": 0.495,
+      "access_score": 0.7315,
       "loan_score": 0.8102,
       "multicultural_score": 0.0911,
       "child_pop": 636,
@@ -2229,8 +2229,8 @@
       "adm_cd": "35030610",
       "adm_nm": "모현동",
       "sgg": "익산시",
-      "risk_index": 0.5642,
-      "access_score": 0.9401,
+      "risk_index": 0.5628,
+      "access_score": 0.9361,
       "loan_score": 0.7349,
       "multicultural_score": 0.1285,
       "child_pop": 2461,
@@ -2310,18 +2310,18 @@
       "adm_cd": "35030660",
       "adm_nm": "영등1동",
       "sgg": "익산시",
-      "risk_index": 0.5654,
-      "access_score": 0.881,
+      "risk_index": 0.8071,
+      "access_score": 1.0,
       "loan_score": 0.8255,
-      "multicultural_score": 0.1268,
+      "multicultural_score": 0.6268,
       "child_pop": 975,
-      "publib_count": 1,
-      "publib_child_borrowers": 5084,
-      "publib_child_target": 21920,
-      "publib_child_collection": 94881,
-      "publib_reading_program": 13045,
-      "publib_child_loans": 23038,
-      "publib_service_area": 1407,
+      "publib_count": 0,
+      "publib_child_borrowers": 0,
+      "publib_child_target": 0,
+      "publib_child_collection": 0,
+      "publib_reading_program": 0,
+      "publib_child_loans": 0,
+      "publib_service_area": 0,
       "school_count": 3,
       "total_students": 1358,
       "median_loans_per_student": 6.4,
@@ -2329,8 +2329,8 @@
       "median_budget_per_student": 29559,
       "multicultural_count": 435,
       "multicultural_ratio": 0.0483,
-      "multicultural_service": 208,
-      "multicultural_unreached": 0.5,
+      "multicultural_service": 0,
+      "multicultural_unreached": 1.0,
       "has_school": true
     },
     "35030690": {
@@ -2364,8 +2364,8 @@
       "adm_cd": "35030700",
       "adm_nm": "삼성동",
       "sgg": "익산시",
-      "risk_index": 0.5677,
-      "access_score": 0.9727,
+      "risk_index": 0.5651,
+      "access_score": 0.9654,
       "loan_score": 0.6684,
       "multicultural_score": 0.1504,
       "child_pop": 1764,
@@ -2391,18 +2391,18 @@
       "adm_cd": "35030710",
       "adm_nm": "영등2동",
       "sgg": "익산시",
-      "risk_index": 0.7776,
-      "access_score": 1.0,
+      "risk_index": 0.505,
+      "access_score": 0.7926,
       "loan_score": 0.6729,
-      "multicultural_score": 0.6484,
+      "multicultural_score": 0.1484,
       "child_pop": 790,
-      "publib_count": 0,
-      "publib_child_borrowers": 0,
-      "publib_child_target": 0,
-      "publib_child_collection": 0,
-      "publib_reading_program": 0,
-      "publib_child_loans": 0,
-      "publib_service_area": 0,
+      "publib_count": 1,
+      "publib_child_borrowers": 5084,
+      "publib_child_target": 21920,
+      "publib_child_collection": 94881,
+      "publib_reading_program": 13045,
+      "publib_child_loans": 23038,
+      "publib_service_area": 1407,
       "school_count": 2,
       "total_students": 935,
       "median_loans_per_student": 16.45,
@@ -2410,8 +2410,8 @@
       "median_budget_per_student": 28756,
       "multicultural_count": 313,
       "multicultural_ratio": 0.0566,
-      "multicultural_service": 0,
-      "multicultural_unreached": 1.0,
+      "multicultural_service": 208,
+      "multicultural_unreached": 0.5,
       "has_school": true
     },
     "35030720": {
@@ -2445,8 +2445,8 @@
       "adm_cd": "35040110",
       "adm_nm": "신태인읍",
       "sgg": "정읍시",
-      "risk_index": 0.5877,
-      "access_score": 0.921,
+      "risk_index": 0.5876,
+      "access_score": 0.9207,
       "loan_score": 0.6732,
       "multicultural_score": 0.2427,
       "child_pop": 135,
@@ -2688,8 +2688,8 @@
       "adm_cd": "35040390",
       "adm_nm": "태인면",
       "sgg": "정읍시",
-      "risk_index": 0.5635,
-      "access_score": 0.8916,
+      "risk_index": 0.5531,
+      "access_score": 0.8618,
       "loan_score": 0.5905,
       "multicultural_score": 0.2595,
       "child_pop": 66,
@@ -2850,8 +2850,8 @@
       "adm_cd": "35040510",
       "adm_nm": "수성동",
       "sgg": "정읍시",
-      "risk_index": 0.5826,
-      "access_score": 0.9115,
+      "risk_index": 0.5808,
+      "access_score": 0.9065,
       "loan_score": 0.5879,
       "multicultural_score": 0.2914,
       "child_pop": 872,
@@ -2877,38 +2877,11 @@
       "adm_cd": "35040520",
       "adm_nm": "장명동",
       "sgg": "정읍시",
-      "risk_index": 0.4264,
-      "access_score": 0.5874,
-      "loan_score": 0.5543,
-      "multicultural_score": 0.2057,
-      "child_pop": 103,
-      "publib_count": 1,
-      "publib_child_borrowers": 1211,
-      "publib_child_target": 7170,
-      "publib_child_collection": 51333,
-      "publib_reading_program": 4118,
-      "publib_child_loans": 35762,
-      "publib_service_area": 1736,
-      "school_count": 1,
-      "total_students": 172,
-      "median_loans_per_student": 14.1,
-      "median_books_per_student": 123.3,
-      "median_budget_per_student": 42680,
-      "multicultural_count": 97,
-      "multicultural_ratio": 0.0784,
-      "multicultural_service": 120,
-      "multicultural_unreached": 0.5,
-      "has_school": true
-    },
-    "35040530": {
-      "adm_cd": "35040530",
-      "adm_nm": "내장상동",
-      "sgg": "정읍시",
-      "risk_index": 0.7959,
+      "risk_index": 0.7709,
       "access_score": 1.0,
-      "loan_score": 0.7041,
-      "multicultural_score": 0.6747,
-      "child_pop": 1240,
+      "loan_score": 0.5543,
+      "multicultural_score": 0.7057,
+      "child_pop": 103,
       "publib_count": 0,
       "publib_child_borrowers": 0,
       "publib_child_target": 0,
@@ -2916,6 +2889,33 @@
       "publib_reading_program": 0,
       "publib_child_loans": 0,
       "publib_service_area": 0,
+      "school_count": 1,
+      "total_students": 172,
+      "median_loans_per_student": 14.1,
+      "median_books_per_student": 123.3,
+      "median_budget_per_student": 42680,
+      "multicultural_count": 97,
+      "multicultural_ratio": 0.0784,
+      "multicultural_service": 0,
+      "multicultural_unreached": 1.0,
+      "has_school": true
+    },
+    "35040530": {
+      "adm_cd": "35040530",
+      "adm_nm": "내장상동",
+      "sgg": "정읍시",
+      "risk_index": 0.5698,
+      "access_score": 0.9253,
+      "loan_score": 0.7041,
+      "multicultural_score": 0.1747,
+      "child_pop": 1240,
+      "publib_count": 1,
+      "publib_child_borrowers": 1211,
+      "publib_child_target": 7170,
+      "publib_child_collection": 51333,
+      "publib_reading_program": 4118,
+      "publib_child_loans": 35762,
+      "publib_service_area": 1736,
       "school_count": 3,
       "total_students": 1532,
       "median_loans_per_student": 14.4,
@@ -2923,8 +2923,8 @@
       "median_budget_per_student": 21561,
       "multicultural_count": 563,
       "multicultural_ratio": 0.0666,
-      "multicultural_service": 0,
-      "multicultural_unreached": 1.0,
+      "multicultural_service": 120,
+      "multicultural_unreached": 0.5,
       "has_school": true
     },
     "35040540": {
@@ -3066,8 +3066,8 @@
       "adm_cd": "35050110",
       "adm_nm": "운봉읍",
       "sgg": "남원시",
-      "risk_index": 0.6384,
-      "access_score": 0.9101,
+      "risk_index": 0.6333,
+      "access_score": 0.8956,
       "loan_score": 0.852,
       "multicultural_score": 0.2672,
       "child_pop": 100,
@@ -3498,8 +3498,8 @@
       "adm_cd": "35050510",
       "adm_nm": "동충동",
       "sgg": "남원시",
-      "risk_index": 0.5638,
-      "access_score": 0.8727,
+      "risk_index": 0.5543,
+      "access_score": 0.8456,
       "loan_score": 0.7926,
       "multicultural_score": 0.1505,
       "child_pop": 93,
@@ -3525,8 +3525,8 @@
       "adm_cd": "35050520",
       "adm_nm": "죽항동",
       "sgg": "남원시",
-      "risk_index": 0.4992,
-      "access_score": 0.4697,
+      "risk_index": 0.4895,
+      "access_score": 0.4422,
       "loan_score": 1.0,
       "multicultural_score": 0.2119,
       "child_pop": 69,
@@ -3579,8 +3579,8 @@
       "adm_cd": "35050550",
       "adm_nm": "금동",
       "sgg": "남원시",
-      "risk_index": 0.5593,
-      "access_score": 0.911,
+      "risk_index": 0.5588,
+      "access_score": 0.9096,
       "loan_score": 0.6463,
       "multicultural_score": 0.1972,
       "child_pop": 365,
@@ -3660,8 +3660,8 @@
       "adm_cd": "35050590",
       "adm_nm": "도통동",
       "sgg": "남원시",
-      "risk_index": 0.5551,
-      "access_score": 0.9664,
+      "risk_index": 0.5537,
+      "access_score": 0.9625,
       "loan_score": 0.606,
       "multicultural_score": 0.1634,
       "child_pop": 1027,
@@ -3687,8 +3687,8 @@
       "adm_cd": "35060110",
       "adm_nm": "만경읍",
       "sgg": "김제시",
-      "risk_index": 0.5126,
-      "access_score": 0.9152,
+      "risk_index": 0.5121,
+      "access_score": 0.9137,
       "loan_score": 0.5357,
       "multicultural_score": 0.1459,
       "child_pop": 37,
@@ -3957,8 +3957,8 @@
       "adm_cd": "35060400",
       "adm_nm": "금구면",
       "sgg": "김제시",
-      "risk_index": 0.5581,
-      "access_score": 0.9474,
+      "risk_index": 0.5567,
+      "access_score": 0.9434,
       "loan_score": 0.5582,
       "multicultural_score": 0.2173,
       "child_pop": 115,
@@ -4038,8 +4038,8 @@
       "adm_cd": "35060430",
       "adm_nm": "금산면",
       "sgg": "김제시",
-      "risk_index": 0.4387,
-      "access_score": 0.9522,
+      "risk_index": 0.4374,
+      "access_score": 0.9484,
       "loan_score": 0.1779,
       "multicultural_score": 0.1525,
       "child_pop": 63,
@@ -4092,8 +4092,8 @@
       "adm_cd": "35060510",
       "adm_nm": "요촌동",
       "sgg": "김제시",
-      "risk_index": 0.5286,
-      "access_score": 0.93,
+      "risk_index": 0.526,
+      "access_score": 0.9225,
       "loan_score": 0.5374,
       "multicultural_score": 0.1719,
       "child_pop": 465,
@@ -4200,8 +4200,8 @@
       "adm_cd": "35510110",
       "adm_nm": "삼례읍",
       "sgg": "완주군",
-      "risk_index": 0.6028,
-      "access_score": 0.9677,
+      "risk_index": 0.6025,
+      "access_score": 0.9666,
       "loan_score": 0.7017,
       "multicultural_score": 0.2218,
       "child_pop": 1076,
@@ -4227,8 +4227,8 @@
       "adm_cd": "35510120",
       "adm_nm": "봉동읍",
       "sgg": "완주군",
-      "risk_index": 0.6149,
-      "access_score": 0.9578,
+      "risk_index": 0.613,
+      "access_score": 0.9524,
       "loan_score": 0.7383,
       "multicultural_score": 0.2377,
       "child_pop": 1717,
@@ -4254,8 +4254,8 @@
       "adm_cd": "35510130",
       "adm_nm": "용진읍",
       "sgg": "완주군",
-      "risk_index": 0.5316,
-      "access_score": 0.9505,
+      "risk_index": 0.5301,
+      "access_score": 0.9462,
       "loan_score": 0.5223,
       "multicultural_score": 0.1708,
       "child_pop": 380,
@@ -4308,8 +4308,8 @@
       "adm_cd": "35510330",
       "adm_nm": "이서면",
       "sgg": "완주군",
-      "risk_index": 0.5003,
-      "access_score": 0.9487,
+      "risk_index": 0.4981,
+      "access_score": 0.9422,
       "loan_score": 0.4442,
       "multicultural_score": 0.1431,
       "child_pop": 1007,
@@ -4389,8 +4389,8 @@
       "adm_cd": "35510360",
       "adm_nm": "고산면",
       "sgg": "완주군",
-      "risk_index": 0.5235,
-      "access_score": 0.9077,
+      "risk_index": 0.5233,
+      "access_score": 0.9073,
       "loan_score": 0.5067,
       "multicultural_score": 0.1978,
       "child_pop": 151,
@@ -4551,8 +4551,8 @@
       "adm_cd": "35520110",
       "adm_nm": "진안읍",
       "sgg": "진안군",
-      "risk_index": 0.6128,
-      "access_score": 0.9691,
+      "risk_index": 0.6119,
+      "access_score": 0.9666,
       "loan_score": 0.6565,
       "multicultural_score": 0.2737,
       "child_pop": 373,
@@ -4848,8 +4848,8 @@
       "adm_cd": "35530110",
       "adm_nm": "무주읍",
       "sgg": "무주군",
-      "risk_index": 0.5499,
-      "access_score": 0.9032,
+      "risk_index": 0.5471,
+      "access_score": 0.8954,
       "loan_score": 0.5808,
       "multicultural_score": 0.2214,
       "child_pop": 490,
@@ -5010,8 +5010,8 @@
       "adm_cd": "35540110",
       "adm_nm": "장수읍",
       "sgg": "장수군",
-      "risk_index": 0.5762,
-      "access_score": 0.9424,
+      "risk_index": 0.5757,
+      "access_score": 0.9411,
       "loan_score": 0.3435,
       "multicultural_score": 0.4011,
       "child_pop": 340,
@@ -5091,8 +5091,8 @@
       "adm_cd": "35540330",
       "adm_nm": "장계면",
       "sgg": "장수군",
-      "risk_index": 0.5118,
-      "access_score": 0.8654,
+      "risk_index": 0.5062,
+      "access_score": 0.8492,
       "loan_score": 0.4983,
       "multicultural_score": 0.2109,
       "child_pop": 150,
@@ -5199,8 +5199,8 @@
       "adm_cd": "35550110",
       "adm_nm": "임실읍",
       "sgg": "임실군",
-      "risk_index": 0.5903,
-      "access_score": 0.8988,
+      "risk_index": 0.5854,
+      "access_score": 0.8847,
       "loan_score": 0.6141,
       "multicultural_score": 0.3055,
       "child_pop": 415,
@@ -5334,8 +5334,8 @@
       "adm_cd": "35550350",
       "adm_nm": "오수면",
       "sgg": "임실군",
-      "risk_index": 0.4871,
-      "access_score": 0.8934,
+      "risk_index": 0.4752,
+      "access_score": 0.8594,
       "loan_score": 0.3656,
       "multicultural_score": 0.2076,
       "child_pop": 61,
@@ -5523,8 +5523,8 @@
       "adm_cd": "35560110",
       "adm_nm": "순창읍",
       "sgg": "순창군",
-      "risk_index": 0.596,
-      "access_score": 0.8849,
+      "risk_index": 0.589,
+      "access_score": 0.8649,
       "loan_score": 0.6496,
       "multicultural_score": 0.3096,
       "child_pop": 591,
@@ -5820,8 +5820,8 @@
       "adm_cd": "35570110",
       "adm_nm": "고창읍",
       "sgg": "고창군",
-      "risk_index": 0.5618,
-      "access_score": 0.8811,
+      "risk_index": 0.5611,
+      "access_score": 0.8792,
       "loan_score": 0.6645,
       "multicultural_score": 0.2182,
       "child_pop": 1135,
@@ -6198,8 +6198,8 @@
       "adm_cd": "35580110",
       "adm_nm": "부안읍",
       "sgg": "부안군",
-      "risk_index": 0.568,
-      "access_score": 0.9365,
+      "risk_index": 0.5633,
+      "access_score": 0.9231,
       "loan_score": 0.5892,
       "multicultural_score": 0.2324,
       "child_pop": 1156,
@@ -6544,6 +6544,5445 @@
       "multicultural_service": 0,
       "multicultural_unreached": 1.0,
       "has_school": true
+    }
+  },
+  "schools": [
+    {
+      "code": "S000003522",
+      "name": "전주교육대학교군산부설초등학교",
+      "sgg": "군산시",
+      "adm_cd": "35020640",
+      "lat": 35.9741280096,
+      "lon": 126.7222319523
+    },
+    {
+      "code": "S000003525",
+      "name": "전주교육대학교전주부설초등학교",
+      "sgg": "전주시완산구",
+      "adm_cd": "35011610",
+      "lat": 35.8083514033,
+      "lon": 127.1511683221
+    },
+    {
+      "code": "S130000480",
+      "name": "가평초등학교",
+      "sgg": "고창군",
+      "adm_cd": "35570420",
+      "lat": 35.4776398229,
+      "lon": 126.7386844123
+    },
+    {
+      "code": "S130000481",
+      "name": "고수초등학교",
+      "sgg": "고창군",
+      "adm_cd": "35570310",
+      "lat": 35.4044175871,
+      "lon": 126.6859381956
+    },
+    {
+      "code": "S130000482",
+      "name": "고창남초등학교",
+      "sgg": "고창군",
+      "adm_cd": "35570110",
+      "lat": 35.4291432604,
+      "lon": 126.6975304452
+    },
+    {
+      "code": "S130000484",
+      "name": "고창초등학교",
+      "sgg": "고창군",
+      "adm_cd": "35570110",
+      "lat": 35.4363790506,
+      "lon": 126.7037246632
+    },
+    {
+      "code": "S130000485",
+      "name": "공음초등학교",
+      "sgg": "고창군",
+      "adm_cd": "35570340",
+      "lat": 35.3768993116,
+      "lon": 126.5114274247
+    },
+    {
+      "code": "S130000486",
+      "name": "대산초등학교",
+      "sgg": "고창군",
+      "adm_cd": "35570380",
+      "lat": 35.3285543175,
+      "lon": 126.5637450723
+    },
+    {
+      "code": "S130000487",
+      "name": "대아초등학교",
+      "sgg": "고창군",
+      "adm_cd": "35570320",
+      "lat": 35.4394679735,
+      "lon": 126.633492569
+    },
+    {
+      "code": "S130000489",
+      "name": "동호초등학교",
+      "sgg": "고창군",
+      "adm_cd": "35570360",
+      "lat": 35.5075536117,
+      "lon": 126.4941473685
+    },
+    {
+      "code": "S130000490",
+      "name": "매산초등학교",
+      "sgg": "고창군",
+      "adm_cd": "35570380",
+      "lat": 35.3402633951,
+      "lon": 126.5945436117
+    },
+    {
+      "code": "S130000491",
+      "name": "무장초등학교",
+      "sgg": "고창군",
+      "adm_cd": "35570330",
+      "lat": 35.4154146722,
+      "lon": 126.564303534
+    },
+    {
+      "code": "S130000492",
+      "name": "봉암초등학교",
+      "sgg": "고창군",
+      "adm_cd": "35570430",
+      "lat": 35.5584285898,
+      "lon": 126.6275752682
+    },
+    {
+      "code": "S130000493",
+      "name": "고창부안초등학교",
+      "sgg": "고창군",
+      "adm_cd": "35570430",
+      "lat": 35.5117850843,
+      "lon": 126.6631344415
+    },
+    {
+      "code": "S130000495",
+      "name": "상하초등학교",
+      "sgg": "고창군",
+      "adm_cd": "35570350",
+      "lat": 35.4444365076,
+      "lon": 126.4879693932
+    },
+    {
+      "code": "S130000500",
+      "name": "성내초등학교",
+      "sgg": "고창군",
+      "adm_cd": "35570410",
+      "lat": 35.5380547024,
+      "lon": 126.7447783872
+    },
+    {
+      "code": "S130000501",
+      "name": "성송초등학교",
+      "sgg": "고창군",
+      "adm_cd": "35570370",
+      "lat": 35.3563440251,
+      "lon": 126.644082949
+    },
+    {
+      "code": "S130000502",
+      "name": "신림초등학교",
+      "sgg": "고창군",
+      "adm_cd": "35570420",
+      "lat": 35.4942353594,
+      "lon": 126.7002028171
+    },
+    {
+      "code": "S130000504",
+      "name": "심원초등학교",
+      "sgg": "고창군",
+      "adm_cd": "35570390",
+      "lat": 35.5257374997,
+      "lon": 126.552360888
+    },
+    {
+      "code": "S130000505",
+      "name": "아산초등학교",
+      "sgg": "고창군",
+      "adm_cd": "35570320",
+      "lat": 35.483349227,
+      "lon": 126.6055244961
+    },
+    {
+      "code": "S130000510",
+      "name": "해리초등학교",
+      "sgg": "고창군",
+      "adm_cd": "35570360",
+      "lat": 35.4657031522,
+      "lon": 126.5359920319
+    },
+    {
+      "code": "S130000512",
+      "name": "흥덕초등학교",
+      "sgg": "고창군",
+      "adm_cd": "35570400",
+      "lat": 35.5191135043,
+      "lon": 126.7018014753
+    },
+    {
+      "code": "S130000571",
+      "name": "개정초등학교",
+      "sgg": "군산시",
+      "adm_cd": "35020360",
+      "lat": 35.9629440201,
+      "lon": 126.7691770281
+    },
+    {
+      "code": "S130000574",
+      "name": "군산경포초등학교",
+      "sgg": "군산시",
+      "adm_cd": "35020650",
+      "lat": 35.9765106584,
+      "lon": 126.7348856588
+    },
+    {
+      "code": "S130000575",
+      "name": "군산구암초등학교",
+      "sgg": "군산시",
+      "adm_cd": "35020660",
+      "lat": 35.9804928538,
+      "lon": 126.7310801856
+    },
+    {
+      "code": "S130000576",
+      "name": "군산금광초등학교",
+      "sgg": "군산시",
+      "adm_cd": "35020560",
+      "lat": 35.9822737655,
+      "lon": 126.7065022119
+    },
+    {
+      "code": "S130000577",
+      "name": "군산나운초등학교",
+      "sgg": "군산시",
+      "adm_cd": "35020700",
+      "lat": 35.9720987273,
+      "lon": 126.6924239279
+    },
+    {
+      "code": "S130000578",
+      "name": "군산남초등학교",
+      "sgg": "군산시",
+      "adm_cd": "35020640",
+      "lat": 35.9787312699,
+      "lon": 126.7144498432
+    },
+    {
+      "code": "S130000579",
+      "name": "군산내흥초등학교",
+      "sgg": "군산시",
+      "adm_cd": "35020670",
+      "lat": 35.9947028944,
+      "lon": 126.7556587749
+    },
+    {
+      "code": "S130000580",
+      "name": "군산동초등학교",
+      "sgg": "군산시",
+      "adm_cd": "35020650",
+      "lat": 35.9652607014,
+      "lon": 126.7386570492
+    },
+    {
+      "code": "S130000581",
+      "name": "군산문화초등학교",
+      "sgg": "군산시",
+      "adm_cd": "35020550",
+      "lat": 35.9740855708,
+      "lon": 126.7030067756
+    },
+    {
+      "code": "S130000582",
+      "name": "군산산북초등학교",
+      "sgg": "군산시",
+      "adm_cd": "35020730",
+      "lat": 35.9645091061,
+      "lon": 126.6812477133
+    },
+    {
+      "code": "S130000583",
+      "name": "군산서초등학교",
+      "sgg": "군산시",
+      "adm_cd": "35020510",
+      "lat": 35.9906986892,
+      "lon": 126.7065863398
+    },
+    {
+      "code": "S130000584",
+      "name": "군산서해초등학교",
+      "sgg": "군산시",
+      "adm_cd": "35020740",
+      "lat": 35.9596400978,
+      "lon": 126.6995557135
+    },
+    {
+      "code": "S130000585",
+      "name": "소룡초등학교",
+      "sgg": "군산시",
+      "adm_cd": "35020720",
+      "lat": 35.9739902966,
+      "lon": 126.6826864207
+    },
+    {
+      "code": "S130000586",
+      "name": "군산수송초등학교",
+      "sgg": "군산시",
+      "adm_cd": "35020690",
+      "lat": 35.972506548,
+      "lon": 126.7163925397
+    },
+    {
+      "code": "S130000587",
+      "name": "군산신흥초등학교",
+      "sgg": "군산시",
+      "adm_cd": "35020710",
+      "lat": 35.9679626921,
+      "lon": 126.7067148312
+    },
+    {
+      "code": "S130000588",
+      "name": "군산용문초등학교",
+      "sgg": "군산시",
+      "adm_cd": "35020740",
+      "lat": 35.9422866902,
+      "lon": 126.6889087567
+    },
+    {
+      "code": "S130000589",
+      "name": "군산월명초등학교",
+      "sgg": "군산시",
+      "adm_cd": "35020690",
+      "lat": 35.9618054507,
+      "lon": 126.7203052077
+    },
+    {
+      "code": "S130000590",
+      "name": "군산중앙초등학교",
+      "sgg": "군산시",
+      "adm_cd": "35020600",
+      "lat": 35.9822366988,
+      "lon": 126.7165750602
+    },
+    {
+      "code": "S130000591",
+      "name": "군산지곡초등학교",
+      "sgg": "군산시",
+      "adm_cd": "35020690",
+      "lat": 35.9576924222,
+      "lon": 126.7068015786
+    },
+    {
+      "code": "S130000592",
+      "name": "군산초등학교",
+      "sgg": "군산시",
+      "adm_cd": "35020690",
+      "lat": 35.9532749521,
+      "lon": 126.7099303913
+    },
+    {
+      "code": "S130000593",
+      "name": "군산풍문초등학교",
+      "sgg": "군산시",
+      "adm_cd": "35020640",
+      "lat": 35.9769455955,
+      "lon": 126.7185054927
+    },
+    {
+      "code": "S130000594",
+      "name": "해성초등학교",
+      "sgg": "군산시",
+      "adm_cd": "35020730",
+      "lat": 35.9585302181,
+      "lon": 126.6303114278
+    },
+    {
+      "code": "S130000595",
+      "name": "군산흥남초등학교",
+      "sgg": "군산시",
+      "adm_cd": "35020550",
+      "lat": 35.9714278645,
+      "lon": 126.70853357
+    },
+    {
+      "code": "S130000598",
+      "name": "나포초등학교",
+      "sgg": "군산시",
+      "adm_cd": "35020380",
+      "lat": 36.0308637039,
+      "lon": 126.8340948039
+    },
+    {
+      "code": "S130000599",
+      "name": "당북초등학교",
+      "sgg": "군산시",
+      "adm_cd": "35020310",
+      "lat": 35.9466769665,
+      "lon": 126.7170944601
+    },
+    {
+      "code": "S130000600",
+      "name": "대야남초등학교",
+      "sgg": "군산시",
+      "adm_cd": "35020350",
+      "lat": 35.919198374,
+      "lon": 126.8200887686
+    },
+    {
+      "code": "S130000601",
+      "name": "대야초등학교",
+      "sgg": "군산시",
+      "adm_cd": "35020350",
+      "lat": 35.948424956,
+      "lon": 126.8184220461
+    },
+    {
+      "code": "S130000604",
+      "name": "무녀도초등학교",
+      "sgg": "군산시",
+      "adm_cd": "35020390",
+      "lat": 35.8047081797,
+      "lon": 126.4238485008
+    },
+    {
+      "code": "S130000605",
+      "name": "문창초등학교",
+      "sgg": "군산시",
+      "adm_cd": "35020730",
+      "lat": 35.9567114514,
+      "lon": 126.655109988
+    },
+    {
+      "code": "S130000606",
+      "name": "미룡초등학교",
+      "sgg": "군산시",
+      "adm_cd": "35020740",
+      "lat": 35.9505124496,
+      "lon": 126.6844828275
+    },
+    {
+      "code": "S130000607",
+      "name": "발산초등학교",
+      "sgg": "군산시",
+      "adm_cd": "35020360",
+      "lat": 35.9591850898,
+      "lon": 126.7966526707
+    },
+    {
+      "code": "S130000610",
+      "name": "서수초등학교",
+      "sgg": "군산시",
+      "adm_cd": "35020340",
+      "lat": 35.982994511,
+      "lon": 126.8764513023
+    },
+    {
+      "code": "S130000613",
+      "name": "성산초등학교",
+      "sgg": "군산시",
+      "adm_cd": "35020370",
+      "lat": 35.9905417196,
+      "lon": 126.7857399153
+    },
+    {
+      "code": "S130000615",
+      "name": "술산초등학교",
+      "sgg": "군산시",
+      "adm_cd": "35020330",
+      "lat": 35.9581731573,
+      "lon": 126.8620483285
+    },
+    {
+      "code": "S130000618",
+      "name": "군산신풍초등학교",
+      "sgg": "군산시",
+      "adm_cd": "35020700",
+      "lat": 35.9648318581,
+      "lon": 126.6958754596
+    },
+    {
+      "code": "S130000621",
+      "name": "오봉초등학교",
+      "sgg": "군산시",
+      "adm_cd": "35020320",
+      "lat": 35.8888505468,
+      "lon": 126.7260432008
+    },
+    {
+      "code": "S130000622",
+      "name": "옥구초등학교",
+      "sgg": "군산시",
+      "adm_cd": "35020110",
+      "lat": 35.9222533025,
+      "lon": 126.680433456
+    },
+    {
+      "code": "S130000623",
+      "name": "옥봉초등학교",
+      "sgg": "군산시",
+      "adm_cd": "35020400",
+      "lat": 35.9271719303,
+      "lon": 126.6413830112
+    },
+    {
+      "code": "S130000624",
+      "name": "옥산초등학교",
+      "sgg": "군산시",
+      "adm_cd": "35020310",
+      "lat": 35.9404345294,
+      "lon": 126.749329317
+    },
+    {
+      "code": "S130000626",
+      "name": "임피초등학교",
+      "sgg": "군산시",
+      "adm_cd": "35020330",
+      "lat": 35.9880432322,
+      "lon": 126.849611868
+    },
+    {
+      "code": "S130000627",
+      "name": "창오초등학교",
+      "sgg": "군산시",
+      "adm_cd": "35020370",
+      "lat": 35.9850735764,
+      "lon": 126.8165151119
+    },
+    {
+      "code": "S130000629",
+      "name": "회현초등학교",
+      "sgg": "군산시",
+      "adm_cd": "35020320",
+      "lat": 35.9152528452,
+      "lon": 126.752329227
+    },
+    {
+      "code": "S130000700",
+      "name": "공덕초등학교",
+      "sgg": "김제시",
+      "adm_cd": "35060360",
+      "lat": 35.8945632523,
+      "lon": 126.9116959993
+    },
+    {
+      "code": "S130000701",
+      "name": "광활초등학교",
+      "sgg": "김제시",
+      "adm_cd": "35060440",
+      "lat": 35.8344983491,
+      "lon": 126.7408839656
+    },
+    {
+      "code": "S130000702",
+      "name": "금구초등학교",
+      "sgg": "김제시",
+      "adm_cd": "35060400",
+      "lat": 35.7743247319,
+      "lon": 127.0131143736
+    },
+    {
+      "code": "S130000704",
+      "name": "금산초등학교",
+      "sgg": "김제시",
+      "adm_cd": "35060430",
+      "lat": 35.7205647802,
+      "lon": 127.0322190273
+    },
+    {
+      "code": "S130000705",
+      "name": "김제검산초등학교",
+      "sgg": "김제시",
+      "adm_cd": "35060540",
+      "lat": 35.805635867,
+      "lon": 126.8996287277
+    },
+    {
+      "code": "S130000706",
+      "name": "김제동초등학교",
+      "sgg": "김제시",
+      "adm_cd": "35060520",
+      "lat": 35.7953105041,
+      "lon": 126.9012136846
+    },
+    {
+      "code": "S130000707",
+      "name": "김제북초등학교",
+      "sgg": "김제시",
+      "adm_cd": "35060540",
+      "lat": 35.8152311997,
+      "lon": 126.9342683761
+    },
+    {
+      "code": "S130000708",
+      "name": "김제중앙초등학교",
+      "sgg": "김제시",
+      "adm_cd": "35060510",
+      "lat": 35.8018756634,
+      "lon": 126.8892118039
+    },
+    {
+      "code": "S130000710",
+      "name": "김제초등학교",
+      "sgg": "김제시",
+      "adm_cd": "35060510",
+      "lat": 35.8020716996,
+      "lon": 126.8868052523
+    },
+    {
+      "code": "S130000711",
+      "name": "난산초등학교",
+      "sgg": "김제시",
+      "adm_cd": "35060340",
+      "lat": 35.8770464546,
+      "lon": 126.9950699552
+    },
+    {
+      "code": "S130000712",
+      "name": "남양초등학교",
+      "sgg": "김제시",
+      "adm_cd": "35060420",
+      "lat": 35.7833814534,
+      "lon": 126.974856658
+    },
+    {
+      "code": "S130000713",
+      "name": "만경초등학교",
+      "sgg": "김제시",
+      "adm_cd": "35060110",
+      "lat": 35.8549362141,
+      "lon": 126.8228688892
+    },
+    {
+      "code": "S130000715",
+      "name": "백구초등학교",
+      "sgg": "김제시",
+      "adm_cd": "35060340",
+      "lat": 35.8864447559,
+      "lon": 126.9703630762
+    },
+    {
+      "code": "S130000716",
+      "name": "백석초등학교",
+      "sgg": "김제시",
+      "adm_cd": "35060510",
+      "lat": 35.8290096343,
+      "lon": 126.8938798302
+    },
+    {
+      "code": "S130000717",
+      "name": "벽량초등학교",
+      "sgg": "김제시",
+      "adm_cd": "35060350",
+      "lat": 35.7305128316,
+      "lon": 126.847634804
+    },
+    {
+      "code": "S130000719",
+      "name": "봉남초등학교",
+      "sgg": "김제시",
+      "adm_cd": "35060410",
+      "lat": 35.7638116587,
+      "lon": 126.9521849492
+    },
+    {
+      "code": "S130000720",
+      "name": "부용초등학교",
+      "sgg": "김제시",
+      "adm_cd": "35060340",
+      "lat": 35.8769864681,
+      "lon": 126.9519309934
+    },
+    {
+      "code": "S130000722",
+      "name": "성덕초등학교",
+      "sgg": "김제시",
+      "adm_cd": "35060380",
+      "lat": 35.8197421472,
+      "lon": 126.807632047
+    },
+    {
+      "code": "S130000727",
+      "name": "용동초등학교",
+      "sgg": "김제시",
+      "adm_cd": "35060330",
+      "lat": 35.8543493397,
+      "lon": 127.0029226433
+    },
+    {
+      "code": "S130000729",
+      "name": "용지초등학교",
+      "sgg": "김제시",
+      "adm_cd": "35060330",
+      "lat": 35.8540247551,
+      "lon": 126.9578919686
+    },
+    {
+      "code": "S130000730",
+      "name": "원평초등학교",
+      "sgg": "김제시",
+      "adm_cd": "35060430",
+      "lat": 35.7185644604,
+      "lon": 126.9931478808
+    },
+    {
+      "code": "S130000732",
+      "name": "월성초등학교",
+      "sgg": "김제시",
+      "adm_cd": "35060520",
+      "lat": 35.7597911925,
+      "lon": 126.9099045758
+    },
+    {
+      "code": "S130000733",
+      "name": "월촌초등학교",
+      "sgg": "김제시",
+      "adm_cd": "35060580",
+      "lat": 35.7891843383,
+      "lon": 126.8680531585
+    },
+    {
+      "code": "S130000734",
+      "name": "종정초등학교",
+      "sgg": "김제시",
+      "adm_cd": "35060320",
+      "lat": 35.8521490652,
+      "lon": 126.9053267006
+    },
+    {
+      "code": "S130000736",
+      "name": "죽산초등학교",
+      "sgg": "김제시",
+      "adm_cd": "35060310",
+      "lat": 35.7732175596,
+      "lon": 126.8159501936
+    },
+    {
+      "code": "S130000737",
+      "name": "진봉초등학교",
+      "sgg": "김제시",
+      "adm_cd": "35060390",
+      "lat": 35.8472862866,
+      "lon": 126.78323011
+    },
+    {
+      "code": "S130000738",
+      "name": "청운초등학교",
+      "sgg": "김제시",
+      "adm_cd": "35060400",
+      "lat": 35.8104785118,
+      "lon": 126.9831509395
+    },
+    {
+      "code": "S130000740",
+      "name": "청하초등학교",
+      "sgg": "김제시",
+      "adm_cd": "35060370",
+      "lat": 35.8929484451,
+      "lon": 126.8590558635
+    },
+    {
+      "code": "S130000741",
+      "name": "초처초등학교",
+      "sgg": "김제시",
+      "adm_cd": "35060410",
+      "lat": 35.7387663977,
+      "lon": 126.9549370454
+    },
+    {
+      "code": "S130000742",
+      "name": "치문초등학교",
+      "sgg": "김제시",
+      "adm_cd": "35060340",
+      "lat": 35.9063887422,
+      "lon": 126.9362225364
+    },
+    {
+      "code": "S130000743",
+      "name": "황강초등학교",
+      "sgg": "김제시",
+      "adm_cd": "35060360",
+      "lat": 35.8760531853,
+      "lon": 126.9246638379
+    },
+    {
+      "code": "S130000744",
+      "name": "황산초등학교",
+      "sgg": "김제시",
+      "adm_cd": "35060420",
+      "lat": 35.7962157667,
+      "lon": 126.9437668565
+    },
+    {
+      "code": "S130000805",
+      "name": "남원교룡초등학교",
+      "sgg": "남원시",
+      "adm_cd": "35050570",
+      "lat": 35.417019388,
+      "lon": 127.3789267661
+    },
+    {
+      "code": "S130000807",
+      "name": "금지초등학교",
+      "sgg": "남원시",
+      "adm_cd": "35050350",
+      "lat": 35.3334539654,
+      "lon": 127.2934893387
+    },
+    {
+      "code": "S130000809",
+      "name": "남원노암초등학교",
+      "sgg": "남원시",
+      "adm_cd": "35050540",
+      "lat": 35.3958552592,
+      "lon": 127.3758556966
+    },
+    {
+      "code": "S130000810",
+      "name": "남원도통초등학교",
+      "sgg": "남원시",
+      "adm_cd": "35050590",
+      "lat": 35.413694779,
+      "lon": 127.3948579971
+    },
+    {
+      "code": "S130000813",
+      "name": "산내초등학교",
+      "sgg": "남원시",
+      "adm_cd": "35050450",
+      "lat": 35.4200236023,
+      "lon": 127.6270986853
+    },
+    {
+      "code": "S130000814",
+      "name": "남원서원초등학교",
+      "sgg": "남원시",
+      "adm_cd": "35050370",
+      "lat": 35.4051935399,
+      "lon": 127.344193714
+    },
+    {
+      "code": "S130000817",
+      "name": "남원왕치초등학교",
+      "sgg": "남원시",
+      "adm_cd": "35050570",
+      "lat": 35.4341046401,
+      "lon": 127.382372281
+    },
+    {
+      "code": "S130000818",
+      "name": "남원월락초등학교",
+      "sgg": "남원시",
+      "adm_cd": "35050590",
+      "lat": 35.4237963617,
+      "lon": 127.4036855028
+    },
+    {
+      "code": "S130000819",
+      "name": "남원중앙초등학교",
+      "sgg": "남원시",
+      "adm_cd": "35050590",
+      "lat": 35.41279196,
+      "lon": 127.3897714629
+    },
+    {
+      "code": "S130000820",
+      "name": "남원초등학교",
+      "sgg": "남원시",
+      "adm_cd": "35050550",
+      "lat": 35.4024952688,
+      "lon": 127.3738213346
+    },
+    {
+      "code": "S130000822",
+      "name": "대강초등학교",
+      "sgg": "남원시",
+      "adm_cd": "35050360",
+      "lat": 35.3464958959,
+      "lon": 127.228507127
+    },
+    {
+      "code": "S130000823",
+      "name": "남원대산초등학교",
+      "sgg": "남원시",
+      "adm_cd": "35050370",
+      "lat": 35.4318376219,
+      "lon": 127.3268986057
+    },
+    {
+      "code": "S130000824",
+      "name": "덕과초등학교",
+      "sgg": "남원시",
+      "adm_cd": "35050390",
+      "lat": 35.5139968828,
+      "lon": 127.3538644218
+    },
+    {
+      "code": "S130000827",
+      "name": "보절초등학교",
+      "sgg": "남원시",
+      "adm_cd": "35050400",
+      "lat": 35.5138394837,
+      "lon": 127.4007316662
+    },
+    {
+      "code": "S130000829",
+      "name": "사매초등학교",
+      "sgg": "남원시",
+      "adm_cd": "35050380",
+      "lat": 35.4999376354,
+      "lon": 127.3608081472
+    },
+    {
+      "code": "S130000830",
+      "name": "산동초등학교",
+      "sgg": "남원시",
+      "adm_cd": "35050410",
+      "lat": 35.4928772382,
+      "lon": 127.4774529031
+    },
+    {
+      "code": "S130000831",
+      "name": "송동초등학교",
+      "sgg": "남원시",
+      "adm_cd": "35050330",
+      "lat": 35.3551218566,
+      "lon": 127.3357472234
+    },
+    {
+      "code": "S130000832",
+      "name": "수지초등학교",
+      "sgg": "남원시",
+      "adm_cd": "35050320",
+      "lat": 35.3371158575,
+      "lon": 127.3741843715
+    },
+    {
+      "code": "S130000833",
+      "name": "아영초등학교",
+      "sgg": "남원시",
+      "adm_cd": "35050440",
+      "lat": 35.505710624,
+      "lon": 127.6097205326
+    },
+    {
+      "code": "S130000834",
+      "name": "오동초등학교",
+      "sgg": "남원시",
+      "adm_cd": "35050420",
+      "lat": 35.4270533697,
+      "lon": 127.4232630179
+    },
+    {
+      "code": "S130000835",
+      "name": "남원용성초등학교",
+      "sgg": "남원시",
+      "adm_cd": "35050510",
+      "lat": 35.410198855,
+      "lon": 127.3798768818
+    },
+    {
+      "code": "S130000837",
+      "name": "운봉초등학교",
+      "sgg": "남원시",
+      "adm_cd": "35050110",
+      "lat": 35.4410304077,
+      "lon": 127.5326705352
+    },
+    {
+      "code": "S130000840",
+      "name": "원천초등학교",
+      "sgg": "남원시",
+      "adm_cd": "35050310",
+      "lat": 35.3884553077,
+      "lon": 127.4453736203
+    },
+    {
+      "code": "S130000841",
+      "name": "이백초등학교",
+      "sgg": "남원시",
+      "adm_cd": "35050420",
+      "lat": 35.4297575941,
+      "lon": 127.460616994
+    },
+    {
+      "code": "S130000842",
+      "name": "인월초등학교",
+      "sgg": "남원시",
+      "adm_cd": "35050430",
+      "lat": 35.4638374463,
+      "lon": 127.601626598
+    },
+    {
+      "code": "S130000845",
+      "name": "주생초등학교",
+      "sgg": "남원시",
+      "adm_cd": "35050340",
+      "lat": 35.3831185386,
+      "lon": 127.3259535547
+    },
+    {
+      "code": "S130000893",
+      "name": "괴목초등학교",
+      "sgg": "무주군",
+      "adm_cd": "35530330",
+      "lat": 35.9467155909,
+      "lon": 127.7160706215
+    },
+    {
+      "code": "S130000894",
+      "name": "구천초등학교",
+      "sgg": "무주군",
+      "adm_cd": "35530320",
+      "lat": 35.9091610005,
+      "lon": 127.7771936659
+    },
+    {
+      "code": "S130000897",
+      "name": "무주중앙초등학교",
+      "sgg": "무주군",
+      "adm_cd": "35530110",
+      "lat": 36.0126070371,
+      "lon": 127.6642265553
+    },
+    {
+      "code": "S130000898",
+      "name": "무주초등학교",
+      "sgg": "무주군",
+      "adm_cd": "35530110",
+      "lat": 36.010785355,
+      "lon": 127.6605330921
+    },
+    {
+      "code": "S130000899",
+      "name": "무풍초등학교",
+      "sgg": "무주군",
+      "adm_cd": "35530310",
+      "lat": 35.9673532388,
+      "lon": 127.8476454459
+    },
+    {
+      "code": "S130000900",
+      "name": "부남초등학교",
+      "sgg": "무주군",
+      "adm_cd": "35530350",
+      "lat": 35.9732283531,
+      "lon": 127.5594259493
+    },
+    {
+      "code": "S130000903",
+      "name": "설천초등학교",
+      "sgg": "무주군",
+      "adm_cd": "35530320",
+      "lat": 36.0092177407,
+      "lon": 127.7888716604
+    },
+    {
+      "code": "S130000904",
+      "name": "안성초등학교",
+      "sgg": "무주군",
+      "adm_cd": "35530340",
+      "lat": 35.8656890253,
+      "lon": 127.6551239918
+    },
+    {
+      "code": "S130000905",
+      "name": "적상초등학교",
+      "sgg": "무주군",
+      "adm_cd": "35530330",
+      "lat": 35.9321188801,
+      "lon": 127.6559198536
+    },
+    {
+      "code": "S130000934",
+      "name": "격포초등학교",
+      "sgg": "부안군",
+      "adm_cd": "35580360",
+      "lat": 35.6260889122,
+      "lon": 126.4743088857
+    },
+    {
+      "code": "S130000937",
+      "name": "곰소초등학교",
+      "sgg": "부안군",
+      "adm_cd": "35580370",
+      "lat": 35.5959995078,
+      "lon": 126.5997861548
+    },
+    {
+      "code": "S130000941",
+      "name": "동북초등학교",
+      "sgg": "부안군",
+      "adm_cd": "35580320",
+      "lat": 35.7755522427,
+      "lon": 126.7309933711
+    },
+    {
+      "code": "S130000944",
+      "name": "동진초등학교",
+      "sgg": "부안군",
+      "adm_cd": "35580320",
+      "lat": 35.7536244355,
+      "lon": 126.7433665656
+    },
+    {
+      "code": "S130000947",
+      "name": "백룡초등학교",
+      "sgg": "부안군",
+      "adm_cd": "35580380",
+      "lat": 35.7186072823,
+      "lon": 126.8109787741
+    },
+    {
+      "code": "S130000948",
+      "name": "백산초등학교",
+      "sgg": "부안군",
+      "adm_cd": "35580380",
+      "lat": 35.7016361472,
+      "lon": 126.7881774223
+    },
+    {
+      "code": "S130000949",
+      "name": "변산초등학교",
+      "sgg": "부안군",
+      "adm_cd": "35580360",
+      "lat": 35.663229662,
+      "lon": 126.5285391571
+    },
+    {
+      "code": "S130000952",
+      "name": "부안남초등학교",
+      "sgg": "부안군",
+      "adm_cd": "35580110",
+      "lat": 35.7018719363,
+      "lon": 126.7343791383
+    },
+    {
+      "code": "S130000953",
+      "name": "부안동초등학교",
+      "sgg": "부안군",
+      "adm_cd": "35580110",
+      "lat": 35.71748786,
+      "lon": 126.7386993441
+    },
+    {
+      "code": "S130000954",
+      "name": "부안초등학교",
+      "sgg": "부안군",
+      "adm_cd": "35580110",
+      "lat": 35.7291897191,
+      "lon": 126.7336473823
+    },
+    {
+      "code": "S130000956",
+      "name": "영전초등학교",
+      "sgg": "부안군",
+      "adm_cd": "35580350",
+      "lat": 35.6121476469,
+      "lon": 126.6689214473
+    },
+    {
+      "code": "S130000957",
+      "name": "우덕초등학교",
+      "sgg": "부안군",
+      "adm_cd": "35580390",
+      "lat": 35.6839354319,
+      "lon": 126.6764684699
+    },
+    {
+      "code": "S130000959",
+      "name": "위도초등학교",
+      "sgg": "부안군",
+      "adm_cd": "35580420",
+      "lat": 35.5958839403,
+      "lon": 126.2922969741
+    },
+    {
+      "code": "S130000963",
+      "name": "장신초등학교",
+      "sgg": "부안군",
+      "adm_cd": "35580400",
+      "lat": 35.7174125674,
+      "lon": 126.6267292891
+    },
+    {
+      "code": "S130000964",
+      "name": "주산초등학교",
+      "sgg": "부안군",
+      "adm_cd": "35580310",
+      "lat": 35.6665031476,
+      "lon": 126.7143289359
+    },
+    {
+      "code": "S130000966",
+      "name": "줄포초등학교",
+      "sgg": "부안군",
+      "adm_cd": "35580410",
+      "lat": 35.5917758096,
+      "lon": 126.6812887233
+    },
+    {
+      "code": "S130000967",
+      "name": "창북초등학교",
+      "sgg": "부안군",
+      "adm_cd": "35580340",
+      "lat": 35.7618942917,
+      "lon": 126.6939693563
+    },
+    {
+      "code": "S130000968",
+      "name": "하서초등학교",
+      "sgg": "부안군",
+      "adm_cd": "35580400",
+      "lat": 35.717437301,
+      "lon": 126.6262771644
+    },
+    {
+      "code": "S130000969",
+      "name": "행안초등학교",
+      "sgg": "부안군",
+      "adm_cd": "35580330",
+      "lat": 35.7193085115,
+      "lon": 126.7164393589
+    },
+    {
+      "code": "S130001009",
+      "name": "구림초등학교",
+      "sgg": "순창군",
+      "adm_cd": "35560400",
+      "lat": 35.4531587623,
+      "lon": 127.1015663345
+    },
+    {
+      "code": "S130001010",
+      "name": "금과초등학교",
+      "sgg": "순창군",
+      "adm_cd": "35560360",
+      "lat": 35.3394931381,
+      "lon": 127.0872955732
+    },
+    {
+      "code": "S130001013",
+      "name": "동계초등학교",
+      "sgg": "순창군",
+      "adm_cd": "35560320",
+      "lat": 35.4405555488,
+      "lon": 127.2408468827
+    },
+    {
+      "code": "S130001014",
+      "name": "동산초등학교",
+      "sgg": "순창군",
+      "adm_cd": "35560380",
+      "lat": 35.4558216168,
+      "lon": 126.920567578
+    },
+    {
+      "code": "S130001015",
+      "name": "복흥초등학교",
+      "sgg": "순창군",
+      "adm_cd": "35560380",
+      "lat": 35.4308442513,
+      "lon": 126.9322916361
+    },
+    {
+      "code": "S130001017",
+      "name": "순창중앙초등학교",
+      "sgg": "순창군",
+      "adm_cd": "35560110",
+      "lat": 35.3776961639,
+      "lon": 127.144453285
+    },
+    {
+      "code": "S130001018",
+      "name": "순창초등학교",
+      "sgg": "순창군",
+      "adm_cd": "35560110",
+      "lat": 35.3754281384,
+      "lon": 127.1385418606
+    },
+    {
+      "code": "S130001019",
+      "name": "시산초등학교",
+      "sgg": "순창군",
+      "adm_cd": "35560390",
+      "lat": 35.4916896481,
+      "lon": 126.9809210479
+    },
+    {
+      "code": "S130001020",
+      "name": "쌍치초등학교",
+      "sgg": "순창군",
+      "adm_cd": "35560390",
+      "lat": 35.5017244978,
+      "lon": 127.0028701346
+    },
+    {
+      "code": "S130001022",
+      "name": "옥천초등학교",
+      "sgg": "순창군",
+      "adm_cd": "35560110",
+      "lat": 35.3730251049,
+      "lon": 127.1462717053
+    },
+    {
+      "code": "S130001024",
+      "name": "유등초등학교",
+      "sgg": "순창군",
+      "adm_cd": "35560340",
+      "lat": 35.3621397752,
+      "lon": 127.1885608157
+    },
+    {
+      "code": "S130001025",
+      "name": "인계초등학교",
+      "sgg": "순창군",
+      "adm_cd": "35560310",
+      "lat": 35.4142932726,
+      "lon": 127.1589858288
+    },
+    {
+      "code": "S130001026",
+      "name": "적성초등학교",
+      "sgg": "순창군",
+      "adm_cd": "35560330",
+      "lat": 35.3985896642,
+      "lon": 127.2102212168
+    },
+    {
+      "code": "S130001027",
+      "name": "팔덕초등학교",
+      "sgg": "순창군",
+      "adm_cd": "35560370",
+      "lat": 35.3927449149,
+      "lon": 127.0974024676
+    },
+    {
+      "code": "S130001028",
+      "name": "풍산초등학교",
+      "sgg": "순창군",
+      "adm_cd": "35560350",
+      "lat": 35.337461671,
+      "lon": 127.1375486586
+    },
+    {
+      "code": "S130001058",
+      "name": "가천초등학교",
+      "sgg": "완주군",
+      "adm_cd": "35510410",
+      "lat": 36.0329405754,
+      "lon": 127.2641626963
+    },
+    {
+      "code": "S130001059",
+      "name": "간중초등학교",
+      "sgg": "완주군",
+      "adm_cd": "35510130",
+      "lat": 35.8911854447,
+      "lon": 127.1813629963
+    },
+    {
+      "code": "S130001061",
+      "name": "삼우초등학교",
+      "sgg": "완주군",
+      "adm_cd": "35510360",
+      "lat": 35.9672408297,
+      "lon": 127.1805079573
+    },
+    {
+      "code": "S130001062",
+      "name": "고산초등학교",
+      "sgg": "완주군",
+      "adm_cd": "35510360",
+      "lat": 35.9754516586,
+      "lon": 127.2141439004
+    },
+    {
+      "code": "S130001064",
+      "name": "구이초등학교",
+      "sgg": "완주군",
+      "adm_cd": "35510350",
+      "lat": 35.7211008353,
+      "lon": 127.1196638698
+    },
+    {
+      "code": "S130001065",
+      "name": "남관초등학교",
+      "sgg": "완주군",
+      "adm_cd": "35510320",
+      "lat": 35.7233272663,
+      "lon": 127.2336621222
+    },
+    {
+      "code": "S130001066",
+      "name": "대덕초등학교",
+      "sgg": "완주군",
+      "adm_cd": "35510350",
+      "lat": 35.6607714695,
+      "lon": 127.110671364
+    },
+    {
+      "code": "S130001067",
+      "name": "동상초등학교",
+      "sgg": "완주군",
+      "adm_cd": "35510400",
+      "lat": 35.9577450429,
+      "lon": 127.293792771
+    },
+    {
+      "code": "S130001068",
+      "name": "동양초등학교",
+      "sgg": "완주군",
+      "adm_cd": "35510340",
+      "lat": 35.844086156,
+      "lon": 127.2712524432
+    },
+    {
+      "code": "S130001069",
+      "name": "봉동초등학교",
+      "sgg": "완주군",
+      "adm_cd": "35510120",
+      "lat": 35.9384731273,
+      "lon": 127.1629657028
+    },
+    {
+      "code": "S130001070",
+      "name": "봉동초등학교양화분교장",
+      "sgg": "완주군",
+      "adm_cd": "35510360",
+      "lat": 35.9456328264,
+      "lon": 127.2051302649
+    },
+    {
+      "code": "S130001071",
+      "name": "봉서초등학교",
+      "sgg": "완주군",
+      "adm_cd": "35510120",
+      "lat": 35.9632120909,
+      "lon": 127.1255399228
+    },
+    {
+      "code": "S130001072",
+      "name": "봉성초등학교",
+      "sgg": "완주군",
+      "adm_cd": "35510120",
+      "lat": 35.922935895,
+      "lon": 127.1546392159
+    },
+    {
+      "code": "S130001073",
+      "name": "비봉초등학교",
+      "sgg": "완주군",
+      "adm_cd": "35510370",
+      "lat": 35.9982881526,
+      "lon": 127.138673631
+    },
+    {
+      "code": "S130001075",
+      "name": "삼례동초등학교",
+      "sgg": "완주군",
+      "adm_cd": "35510110",
+      "lat": 35.9225234863,
+      "lon": 127.1177771301
+    },
+    {
+      "code": "S130001076",
+      "name": "삼례중앙초등학교",
+      "sgg": "완주군",
+      "adm_cd": "35510110",
+      "lat": 35.9194752273,
+      "lon": 127.0810722745
+    },
+    {
+      "code": "S130001077",
+      "name": "삼례초등학교",
+      "sgg": "완주군",
+      "adm_cd": "35510110",
+      "lat": 35.9103696495,
+      "lon": 127.0685089256
+    },
+    {
+      "code": "S130001078",
+      "name": "상관초등학교",
+      "sgg": "완주군",
+      "adm_cd": "35510320",
+      "lat": 35.7723168295,
+      "lon": 127.2059538282
+    },
+    {
+      "code": "S130001079",
+      "name": "소양서초등학교",
+      "sgg": "완주군",
+      "adm_cd": "35510340",
+      "lat": 35.8594768252,
+      "lon": 127.210587643
+    },
+    {
+      "code": "S130001080",
+      "name": "소양초등학교",
+      "sgg": "완주군",
+      "adm_cd": "35510340",
+      "lat": 35.8569969974,
+      "lon": 127.2346803502
+    },
+    {
+      "code": "S130001081",
+      "name": "송광초등학교",
+      "sgg": "완주군",
+      "adm_cd": "35510340",
+      "lat": 35.8856247622,
+      "lon": 127.2452881903
+    },
+    {
+      "code": "S130001082",
+      "name": "용봉초등학교",
+      "sgg": "완주군",
+      "adm_cd": "35510120",
+      "lat": 35.9056120939,
+      "lon": 127.1560766289
+    },
+    {
+      "code": "S130001083",
+      "name": "용진초등학교",
+      "sgg": "완주군",
+      "adm_cd": "35510130",
+      "lat": 35.8571793743,
+      "lon": 127.1765604089
+    },
+    {
+      "code": "S130001084",
+      "name": "운주초등학교",
+      "sgg": "완주군",
+      "adm_cd": "35510380",
+      "lat": 36.0921557829,
+      "lon": 127.2779073887
+    },
+    {
+      "code": "S130001086",
+      "name": "이서초등학교",
+      "sgg": "완주군",
+      "adm_cd": "35510330",
+      "lat": 35.8199881377,
+      "lon": 127.0248483562
+    },
+    {
+      "code": "S130001087",
+      "name": "이성초등학교",
+      "sgg": "완주군",
+      "adm_cd": "35510330",
+      "lat": 35.7975741808,
+      "lon": 127.0450363999
+    },
+    {
+      "code": "S130001088",
+      "name": "청명초등학교",
+      "sgg": "완주군",
+      "adm_cd": "35510350",
+      "lat": 35.7516700869,
+      "lon": 127.1250962788
+    },
+    {
+      "code": "S130001089",
+      "name": "청완초등학교",
+      "sgg": "완주군",
+      "adm_cd": "35510120",
+      "lat": 35.9636678645,
+      "lon": 127.1205121032
+    },
+    {
+      "code": "S130001090",
+      "name": "태봉초등학교",
+      "sgg": "완주군",
+      "adm_cd": "35510350",
+      "lat": 35.7455770356,
+      "lon": 127.1492165396
+    },
+    {
+      "code": "S130001091",
+      "name": "화산초등학교",
+      "sgg": "완주군",
+      "adm_cd": "35510390",
+      "lat": 36.0351483201,
+      "lon": 127.2043191278
+    },
+    {
+      "code": "S130001151",
+      "name": "금마초등학교",
+      "sgg": "익산시",
+      "adm_cd": "35030400",
+      "lat": 35.9916316861,
+      "lon": 127.0567219421
+    },
+    {
+      "code": "S130001153",
+      "name": "낭산초등학교",
+      "sgg": "익산시",
+      "adm_cd": "35030370",
+      "lat": 36.0668968267,
+      "lon": 127.014861111
+    },
+    {
+      "code": "S130001154",
+      "name": "다송초등학교",
+      "sgg": "익산시",
+      "adm_cd": "35030110",
+      "lat": 36.0414567434,
+      "lon": 126.9550714791
+    },
+    {
+      "code": "S130001155",
+      "name": "망성초등학교",
+      "sgg": "익산시",
+      "adm_cd": "35030380",
+      "lat": 36.1209239378,
+      "lon": 127.0298936396
+    },
+    {
+      "code": "S130001156",
+      "name": "미륵초등학교",
+      "sgg": "익산시",
+      "adm_cd": "35030400",
+      "lat": 36.0021657965,
+      "lon": 127.0224974765
+    },
+    {
+      "code": "S130001157",
+      "name": "삼기초등학교",
+      "sgg": "익산시",
+      "adm_cd": "35030430",
+      "lat": 36.0204115151,
+      "lon": 126.9850366841
+    },
+    {
+      "code": "S130001158",
+      "name": "석불초등학교",
+      "sgg": "익산시",
+      "adm_cd": "35030430",
+      "lat": 36.0300806629,
+      "lon": 127.0065860837
+    },
+    {
+      "code": "S130001160",
+      "name": "성당초등학교",
+      "sgg": "익산시",
+      "adm_cd": "35030350",
+      "lat": 36.1003460251,
+      "lon": 126.9270988487
+    },
+    {
+      "code": "S130001162",
+      "name": "성북초등학교",
+      "sgg": "익산시",
+      "adm_cd": "35030380",
+      "lat": 36.1468642732,
+      "lon": 127.0087825916
+    },
+    {
+      "code": "S130001166",
+      "name": "여산초등학교",
+      "sgg": "익산시",
+      "adm_cd": "35030390",
+      "lat": 36.0590542506,
+      "lon": 127.0871599474
+    },
+    {
+      "code": "S130001167",
+      "name": "영만초등학교",
+      "sgg": "익산시",
+      "adm_cd": "35030310",
+      "lat": 35.9477349514,
+      "lon": 126.9309933209
+    },
+    {
+      "code": "S130001168",
+      "name": "오산남초등학교",
+      "sgg": "익산시",
+      "adm_cd": "35030310",
+      "lat": 35.9282367392,
+      "lon": 126.8931002759
+    },
+    {
+      "code": "S130001169",
+      "name": "오산초등학교",
+      "sgg": "익산시",
+      "adm_cd": "35030310",
+      "lat": 35.9419282103,
+      "lon": 126.9154336616
+    },
+    {
+      "code": "S130001170",
+      "name": "왕궁남초등학교",
+      "sgg": "익산시",
+      "adm_cd": "35030410",
+      "lat": 35.9269015209,
+      "lon": 127.0754907396
+    },
+    {
+      "code": "S130001171",
+      "name": "왕궁초등학교",
+      "sgg": "익산시",
+      "adm_cd": "35030410",
+      "lat": 35.9665062169,
+      "lon": 127.0903640402
+    },
+    {
+      "code": "S130001172",
+      "name": "왕북초등학교",
+      "sgg": "익산시",
+      "adm_cd": "35030410",
+      "lat": 35.9910195694,
+      "lon": 127.1040611245
+    },
+    {
+      "code": "S130001173",
+      "name": "용남초등학교",
+      "sgg": "익산시",
+      "adm_cd": "35030360",
+      "lat": 36.0954569996,
+      "lon": 126.9625028754
+    },
+    {
+      "code": "S130001174",
+      "name": "용북초등학교",
+      "sgg": "익산시",
+      "adm_cd": "35030360",
+      "lat": 36.1344900724,
+      "lon": 126.9470838644
+    },
+    {
+      "code": "S130001175",
+      "name": "용산초등학교",
+      "sgg": "익산시",
+      "adm_cd": "35030320",
+      "lat": 36.0405225781,
+      "lon": 126.9378234274
+    },
+    {
+      "code": "S130001176",
+      "name": "용성초등학교",
+      "sgg": "익산시",
+      "adm_cd": "35030370",
+      "lat": 36.0562020151,
+      "lon": 126.9997025516
+    },
+    {
+      "code": "S130001177",
+      "name": "용안초등학교",
+      "sgg": "익산시",
+      "adm_cd": "35030360",
+      "lat": 36.1204970638,
+      "lon": 126.9539912372
+    },
+    {
+      "code": "S130001179",
+      "name": "웅포초등학교",
+      "sgg": "익산시",
+      "adm_cd": "35030340",
+      "lat": 36.0647522454,
+      "lon": 126.8782061616
+    },
+    {
+      "code": "S130001180",
+      "name": "이리계문초등학교",
+      "sgg": "익산시",
+      "adm_cd": "35030650",
+      "lat": 35.9734089285,
+      "lon": 126.9437878048
+    },
+    {
+      "code": "S130001181",
+      "name": "이리고현초등학교",
+      "sgg": "익산시",
+      "adm_cd": "35030610",
+      "lat": 35.9520473967,
+      "lon": 126.9469597307
+    },
+    {
+      "code": "S130001182",
+      "name": "이리남창초등학교",
+      "sgg": "익산시",
+      "adm_cd": "35030590",
+      "lat": 35.945309019,
+      "lon": 126.9540087737
+    },
+    {
+      "code": "S130001183",
+      "name": "이리남초등학교",
+      "sgg": "익산시",
+      "adm_cd": "35030530",
+      "lat": 35.9143883286,
+      "lon": 126.9299631428
+    },
+    {
+      "code": "S130001184",
+      "name": "이리동남초등학교",
+      "sgg": "익산시",
+      "adm_cd": "35030570",
+      "lat": 35.9315612759,
+      "lon": 126.970660958
+    },
+    {
+      "code": "S130001185",
+      "name": "이리동북초등학교",
+      "sgg": "익산시",
+      "adm_cd": "35030660",
+      "lat": 35.9497550836,
+      "lon": 126.9687611007
+    },
+    {
+      "code": "S130001186",
+      "name": "이리동산초등학교",
+      "sgg": "익산시",
+      "adm_cd": "35030570",
+      "lat": 35.9322189884,
+      "lon": 126.9633868421
+    },
+    {
+      "code": "S130001187",
+      "name": "이리동초등학교",
+      "sgg": "익산시",
+      "adm_cd": "35030660",
+      "lat": 35.9574176338,
+      "lon": 126.9777546558
+    },
+    {
+      "code": "S130001188",
+      "name": "이리마한초등학교",
+      "sgg": "익산시",
+      "adm_cd": "35030710",
+      "lat": 35.9629297848,
+      "lon": 126.9786843132
+    },
+    {
+      "code": "S130001189",
+      "name": "이리모현초등학교",
+      "sgg": "익산시",
+      "adm_cd": "35030610",
+      "lat": 35.9453459467,
+      "lon": 126.9397068678
+    },
+    {
+      "code": "S130001190",
+      "name": "이리백제초등학교",
+      "sgg": "익산시",
+      "adm_cd": "35030710",
+      "lat": 35.962806321,
+      "lon": 126.9741303261
+    },
+    {
+      "code": "S130001191",
+      "name": "이리부송초등학교",
+      "sgg": "익산시",
+      "adm_cd": "35030700",
+      "lat": 35.9558513728,
+      "lon": 126.9937171555
+    },
+    {
+      "code": "S130001192",
+      "name": "이리부천초등학교",
+      "sgg": "익산시",
+      "adm_cd": "35030700",
+      "lat": 35.9565752704,
+      "lon": 126.9855985427
+    },
+    {
+      "code": "S130001193",
+      "name": "이리북일초등학교",
+      "sgg": "익산시",
+      "adm_cd": "35030650",
+      "lat": 35.963007691,
+      "lon": 126.9593019427
+    },
+    {
+      "code": "S130001194",
+      "name": "이리북초등학교",
+      "sgg": "익산시",
+      "adm_cd": "35030590",
+      "lat": 35.9526078914,
+      "lon": 126.9608369124
+    },
+    {
+      "code": "S130001195",
+      "name": "이리삼성초등학교",
+      "sgg": "익산시",
+      "adm_cd": "35030700",
+      "lat": 35.9882973142,
+      "lon": 126.9760249309
+    },
+    {
+      "code": "S130001196",
+      "name": "이리서초등학교",
+      "sgg": "익산시",
+      "adm_cd": "35030590",
+      "lat": 35.9457827788,
+      "lon": 126.9488303549
+    },
+    {
+      "code": "S130001197",
+      "name": "이리석암초등학교",
+      "sgg": "익산시",
+      "adm_cd": "35030690",
+      "lat": 35.9355733109,
+      "lon": 127.0082338759
+    },
+    {
+      "code": "S130001198",
+      "name": "이리송학초등학교",
+      "sgg": "익산시",
+      "adm_cd": "35030620",
+      "lat": 35.937000881,
+      "lon": 126.9405886942
+    },
+    {
+      "code": "S130001199",
+      "name": "이리신동초등학교",
+      "sgg": "익산시",
+      "adm_cd": "35030650",
+      "lat": 35.9616439701,
+      "lon": 126.9677143753
+    },
+    {
+      "code": "S130001200",
+      "name": "이리신흥초등학교",
+      "sgg": "익산시",
+      "adm_cd": "35030570",
+      "lat": 35.9349048187,
+      "lon": 126.978900178
+    },
+    {
+      "code": "S130001201",
+      "name": "익산어양초등학교",
+      "sgg": "익산시",
+      "adm_cd": "35030720",
+      "lat": 35.9616904136,
+      "lon": 126.983322853
+    },
+    {
+      "code": "S130001202",
+      "name": "이리영등초등학교",
+      "sgg": "익산시",
+      "adm_cd": "35030660",
+      "lat": 35.9532491531,
+      "lon": 126.9722579619
+    },
+    {
+      "code": "S130001203",
+      "name": "이리중앙초등학교",
+      "sgg": "익산시",
+      "adm_cd": "35030510",
+      "lat": 35.9367715479,
+      "lon": 126.9517130761
+    },
+    {
+      "code": "S130001204",
+      "name": "이리초등학교",
+      "sgg": "익산시",
+      "adm_cd": "35030580",
+      "lat": 35.9403937622,
+      "lon": 126.9593312718
+    },
+    {
+      "code": "S130001205",
+      "name": "이리팔봉초등학교",
+      "sgg": "익산시",
+      "adm_cd": "35030690",
+      "lat": 35.9673507066,
+      "lon": 127.0124655161
+    },
+    {
+      "code": "S130001206",
+      "name": "익산초등학교",
+      "sgg": "익산시",
+      "adm_cd": "35030720",
+      "lat": 35.9545268139,
+      "lon": 126.9797861612
+    },
+    {
+      "code": "S130001207",
+      "name": "천서초등학교",
+      "sgg": "익산시",
+      "adm_cd": "35030420",
+      "lat": 35.9462388977,
+      "lon": 127.0360344199
+    },
+    {
+      "code": "S130001208",
+      "name": "춘포초등학교",
+      "sgg": "익산시",
+      "adm_cd": "35030420",
+      "lat": 35.9023711502,
+      "lon": 127.0114007594
+    },
+    {
+      "code": "S130001209",
+      "name": "함라초등학교",
+      "sgg": "익산시",
+      "adm_cd": "35030330",
+      "lat": 36.0596946998,
+      "lon": 126.9111744504
+    },
+    {
+      "code": "S130001210",
+      "name": "함열초등학교",
+      "sgg": "익산시",
+      "adm_cd": "35030110",
+      "lat": 36.0792033891,
+      "lon": 126.9651662043
+    },
+    {
+      "code": "S130001211",
+      "name": "황등남초등학교",
+      "sgg": "익산시",
+      "adm_cd": "35030320",
+      "lat": 36.0032986756,
+      "lon": 126.9388242703
+    },
+    {
+      "code": "S130001212",
+      "name": "황등초등학교",
+      "sgg": "익산시",
+      "adm_cd": "35030320",
+      "lat": 36.0095993455,
+      "lon": 126.9447071861
+    },
+    {
+      "code": "S130001213",
+      "name": "흥왕초등학교",
+      "sgg": "익산시",
+      "adm_cd": "35030440",
+      "lat": 36.1050770308,
+      "lon": 126.9970458863
+    },
+    {
+      "code": "S130001308",
+      "name": "갈담초등학교",
+      "sgg": "임실군",
+      "adm_cd": "35550390",
+      "lat": 35.5318733677,
+      "lon": 127.1654097288
+    },
+    {
+      "code": "S130001311",
+      "name": "관촌초등학교",
+      "sgg": "임실군",
+      "adm_cd": "35550380",
+      "lat": 35.6767107885,
+      "lon": 127.270963251
+    },
+    {
+      "code": "S130001313",
+      "name": "대리초등학교",
+      "sgg": "임실군",
+      "adm_cd": "35550330",
+      "lat": 35.6594459046,
+      "lon": 127.2693367212
+    },
+    {
+      "code": "S130001314",
+      "name": "덕치초등학교",
+      "sgg": "임실군",
+      "adm_cd": "35550400",
+      "lat": 35.4962365723,
+      "lon": 127.1481258503
+    },
+    {
+      "code": "S130001316",
+      "name": "삼계초등학교",
+      "sgg": "임실군",
+      "adm_cd": "35550370",
+      "lat": 35.5072290524,
+      "lon": 127.2769711026
+    },
+    {
+      "code": "S130001318",
+      "name": "성수초등학교",
+      "sgg": "임실군",
+      "adm_cd": "35550340",
+      "lat": 35.6297486069,
+      "lon": 127.3308420024
+    },
+    {
+      "code": "S130001320",
+      "name": "신평초등학교",
+      "sgg": "임실군",
+      "adm_cd": "35550330",
+      "lat": 35.6573020918,
+      "lon": 127.2267243753
+    },
+    {
+      "code": "S130001322",
+      "name": "오수초등학교",
+      "sgg": "임실군",
+      "adm_cd": "35550350",
+      "lat": 35.5426115121,
+      "lon": 127.3283047059
+    },
+    {
+      "code": "S130001323",
+      "name": "운암초등학교",
+      "sgg": "임실군",
+      "adm_cd": "35550320",
+      "lat": 35.6637980545,
+      "lon": 127.1568548341
+    },
+    {
+      "code": "S130001324",
+      "name": "마암초등학교",
+      "sgg": "임실군",
+      "adm_cd": "35550320",
+      "lat": 35.6026680931,
+      "lon": 127.1046242266
+    },
+    {
+      "code": "S130001325",
+      "name": "임실기림초등학교",
+      "sgg": "임실군",
+      "adm_cd": "35550110",
+      "lat": 35.6286168352,
+      "lon": 127.2901860019
+    },
+    {
+      "code": "S130001327",
+      "name": "임실초등학교",
+      "sgg": "임실군",
+      "adm_cd": "35550110",
+      "lat": 35.6079919252,
+      "lon": 127.2715612986
+    },
+    {
+      "code": "S130001328",
+      "name": "지사초등학교",
+      "sgg": "임실군",
+      "adm_cd": "35550410",
+      "lat": 35.5645112013,
+      "lon": 127.3565472754
+    },
+    {
+      "code": "S130001329",
+      "name": "청웅초등학교",
+      "sgg": "임실군",
+      "adm_cd": "35550310",
+      "lat": 35.5713513814,
+      "lon": 127.2046395373
+    },
+    {
+      "code": "S130001352",
+      "name": "계남초등학교",
+      "sgg": "장수군",
+      "adm_cd": "35540350",
+      "lat": 35.7020438825,
+      "lon": 127.5784880817
+    },
+    {
+      "code": "S130001353",
+      "name": "계북초등학교",
+      "sgg": "장수군",
+      "adm_cd": "35540360",
+      "lat": 35.7875328029,
+      "lon": 127.6170732422
+    },
+    {
+      "code": "S130001358",
+      "name": "번암초등학교",
+      "sgg": "장수군",
+      "adm_cd": "35540320",
+      "lat": 35.5344728678,
+      "lon": 127.5472755418
+    },
+    {
+      "code": "S130001359",
+      "name": "번암초등학교동화분교장",
+      "sgg": "장수군",
+      "adm_cd": "35540320",
+      "lat": 35.5680560904,
+      "lon": 127.557235309
+    },
+    {
+      "code": "S130001360",
+      "name": "산서초등학교",
+      "sgg": "장수군",
+      "adm_cd": "35540310",
+      "lat": 35.5872276572,
+      "lon": 127.3946301973
+    },
+    {
+      "code": "S130001361",
+      "name": "수남초등학교",
+      "sgg": "장수군",
+      "adm_cd": "35540110",
+      "lat": 35.625059937,
+      "lon": 127.5075498748
+    },
+    {
+      "code": "S130001365",
+      "name": "장계초등학교",
+      "sgg": "장수군",
+      "adm_cd": "35540330",
+      "lat": 35.7320274279,
+      "lon": 127.5814018866
+    },
+    {
+      "code": "S130001366",
+      "name": "장수초등학교",
+      "sgg": "장수군",
+      "adm_cd": "35540110",
+      "lat": 35.6484240729,
+      "lon": 127.5220212912
+    },
+    {
+      "code": "S130001368",
+      "name": "천천초등학교",
+      "sgg": "장수군",
+      "adm_cd": "35540340",
+      "lat": 35.7356412212,
+      "lon": 127.5336085665
+    },
+    {
+      "code": "S130001423",
+      "name": "전주금암초등학교",
+      "sgg": "전주시덕진구",
+      "adm_cd": "35012721",
+      "lat": 35.8375912371,
+      "lon": 127.1366379956
+    },
+    {
+      "code": "S130001424",
+      "name": "전주금평초등학교",
+      "sgg": "전주시덕진구",
+      "adm_cd": "35012550",
+      "lat": 35.8439453266,
+      "lon": 127.1471313891
+    },
+    {
+      "code": "S130001425",
+      "name": "전주기린초등학교",
+      "sgg": "전주시덕진구",
+      "adm_cd": "35012560",
+      "lat": 35.8349678218,
+      "lon": 127.1592186819
+    },
+    {
+      "code": "S130001426",
+      "name": "전주남초등학교",
+      "sgg": "전주시완산구",
+      "adm_cd": "35011610",
+      "lat": 35.8034742963,
+      "lon": 127.1507519425
+    },
+    {
+      "code": "S130001427",
+      "name": "전주대성초등학교",
+      "sgg": "전주시완산구",
+      "adm_cd": "35011600",
+      "lat": 35.7976187028,
+      "lon": 127.1778578399
+    },
+    {
+      "code": "S130001428",
+      "name": "전주덕일초등학교",
+      "sgg": "전주시덕진구",
+      "adm_cd": "35012570",
+      "lat": 35.8484859885,
+      "lon": 127.1118846948
+    },
+    {
+      "code": "S130001429",
+      "name": "전주덕진초등학교",
+      "sgg": "전주시덕진구",
+      "adm_cd": "35012570",
+      "lat": 35.8414228506,
+      "lon": 127.1246935692
+    },
+    {
+      "code": "S130001431",
+      "name": "전주동북초등학교",
+      "sgg": "전주시덕진구",
+      "adm_cd": "35012550",
+      "lat": 35.8396110135,
+      "lon": 127.1450469234
+    },
+    {
+      "code": "S130001432",
+      "name": "전주동신초등학교",
+      "sgg": "전주시덕진구",
+      "adm_cd": "35012610",
+      "lat": 35.8517998514,
+      "lon": 127.1563452774
+    },
+    {
+      "code": "S130001433",
+      "name": "전주동초등학교",
+      "sgg": "전주시완산구",
+      "adm_cd": "35011760",
+      "lat": 35.8295257756,
+      "lon": 127.1524612719
+    },
+    {
+      "code": "S130001434",
+      "name": "전주만성초등학교",
+      "sgg": "전주시덕진구",
+      "adm_cd": "35012700",
+      "lat": 35.8366703842,
+      "lon": 127.065700604
+    },
+    {
+      "code": "S130001435",
+      "name": "전주문정초등학교",
+      "sgg": "전주시완산구",
+      "adm_cd": "35011650",
+      "lat": 35.7751764,
+      "lon": 127.1273627064
+    },
+    {
+      "code": "S130001436",
+      "name": "전주미산초등학교",
+      "sgg": "전주시덕진구",
+      "adm_cd": "35012660",
+      "lat": 35.8839794079,
+      "lon": 127.1096487699
+    },
+    {
+      "code": "S130001437",
+      "name": "전주반월초등학교",
+      "sgg": "전주시덕진구",
+      "adm_cd": "35012670",
+      "lat": 35.8752322821,
+      "lon": 127.0736610686
+    },
+    {
+      "code": "S130001438",
+      "name": "전주북일초등학교",
+      "sgg": "전주시덕진구",
+      "adm_cd": "35012540",
+      "lat": 35.8423524394,
+      "lon": 127.1553017518
+    },
+    {
+      "code": "S130001439",
+      "name": "전주북초등학교",
+      "sgg": "전주시덕진구",
+      "adm_cd": "35012630",
+      "lat": 35.8565920761,
+      "lon": 127.1512177803
+    },
+    {
+      "code": "S130001440",
+      "name": "전주삼천남초등학교",
+      "sgg": "전주시완산구",
+      "adm_cd": "35011680",
+      "lat": 35.7961763834,
+      "lon": 127.1234247619
+    },
+    {
+      "code": "S130001441",
+      "name": "전주삼천초등학교",
+      "sgg": "전주시완산구",
+      "adm_cd": "35011670",
+      "lat": 35.800790788,
+      "lon": 127.1234872151
+    },
+    {
+      "code": "S130001442",
+      "name": "전주서곡초등학교",
+      "sgg": "전주시완산구",
+      "adm_cd": "35011790",
+      "lat": 35.8328976462,
+      "lon": 127.0998300774
+    },
+    {
+      "code": "S130001443",
+      "name": "전주서문초등학교",
+      "sgg": "전주시완산구",
+      "adm_cd": "35011660",
+      "lat": 35.8298007392,
+      "lon": 127.1122922946
+    },
+    {
+      "code": "S130001444",
+      "name": "전주서신초등학교",
+      "sgg": "전주시완산구",
+      "adm_cd": "35011660",
+      "lat": 35.8296480427,
+      "lon": 127.1245722214
+    },
+    {
+      "code": "S130001445",
+      "name": "전주서원초등학교",
+      "sgg": "전주시완산구",
+      "adm_cd": "35011710",
+      "lat": 35.8100564264,
+      "lon": 127.1192616569
+    },
+    {
+      "code": "S130001446",
+      "name": "전주서일초등학교",
+      "sgg": "전주시완산구",
+      "adm_cd": "35011660",
+      "lat": 35.8363881861,
+      "lon": 127.1149933423
+    },
+    {
+      "code": "S130001447",
+      "name": "전주서천초등학교",
+      "sgg": "전주시완산구",
+      "adm_cd": "35011660",
+      "lat": 35.8325108836,
+      "lon": 127.1092945859
+    },
+    {
+      "code": "S130001448",
+      "name": "전주송북초등학교",
+      "sgg": "전주시덕진구",
+      "adm_cd": "35012650",
+      "lat": 35.8634203552,
+      "lon": 127.1241467423
+    },
+    {
+      "code": "S130001449",
+      "name": "전주송원초등학교",
+      "sgg": "전주시덕진구",
+      "adm_cd": "35012660",
+      "lat": 35.8621205968,
+      "lon": 127.1114299849
+    },
+    {
+      "code": "S130001450",
+      "name": "전주송천초등학교",
+      "sgg": "전주시덕진구",
+      "adm_cd": "35012660",
+      "lat": 35.8578333319,
+      "lon": 127.1198557312
+    },
+    {
+      "code": "S130001451",
+      "name": "전주신동초등학교",
+      "sgg": "전주시덕진구",
+      "adm_cd": "35012650",
+      "lat": 35.8690848843,
+      "lon": 127.1265915623
+    },
+    {
+      "code": "S130001452",
+      "name": "전주신성초등학교",
+      "sgg": "전주시완산구",
+      "adm_cd": "35011650",
+      "lat": 35.7904326161,
+      "lon": 127.1343647883
+    },
+    {
+      "code": "S130001453",
+      "name": "전주아중초등학교",
+      "sgg": "전주시덕진구",
+      "adm_cd": "35012620",
+      "lat": 35.8281974474,
+      "lon": 127.1748715605
+    },
+    {
+      "code": "S130001454",
+      "name": "전주양지초등학교",
+      "sgg": "전주시완산구",
+      "adm_cd": "35011650",
+      "lat": 35.7925074202,
+      "lon": 127.1259522921
+    },
+    {
+      "code": "S130001455",
+      "name": "전주완산서초등학교",
+      "sgg": "전주시완산구",
+      "adm_cd": "35011770",
+      "lat": 35.807060943,
+      "lon": 127.1327243325
+    },
+    {
+      "code": "S130001456",
+      "name": "전주완산초등학교",
+      "sgg": "전주시완산구",
+      "adm_cd": "35011770",
+      "lat": 35.8104012175,
+      "lon": 127.1435332733
+    },
+    {
+      "code": "S130001457",
+      "name": "전주용덕초등학교",
+      "sgg": "전주시덕진구",
+      "adm_cd": "35012670",
+      "lat": 35.8769418024,
+      "lon": 127.0514619796
+    },
+    {
+      "code": "S130001458",
+      "name": "전주용흥초등학교",
+      "sgg": "전주시완산구",
+      "adm_cd": "35011690",
+      "lat": 35.7945253078,
+      "lon": 127.1123532645
+    },
+    {
+      "code": "S130001459",
+      "name": "전주우전초등학교",
+      "sgg": "전주시완산구",
+      "adm_cd": "35011780",
+      "lat": 35.8056014941,
+      "lon": 127.1067926841
+    },
+    {
+      "code": "S130001460",
+      "name": "전주원동초등학교",
+      "sgg": "전주시덕진구",
+      "adm_cd": "35012670",
+      "lat": 35.8513850528,
+      "lon": 127.0332416151
+    },
+    {
+      "code": "S130001461",
+      "name": "전주인봉초등학교",
+      "sgg": "전주시덕진구",
+      "adm_cd": "35012560",
+      "lat": 35.8270002502,
+      "lon": 127.1648999576
+    },
+    {
+      "code": "S130001462",
+      "name": "전주인후초등학교",
+      "sgg": "전주시덕진구",
+      "adm_cd": "35012560",
+      "lat": 35.8317224933,
+      "lon": 127.1625103018
+    },
+    {
+      "code": "S130001463",
+      "name": "전주장동초등학교",
+      "sgg": "전주시덕진구",
+      "adm_cd": "35012710",
+      "lat": 35.849384751,
+      "lon": 127.0598927369
+    },
+    {
+      "code": "S130001464",
+      "name": "전주전라초등학교",
+      "sgg": "전주시덕진구",
+      "adm_cd": "35012540",
+      "lat": 35.839151451,
+      "lon": 127.1522693864
+    },
+    {
+      "code": "S130001465",
+      "name": "전주전일초등학교",
+      "sgg": "전주시덕진구",
+      "adm_cd": "35012690",
+      "lat": 35.8299659767,
+      "lon": 127.1371804971
+    },
+    {
+      "code": "S130001466",
+      "name": "전주조촌초등학교",
+      "sgg": "전주시덕진구",
+      "adm_cd": "35012710",
+      "lat": 35.8694698331,
+      "lon": 127.0762910421
+    },
+    {
+      "code": "S130001467",
+      "name": "전주중산초등학교",
+      "sgg": "전주시완산구",
+      "adm_cd": "35011630",
+      "lat": 35.8173823244,
+      "lon": 127.119718551
+    },
+    {
+      "code": "S130001468",
+      "name": "전주중앙초등학교",
+      "sgg": "전주시완산구",
+      "adm_cd": "35011750",
+      "lat": 35.8149051134,
+      "lon": 127.15137549
+    },
+    {
+      "code": "S130001469",
+      "name": "전주중인초등학교",
+      "sgg": "전주시완산구",
+      "adm_cd": "35011690",
+      "lat": 35.7710476993,
+      "lon": 127.0974657092
+    },
+    {
+      "code": "S130001470",
+      "name": "전주지곡초등학교",
+      "sgg": "전주시완산구",
+      "adm_cd": "35011650",
+      "lat": 35.7842081013,
+      "lon": 127.1330845239
+    },
+    {
+      "code": "S130001471",
+      "name": "전주진북초등학교",
+      "sgg": "전주시덕진구",
+      "adm_cd": "35012690",
+      "lat": 35.8260240412,
+      "lon": 127.1322025636
+    },
+    {
+      "code": "S130001472",
+      "name": "전주초등학교",
+      "sgg": "전주시완산구",
+      "adm_cd": "35011740",
+      "lat": 35.822601668,
+      "lon": 127.1396333739
+    },
+    {
+      "code": "S130001473",
+      "name": "전주초포초등학교",
+      "sgg": "전주시덕진구",
+      "adm_cd": "35012630",
+      "lat": 35.8771816295,
+      "lon": 127.1396958713
+    },
+    {
+      "code": "S130001474",
+      "name": "전주팔복초등학교",
+      "sgg": "전주시덕진구",
+      "adm_cd": "35012710",
+      "lat": 35.8636419738,
+      "lon": 127.0945363875
+    },
+    {
+      "code": "S130001475",
+      "name": "전주평화초등학교",
+      "sgg": "전주시완산구",
+      "adm_cd": "35011640",
+      "lat": 35.7996455598,
+      "lon": 127.138924986
+    },
+    {
+      "code": "S130001476",
+      "name": "전주풍남초등학교",
+      "sgg": "전주시완산구",
+      "adm_cd": "35011760",
+      "lat": 35.8222853878,
+      "lon": 127.1536204374
+    },
+    {
+      "code": "S130001477",
+      "name": "전주한들초등학교",
+      "sgg": "전주시완산구",
+      "adm_cd": "35011630",
+      "lat": 35.8213531135,
+      "lon": 127.1171405955
+    },
+    {
+      "code": "S130001478",
+      "name": "전주화산초등학교",
+      "sgg": "전주시완산구",
+      "adm_cd": "35011620",
+      "lat": 35.809544768,
+      "lon": 127.1294666838
+    },
+    {
+      "code": "S130001479",
+      "name": "전주효림초등학교",
+      "sgg": "전주시완산구",
+      "adm_cd": "35011720",
+      "lat": 35.803112133,
+      "lon": 127.1127946188
+    },
+    {
+      "code": "S130001480",
+      "name": "전주효문초등학교",
+      "sgg": "전주시완산구",
+      "adm_cd": "35011720",
+      "lat": 35.8020346524,
+      "lon": 127.1161298014
+    },
+    {
+      "code": "S130001481",
+      "name": "전주효자초등학교",
+      "sgg": "전주시완산구",
+      "adm_cd": "35011710",
+      "lat": 35.8033225217,
+      "lon": 127.1225219686
+    },
+    {
+      "code": "S130001604",
+      "name": "감곡초등학교",
+      "sgg": "정읍시",
+      "adm_cd": "35040400",
+      "lat": 35.7186898529,
+      "lon": 126.9262268808
+    },
+    {
+      "code": "S130001605",
+      "name": "고부초등학교",
+      "sgg": "정읍시",
+      "adm_cd": "35040340",
+      "lat": 35.6216080086,
+      "lon": 126.771597029
+    },
+    {
+      "code": "S130001607",
+      "name": "교암초등학교",
+      "sgg": "정읍시",
+      "adm_cd": "35040590",
+      "lat": 35.527014425,
+      "lon": 126.8461549307
+    },
+    {
+      "code": "S130001608",
+      "name": "내장초등학교",
+      "sgg": "정읍시",
+      "adm_cd": "35040530",
+      "lat": 35.5353858267,
+      "lon": 126.8929017221
+    },
+    {
+      "code": "S130001609",
+      "name": "능교초등학교",
+      "sgg": "정읍시",
+      "adm_cd": "35040430",
+      "lat": 35.5680887628,
+      "lon": 127.0316813288
+    },
+    {
+      "code": "S130001611",
+      "name": "대흥초등학교",
+      "sgg": "정읍시",
+      "adm_cd": "35040320",
+      "lat": 35.5252039467,
+      "lon": 126.8079758606
+    },
+    {
+      "code": "S130001612",
+      "name": "덕천초등학교",
+      "sgg": "정읍시",
+      "adm_cd": "35040360",
+      "lat": 35.6212272221,
+      "lon": 126.8449470177
+    },
+    {
+      "code": "S130001614",
+      "name": "동신초등학교",
+      "sgg": "정읍시",
+      "adm_cd": "35040530",
+      "lat": 35.5586622893,
+      "lon": 126.8653833933
+    },
+    {
+      "code": "S130001616",
+      "name": "백암초등학교",
+      "sgg": "정읍시",
+      "adm_cd": "35040420",
+      "lat": 35.6117966487,
+      "lon": 126.9508992517
+    },
+    {
+      "code": "S130001618",
+      "name": "보성초등학교",
+      "sgg": "정읍시",
+      "adm_cd": "35040310",
+      "lat": 35.6026740054,
+      "lon": 126.9280506917
+    },
+    {
+      "code": "S130001619",
+      "name": "북면초등학교",
+      "sgg": "정읍시",
+      "adm_cd": "35040310",
+      "lat": 35.6035836159,
+      "lon": 126.8871726515
+    },
+    {
+      "code": "S130001620",
+      "name": "산외초등학교",
+      "sgg": "정읍시",
+      "adm_cd": "35040440",
+      "lat": 35.6206348321,
+      "lon": 127.0415967853
+    },
+    {
+      "code": "S130001622",
+      "name": "서신초등학교",
+      "sgg": "정읍시",
+      "adm_cd": "35040590",
+      "lat": 35.5633396064,
+      "lon": 126.821959763
+    },
+    {
+      "code": "S130001623",
+      "name": "소성초등학교",
+      "sgg": "정읍시",
+      "adm_cd": "35040330",
+      "lat": 35.5553532025,
+      "lon": 126.7779571363
+    },
+    {
+      "code": "S130001624",
+      "name": "수곡초등학교",
+      "sgg": "정읍시",
+      "adm_cd": "35040420",
+      "lat": 35.568511362,
+      "lon": 126.9589861428
+    },
+    {
+      "code": "S130001627",
+      "name": "신태인초등학교",
+      "sgg": "정읍시",
+      "adm_cd": "35040110",
+      "lat": 35.6870777515,
+      "lon": 126.8899363805
+    },
+    {
+      "code": "S130001629",
+      "name": "영산초등학교",
+      "sgg": "정읍시",
+      "adm_cd": "35040510",
+      "lat": 35.5995928532,
+      "lon": 126.862984206
+    },
+    {
+      "code": "S130001630",
+      "name": "영원초등학교",
+      "sgg": "정읍시",
+      "adm_cd": "35040350",
+      "lat": 35.655826869,
+      "lon": 126.7846674686
+    },
+    {
+      "code": "S130001632",
+      "name": "옹동초등학교",
+      "sgg": "정읍시",
+      "adm_cd": "35040410",
+      "lat": 35.6475495939,
+      "lon": 126.9769928553
+    },
+    {
+      "code": "S130001636",
+      "name": "이평초등학교",
+      "sgg": "정읍시",
+      "adm_cd": "35040370",
+      "lat": 35.6630139441,
+      "lon": 126.8390515356
+    },
+    {
+      "code": "S130001637",
+      "name": "입암초등학교",
+      "sgg": "정읍시",
+      "adm_cd": "35040320",
+      "lat": 35.5055379988,
+      "lon": 126.7972779312
+    },
+    {
+      "code": "S130001638",
+      "name": "정남초등학교",
+      "sgg": "정읍시",
+      "adm_cd": "35040380",
+      "lat": 35.62234366,
+      "lon": 126.8649433825
+    },
+    {
+      "code": "S130001639",
+      "name": "정우초등학교",
+      "sgg": "정읍시",
+      "adm_cd": "35040380",
+      "lat": 35.6519288601,
+      "lon": 126.8798165822
+    },
+    {
+      "code": "S130001640",
+      "name": "정읍남초등학교",
+      "sgg": "정읍시",
+      "adm_cd": "35040600",
+      "lat": 35.5610909882,
+      "lon": 126.8491407698
+    },
+    {
+      "code": "S130001641",
+      "name": "정읍동초등학교",
+      "sgg": "정읍시",
+      "adm_cd": "35040520",
+      "lat": 35.5673500893,
+      "lon": 126.8615653776
+    },
+    {
+      "code": "S130001642",
+      "name": "정읍북초등학교",
+      "sgg": "정읍시",
+      "adm_cd": "35040580",
+      "lat": 35.5797197424,
+      "lon": 126.8497347069
+    },
+    {
+      "code": "S130001643",
+      "name": "정읍서초등학교",
+      "sgg": "정읍시",
+      "adm_cd": "35040570",
+      "lat": 35.5701841438,
+      "lon": 126.8469637818
+    },
+    {
+      "code": "S130001644",
+      "name": "정읍수성초등학교",
+      "sgg": "정읍시",
+      "adm_cd": "35040510",
+      "lat": 35.5845413667,
+      "lon": 126.8568885489
+    },
+    {
+      "code": "S130001645",
+      "name": "정일초등학교",
+      "sgg": "정읍시",
+      "adm_cd": "35040580",
+      "lat": 35.5902322383,
+      "lon": 126.8205849747
+    },
+    {
+      "code": "S130001646",
+      "name": "칠보초등학교",
+      "sgg": "정읍시",
+      "adm_cd": "35040420",
+      "lat": 35.6071006233,
+      "lon": 126.9904115272
+    },
+    {
+      "code": "S130001647",
+      "name": "태인초등학교",
+      "sgg": "정읍시",
+      "adm_cd": "35040390",
+      "lat": 35.6547132663,
+      "lon": 126.9465474552
+    },
+    {
+      "code": "S130001721",
+      "name": "동향초등학교",
+      "sgg": "진안군",
+      "adm_cd": "35520330",
+      "lat": 35.8397616653,
+      "lon": 127.5665849729
+    },
+    {
+      "code": "S130001722",
+      "name": "마령초등학교",
+      "sgg": "진안군",
+      "adm_cd": "35520370",
+      "lat": 35.7355148545,
+      "lon": 127.3693757065
+    },
+    {
+      "code": "S130001723",
+      "name": "백운초등학교",
+      "sgg": "진안군",
+      "adm_cd": "35520350",
+      "lat": 35.6920163089,
+      "lon": 127.3986380113
+    },
+    {
+      "code": "S130001724",
+      "name": "부귀초등학교",
+      "sgg": "진안군",
+      "adm_cd": "35520380",
+      "lat": 35.837829714,
+      "lon": 127.3609948057
+    },
+    {
+      "code": "S130001727",
+      "name": "송풍초등학교",
+      "sgg": "진안군",
+      "adm_cd": "35520310",
+      "lat": 35.9647218997,
+      "lon": 127.5182330011
+    },
+    {
+      "code": "S130001728",
+      "name": "안천초등학교",
+      "sgg": "진안군",
+      "adm_cd": "35520320",
+      "lat": 35.9006979554,
+      "lon": 127.5600759544
+    },
+    {
+      "code": "S130001730",
+      "name": "오천초등학교",
+      "sgg": "진안군",
+      "adm_cd": "35520110",
+      "lat": 35.7762525391,
+      "lon": 127.4929148715
+    },
+    {
+      "code": "S130001731",
+      "name": "외궁초등학교",
+      "sgg": "진안군",
+      "adm_cd": "35520360",
+      "lat": 35.7070570449,
+      "lon": 127.3254238972
+    },
+    {
+      "code": "S130001733",
+      "name": "장승초등학교",
+      "sgg": "진안군",
+      "adm_cd": "35520380",
+      "lat": 35.79939358,
+      "lon": 127.3346149846
+    },
+    {
+      "code": "S130001734",
+      "name": "조림초등학교",
+      "sgg": "진안군",
+      "adm_cd": "35520390",
+      "lat": 35.8724867508,
+      "lon": 127.430380705
+    },
+    {
+      "code": "S130001737",
+      "name": "주천초등학교",
+      "sgg": "진안군",
+      "adm_cd": "35520400",
+      "lat": 35.9763418316,
+      "lon": 127.4263092237
+    },
+    {
+      "code": "S130001741",
+      "name": "진안중앙초등학교",
+      "sgg": "진안군",
+      "adm_cd": "35520110",
+      "lat": 35.7956908051,
+      "lon": 127.4359885262
+    },
+    {
+      "code": "S130001742",
+      "name": "진안초등학교",
+      "sgg": "진안군",
+      "adm_cd": "35520110",
+      "lat": 35.7909656675,
+      "lon": 127.4235912859
+    },
+    {
+      "code": "S130002454",
+      "name": "익산궁동초등학교",
+      "sgg": "익산시",
+      "adm_cd": "35030700",
+      "lat": 35.9626106679,
+      "lon": 126.9936368031
+    },
+    {
+      "code": "S130002462",
+      "name": "정읍초등학교",
+      "sgg": "정읍시",
+      "adm_cd": "35040510",
+      "lat": 35.5878979909,
+      "lon": 126.8632733584
+    },
+    {
+      "code": "S130002463",
+      "name": "전주여울초등학교",
+      "sgg": "전주시완산구",
+      "adm_cd": "35011660",
+      "lat": 35.8376732799,
+      "lon": 127.111269609
+    },
+    {
+      "code": "S130002468",
+      "name": "전주용소초등학교",
+      "sgg": "전주시덕진구",
+      "adm_cd": "35012660",
+      "lat": 35.8622155401,
+      "lon": 127.1177188463
+    },
+    {
+      "code": "S130002478",
+      "name": "전주대정초등학교",
+      "sgg": "전주시완산구",
+      "adm_cd": "35011650",
+      "lat": 35.7858530884,
+      "lon": 127.1253710402
+    },
+    {
+      "code": "S130002479",
+      "name": "전주용와초등학교",
+      "sgg": "전주시완산구",
+      "adm_cd": "35011690",
+      "lat": 35.791455008,
+      "lon": 127.1148887506
+    },
+    {
+      "code": "S130002498",
+      "name": "군산미성초등학교",
+      "sgg": "군산시",
+      "adm_cd": "35020730",
+      "lat": 35.9579185473,
+      "lon": 126.6742640434
+    },
+    {
+      "code": "S130002499",
+      "name": "군산진포초등학교",
+      "sgg": "군산시",
+      "adm_cd": "35020710",
+      "lat": 35.965817236,
+      "lon": 126.7050332421
+    },
+    {
+      "code": "S130002502",
+      "name": "익산옥야초등학교",
+      "sgg": "익산시",
+      "adm_cd": "35030570",
+      "lat": 35.9222176335,
+      "lon": 126.9598103743
+    },
+    {
+      "code": "S130002506",
+      "name": "전주만수초등학교",
+      "sgg": "전주시덕진구",
+      "adm_cd": "35012630",
+      "lat": 35.8626099031,
+      "lon": 127.1474681349
+    },
+    {
+      "code": "S130002507",
+      "name": "전주오송초등학교",
+      "sgg": "전주시덕진구",
+      "adm_cd": "35012650",
+      "lat": 35.8660382097,
+      "lon": 127.1303734213
+    },
+    {
+      "code": "S130002542",
+      "name": "익산한벌초등학교",
+      "sgg": "익산시",
+      "adm_cd": "35030700",
+      "lat": 35.9590165648,
+      "lon": 126.9944573967
+    },
+    {
+      "code": "S130002543",
+      "name": "한솔초등학교",
+      "sgg": "정읍시",
+      "adm_cd": "35040530",
+      "lat": 35.561720109,
+      "lon": 126.8725832207
+    },
+    {
+      "code": "S130002572",
+      "name": "전주문학초등학교",
+      "sgg": "전주시완산구",
+      "adm_cd": "35011790",
+      "lat": 35.8281547094,
+      "lon": 127.1025798135
+    },
+    {
+      "code": "S130002573",
+      "name": "전주우림초등학교",
+      "sgg": "전주시완산구",
+      "adm_cd": "35011780",
+      "lat": 35.8066722447,
+      "lon": 127.0982792687
+    },
+    {
+      "code": "S130002582",
+      "name": "군산미장초등학교",
+      "sgg": "군산시",
+      "adm_cd": "35020690",
+      "lat": 35.9656506825,
+      "lon": 126.727600709
+    },
+    {
+      "code": "S130002606",
+      "name": "군산푸른솔초등학교",
+      "sgg": "군산시",
+      "adm_cd": "35020690",
+      "lat": 35.9616580612,
+      "lon": 126.7113452911
+    },
+    {
+      "code": "S130002673",
+      "name": "군산아리울초등학교",
+      "sgg": "군산시",
+      "adm_cd": "35020690",
+      "lat": 35.9675877962,
+      "lon": 126.7203125312
+    },
+    {
+      "code": "S130002690",
+      "name": "새만금초등학교",
+      "sgg": "군산시",
+      "adm_cd": "35020720",
+      "lat": 35.9672316922,
+      "lon": 126.5615448735
+    },
+    {
+      "code": "S130002714",
+      "name": "전주온빛초등학교",
+      "sgg": "전주시덕진구",
+      "adm_cd": "35012700",
+      "lat": 35.8423963457,
+      "lon": 127.0562878585
+    },
+    {
+      "code": "S130002725",
+      "name": "전주홍산초등학교",
+      "sgg": "전주시완산구",
+      "adm_cd": "35011790",
+      "lat": 35.8205060193,
+      "lon": 127.0989956828
+    },
+    {
+      "code": "S130002732",
+      "name": "전주양현초등학교",
+      "sgg": "전주시덕진구",
+      "adm_cd": "35012700",
+      "lat": 35.8466114549,
+      "lon": 127.0746175683
+    },
+    {
+      "code": "S130002735",
+      "name": "익산가온초등학교",
+      "sgg": "익산시",
+      "adm_cd": "35030610",
+      "lat": 35.9560517178,
+      "lon": 126.9378010167
+    },
+    {
+      "code": "S130002737",
+      "name": "전주새연초등학교",
+      "sgg": "전주시완산구",
+      "adm_cd": "35011780",
+      "lat": 35.8115263695,
+      "lon": 127.1005468673
+    },
+    {
+      "code": "S130002738",
+      "name": "전주하가초등학교",
+      "sgg": "전주시덕진구",
+      "adm_cd": "35012570",
+      "lat": 35.8437970333,
+      "lon": 127.1066180512
+    },
+    {
+      "code": "S130002745",
+      "name": "전주효천초등학교",
+      "sgg": "전주시완산구",
+      "adm_cd": "35011780",
+      "lat": 35.7996528506,
+      "lon": 127.1050965056
+    },
+    {
+      "code": "S130002748",
+      "name": "전주화정초등학교",
+      "sgg": "전주시덕진구",
+      "adm_cd": "35012650",
+      "lat": 35.8730125599,
+      "lon": 127.131607328
+    },
+    {
+      "code": "S130002771",
+      "name": "전주자연초등학교",
+      "sgg": "전주시덕진구",
+      "adm_cd": "35012650",
+      "lat": 35.877474424,
+      "lon": 127.1358648419
+    },
+    {
+      "code": "S130002788",
+      "name": "군산금빛초등학교",
+      "sgg": "군산시",
+      "adm_cd": "35020650",
+      "lat": 35.979647136,
+      "lon": 126.7428375014
+    }
+  ],
+  "libraries": [
+    {
+      "name": "명봉도서관",
+      "addr": "전라북도 정읍시 태인면 태인로 33-9",
+      "adm_cd": "35040390",
+      "sgg": "정읍시",
+      "adm_nm": "태인면",
+      "lat": 35.6523412303554,
+      "lon": 126.942185302148,
+      "child_collection": 9800,
+      "child_borrowers": 35
+    },
+    {
+      "name": "산들도서관",
+      "addr": "전라북도 군산시 옥구읍 옥구로 27",
+      "adm_cd": "35020110",
+      "sgg": "군산시",
+      "adm_nm": "옥구읍",
+      "lat": 35.9218769949513,
+      "lon": 126.683343904625,
+      "child_collection": 16834,
+      "child_borrowers": 493
+    },
+    {
+      "name": "설림도서관",
+      "addr": "전라북도 군산시 설림길 25 (소룡동)",
+      "adm_cd": "35020720",
+      "sgg": "군산시",
+      "adm_nm": "소룡동",
+      "lat": 35.9730214827821,
+      "lon": 126.684399708912,
+      "child_collection": 33541,
+      "child_borrowers": 1065
+    },
+    {
+      "name": "아중도서관",
+      "addr": "전라북도 전주시 덕진구 무삼지2길 7 (인후동1가)",
+      "adm_cd": "35012560",
+      "sgg": "전주시덕진구",
+      "adm_nm": "인후3동",
+      "lat": 35.8263313798444,
+      "lon": 127.162618609985,
+      "child_collection": 51771,
+      "child_borrowers": 399
+    },
+    {
+      "name": "군산시립도서관",
+      "addr": "전라북도 군산시 축동로 72 (수송동)",
+      "adm_cd": "35020690",
+      "sgg": "군산시",
+      "adm_nm": "수송동",
+      "lat": 35.9660889437161,
+      "lon": 126.71136508392,
+      "child_collection": 73424,
+      "child_borrowers": 1621
+    },
+    {
+      "name": "김제시립도서관",
+      "addr": "전라북도 김제시 서낭당길 151 (요촌동)",
+      "adm_cd": "35060510",
+      "sgg": "김제시",
+      "adm_nm": "요촌동",
+      "lat": 35.7991039690268,
+      "lon": 126.892544712835,
+      "child_collection": 38197,
+      "child_borrowers": 350
+    },
+    {
+      "name": "남원시립도서관",
+      "addr": "전라북도 남원시 광한북로 54 (하정동)",
+      "adm_cd": "35050520",
+      "sgg": "남원시",
+      "adm_nm": "죽항동",
+      "lat": 35.4077018534701,
+      "lon": 127.380190704987,
+      "child_collection": 24799,
+      "child_borrowers": 207
+    },
+    {
+      "name": "부안군립도서관",
+      "addr": "전라북도 부안군 부안읍 매창로 125",
+      "adm_cd": "35580110",
+      "sgg": "부안군",
+      "adm_nm": "부안읍",
+      "lat": 35.7192678357395,
+      "lon": 126.732447018926,
+      "child_collection": 24760,
+      "child_borrowers": 177
+    },
+    {
+      "name": "순창군립도서관",
+      "addr": "전라북도 순창군 순창읍 순창5길 18",
+      "adm_cd": "35560110",
+      "sgg": "순창군",
+      "adm_nm": "순창읍",
+      "lat": 35.3736918167902,
+      "lon": 127.140808146541,
+      "child_collection": 18347,
+      "child_borrowers": 1466
+    },
+    {
+      "name": "아중호수도서관",
+      "addr": "전북특별자치도 전주시 덕진구 아중호수길 132 (우아동1가)",
+      "adm_cd": "35012620",
+      "sgg": "전주시덕진구",
+      "adm_nm": "우아2동",
+      "lat": 35.8230979554058,
+      "lon": 127.174492642802,
+      "child_collection": 4423,
+      "child_borrowers": 349
+    },
+    {
+      "name": "임실군립도서관",
+      "addr": "전라북도 임실군 임실읍 호국로 1701",
+      "adm_cd": "35550110",
+      "sgg": "임실군",
+      "adm_nm": "임실읍",
+      "lat": 35.6146566635275,
+      "lon": 127.286477760486,
+      "child_collection": 13961,
+      "child_borrowers": 447
+    },
+    {
+      "name": "장수군립도서관",
+      "addr": "전북특별자치도 장수군 장계면 방천길 19 ",
+      "adm_cd": "35540330",
+      "sgg": "장수군",
+      "adm_nm": "장계면",
+      "lat": 35.7300600233555,
+      "lon": 127.589726569935,
+      "child_collection": 21799,
+      "child_borrowers": 606
+    },
+    {
+      "name": "전북도청도서관",
+      "addr": "전북특별자치도 전주시 완산구 효자로 225 (효자동3가)",
+      "adm_cd": "35011790",
+      "sgg": "전주시완산구",
+      "adm_nm": "효자5동",
+      "lat": 35.8194621650578,
+      "lon": 127.106396942356,
+      "child_collection": 18018,
+      "child_borrowers": 122
+    },
+    {
+      "name": "콩쥐팥쥐도서관",
+      "addr": "전북특별자치도 완주군 이서면 갈산로 40",
+      "adm_cd": "35510330",
+      "sgg": "완주군",
+      "adm_nm": "이서면",
+      "lat": 35.8364475596622,
+      "lon": 127.056167662247,
+      "child_collection": 23959,
+      "child_borrowers": 717
+    },
+    {
+      "name": "고창황윤석도서관",
+      "addr": "전북특별자치도 고창군 고창읍 중앙로 340 ",
+      "adm_cd": "35570110",
+      "sgg": "고창군",
+      "adm_nm": "고창읍",
+      "lat": 35.4346159544148,
+      "lon": 126.71323001147,
+      "child_collection": 11727,
+      "child_borrowers": 112
+    },
+    {
+      "name": "남원어울림도서관",
+      "addr": "전북특별자치도 남원시 금동로 32 (금동)",
+      "adm_cd": "35050550",
+      "sgg": "남원시",
+      "adm_nm": "금동",
+      "lat": 35.4016086828634,
+      "lon": 127.372846089455,
+      "child_collection": 12181,
+      "child_borrowers": 384
+    },
+    {
+      "name": "임피채만식도서관",
+      "addr": "전라북도 군산시 임피면 임피향교길 39",
+      "adm_cd": "35020330",
+      "sgg": "군산시",
+      "adm_nm": "임피면",
+      "lat": 35.9875417253055,
+      "lon": 126.848418403821,
+      "child_collection": 15129,
+      "child_borrowers": 25
+    },
+    {
+      "name": "정읍학생복지회관",
+      "addr": "전라북도 정읍시 구미길 14-4 (수성동)",
+      "adm_cd": "35040510",
+      "sgg": "정읍시",
+      "adm_nm": "수성동",
+      "lat": 35.5716413236978,
+      "lon": 126.852280658189,
+      "child_collection": 20102,
+      "child_borrowers": 71
+    },
+    {
+      "name": "익산시 유천도서관",
+      "addr": "전라북도 익산시 동천로 82 (동산동)",
+      "adm_cd": "35030570",
+      "sgg": "익산시",
+      "adm_nm": "동산동",
+      "lat": 35.9286145679614,
+      "lon": 126.972568526001,
+      "child_collection": 15442,
+      "child_borrowers": 815
+    },
+    {
+      "name": "고창군립성호도서관",
+      "addr": "전라북도 고창군 고창읍 모양성로 50",
+      "adm_cd": "35570110",
+      "sgg": "고창군",
+      "adm_nm": "고창읍",
+      "lat": 35.4374082028375,
+      "lon": 126.700958782201,
+      "child_collection": 11123,
+      "child_borrowers": 80
+    },
+    {
+      "name": "군산시립금강도서관",
+      "addr": "전라북도 군산시 궁포3로 30 (조촌동)",
+      "adm_cd": "35020650",
+      "sgg": "군산시",
+      "adm_nm": "조촌동",
+      "lat": 35.9782155792406,
+      "lon": 126.741897127565,
+      "child_collection": 33443,
+      "child_borrowers": 1752
+    },
+    {
+      "name": "완주군립고산도서관",
+      "addr": "전라북도 완주군 고산면 고산로 69-13, 고산도서관",
+      "adm_cd": "35510360",
+      "sgg": "완주군",
+      "adm_nm": "고산면",
+      "lat": 35.9764586140832,
+      "lon": 127.205218756411,
+      "child_collection": 17484,
+      "child_borrowers": 879
+    },
+    {
+      "name": "완주군립삼례도서관",
+      "addr": "전라북도 완주군 삼례읍 삼봉로 215-12 삼례읍 신금리 산71-1",
+      "adm_cd": "35510110",
+      "sgg": "완주군",
+      "adm_nm": "삼례읍",
+      "lat": 35.9205312078956,
+      "lon": 127.093250860726,
+      "child_collection": 19187,
+      "child_borrowers": 577
+    },
+    {
+      "name": "완주군립중앙도서관",
+      "addr": "전라북도 완주군 용진읍 지암로 61",
+      "adm_cd": "35510130",
+      "sgg": "완주군",
+      "adm_nm": "용진읍",
+      "lat": 35.9053550702997,
+      "lon": 127.160781157709,
+      "child_collection": 25866,
+      "child_borrowers": 216
+    },
+    {
+      "name": "익산시립금마도서관",
+      "addr": "전라북도 익산시 금마면 고도길 26-53",
+      "adm_cd": "35030400",
+      "sgg": "익산시",
+      "adm_nm": "금마면",
+      "lat": 35.993128687642,
+      "lon": 127.050562088568,
+      "child_collection": 10037,
+      "child_borrowers": 1057
+    },
+    {
+      "name": "익산시립모현도서관",
+      "addr": "전라북도 익산시 선화로6길 7 (모현동1가)",
+      "adm_cd": "35030610",
+      "sgg": "익산시",
+      "adm_nm": "모현동",
+      "lat": 35.9498377738898,
+      "lon": 126.936463846332,
+      "child_collection": 86035,
+      "child_borrowers": 6774
+    },
+    {
+      "name": "익산시립부송도서관",
+      "addr": "전라북도 익산시 무왕로25길 30 (부송동)",
+      "adm_cd": "35030700",
+      "sgg": "익산시",
+      "adm_nm": "삼성동",
+      "lat": 35.9645072831542,
+      "lon": 126.994603126124,
+      "child_collection": 52983,
+      "child_borrowers": 991
+    },
+    {
+      "name": "익산시립황등도서관",
+      "addr": "전라북도 익산시 황등면 황등8길 7",
+      "adm_cd": "35030320",
+      "sgg": "익산시",
+      "adm_nm": "황등면",
+      "lat": 36.0045838202048,
+      "lon": 126.943385355194,
+      "child_collection": 12221,
+      "child_borrowers": 362
+    },
+    {
+      "name": "임실군립오수도서관",
+      "addr": "전북특별자치도 임실군 오수면 삼일로 27 ",
+      "adm_cd": "35550350",
+      "sgg": "임실군",
+      "adm_nm": "오수면",
+      "lat": 35.5413375356462,
+      "lon": 127.326675511701,
+      "child_collection": 10815,
+      "child_borrowers": 21
+    },
+    {
+      "name": "전주시립건지도서관",
+      "addr": "전라북도 전주시 덕진구 호성로 25 (호성동1가)",
+      "adm_cd": "35012630",
+      "sgg": "전주시덕진구",
+      "adm_nm": "호성동",
+      "lat": 35.8540790892339,
+      "lon": 127.151590293286,
+      "child_collection": 21765,
+      "child_borrowers": 919
+    },
+    {
+      "name": "전주시립금암도서관",
+      "addr": "전라북도 전주시 덕진구 거북바우로 13 (금암동)",
+      "adm_cd": "35012721",
+      "sgg": "전주시덕진구",
+      "adm_nm": "금암동",
+      "lat": 35.8363381320642,
+      "lon": 127.140079577218,
+      "child_collection": 23734,
+      "child_borrowers": 4792
+    },
+    {
+      "name": "전주시립삼천도서관",
+      "addr": "전라북도 전주시 완산구 용리로 107 (삼천동1가)",
+      "adm_cd": "35011670",
+      "sgg": "전주시완산구",
+      "adm_nm": "삼천1동",
+      "lat": 35.7989511722535,
+      "lon": 127.121677240262,
+      "child_collection": 31599,
+      "child_borrowers": 1075
+    },
+    {
+      "name": "전주시립서신도서관",
+      "addr": "전라북도 전주시 완산구 서신천변14길 10 (서신동)",
+      "adm_cd": "35011660",
+      "sgg": "전주시완산구",
+      "adm_nm": "서신동",
+      "lat": 35.8310696484637,
+      "lon": 127.115309610542,
+      "child_collection": 31346,
+      "child_borrowers": 1072
+    },
+    {
+      "name": "전주시립송천도서관",
+      "addr": "전라북도 전주시 덕진구 솔내로 212 (송천동2가)",
+      "adm_cd": "35012650",
+      "sgg": "전주시덕진구",
+      "adm_nm": "송천1동",
+      "lat": 35.8693714760842,
+      "lon": 127.128043427496,
+      "child_collection": 39733,
+      "child_borrowers": 1360
+    },
+    {
+      "name": "전주시립완산도서관",
+      "addr": "전라북도 전주시 완산구 곤지산4길 12 (동완산동)",
+      "adm_cd": "35011770",
+      "sgg": "전주시완산구",
+      "adm_nm": "완산동",
+      "lat": 35.8092414870503,
+      "lon": 127.147542785417,
+      "child_collection": 37337,
+      "child_borrowers": 717
+    },
+    {
+      "name": "전주시립인후도서관",
+      "addr": "전라북도 전주시 덕진구 안덕원로 349 (인후동1가)",
+      "adm_cd": "35012540",
+      "sgg": "전주시덕진구",
+      "adm_nm": "인후1동",
+      "lat": 35.8396155897158,
+      "lon": 127.163326766267,
+      "child_collection": 21280,
+      "child_borrowers": 658
+    },
+    {
+      "name": "전주시립평화도서관",
+      "addr": "전라북도 전주시 완산구 평화14길 27-51 (평화동2가)",
+      "adm_cd": "35011650",
+      "sgg": "전주시완산구",
+      "adm_nm": "평화2동",
+      "lat": 35.791361205539,
+      "lon": 127.134832940968,
+      "child_collection": 39232,
+      "child_borrowers": 857
+    },
+    {
+      "name": "전주시립효자도서관",
+      "addr": "전라북도 전주시 완산구 우전로 181 (효자동2가)",
+      "adm_cd": "35011780",
+      "sgg": "전주시완산구",
+      "adm_nm": "효자4동",
+      "lat": 35.8110325324509,
+      "lon": 127.100589618013,
+      "child_collection": 35820,
+      "child_borrowers": 1364
+    },
+    {
+      "name": "정읍시립중앙도서관",
+      "addr": "전라북도 정읍시 벚꽃로 511 (상동)",
+      "adm_cd": "35040530",
+      "sgg": "정읍시",
+      "adm_nm": "내장상동",
+      "lat": 35.5573793374459,
+      "lon": 126.866969392755,
+      "child_collection": 51333,
+      "child_borrowers": 1211
+    },
+    {
+      "name": "전주시립도서관 꽃심",
+      "addr": "전라북도 전주시 완산구 백제대로 306 (중화산동2가)",
+      "adm_cd": "35011630",
+      "sgg": "전주시완산구",
+      "adm_nm": "중화산2동",
+      "lat": 35.8202434927303,
+      "lon": 127.123609734734,
+      "child_collection": 21326,
+      "child_borrowers": 9275
+    },
+    {
+      "name": "전주시립쪽구름도서관",
+      "addr": "전라북도 전주시 덕진구 여암2길 9 (반월동)",
+      "adm_cd": "35012710",
+      "sgg": "전주시덕진구",
+      "adm_nm": "여의동",
+      "lat": 35.8713983971955,
+      "lon": 127.075621424865,
+      "child_collection": 21084,
+      "child_borrowers": 4925
+    },
+    {
+      "name": "김제시립도서관금구분관",
+      "addr": "전라북도 김제시 금구면 양시7길 57",
+      "adm_cd": "35060400",
+      "sgg": "김제시",
+      "adm_nm": "금구면",
+      "lat": 35.7751770360013,
+      "lon": 127.012500040284,
+      "child_collection": 8917,
+      "child_borrowers": 109
+    },
+    {
+      "name": "김제시립도서관만경분관",
+      "addr": "전라북도 김제시 만경읍 만경로 776",
+      "adm_cd": "35060110",
+      "sgg": "김제시",
+      "adm_nm": "만경읍",
+      "lat": 35.8493220203317,
+      "lon": 126.816910712842,
+      "child_collection": 8127,
+      "child_borrowers": 23
+    },
+    {
+      "name": "무주형설지공군립도서관",
+      "addr": "전북특별자치도 무주군 무주읍 최북로 7 ",
+      "adm_cd": "35530110",
+      "sgg": "무주군",
+      "adm_nm": "무주읍",
+      "lat": 36.0037689045541,
+      "lon": 127.664409181208,
+      "child_collection": 14470,
+      "child_borrowers": 164
+    },
+    {
+      "name": "완주군립 둔산영어도서관",
+      "addr": "전라북도 완주군 봉동읍 둔산2로 62",
+      "adm_cd": "35510120",
+      "sgg": "완주군",
+      "adm_nm": "봉동읍",
+      "lat": 35.9609047125886,
+      "lon": 127.123480804527,
+      "child_collection": 25226,
+      "child_borrowers": 1002
+    },
+    {
+      "name": "익산시립도서관 마동분관",
+      "addr": "전라북도 익산시 선화1로 99 (마동)",
+      "adm_cd": "35030580",
+      "sgg": "익산시",
+      "adm_nm": "마동",
+      "lat": 35.940070048701,
+      "lon": 126.968693429877,
+      "child_collection": 86956,
+      "child_borrowers": 256
+    },
+    {
+      "name": "정읍시립도서관신태인분관",
+      "addr": "전라북도 정읍시 신태인읍 신태인중앙로 47",
+      "adm_cd": "35040110",
+      "sgg": "정읍시",
+      "adm_nm": "신태인읍",
+      "lat": 35.6897571163675,
+      "lon": 126.889979542655,
+      "child_collection": 22096,
+      "child_borrowers": 20
+    },
+    {
+      "name": "익산시립도서관(영등도서관)",
+      "addr": "전라북도 익산시 궁동로 57 (영등동)",
+      "adm_cd": "35030710",
+      "sgg": "익산시",
+      "adm_nm": "영등2동",
+      "lat": 35.9629161856813,
+      "lon": 126.977744245173,
+      "child_collection": 94881,
+      "child_borrowers": 5084
+    },
+    {
+      "name": "전북특별자치도교육청고창도서관",
+      "addr": "전북특별자치도 고창군 고창읍 천변북로 109",
+      "adm_cd": "35570110",
+      "sgg": "고창군",
+      "adm_nm": "고창읍",
+      "lat": 35.4341689610534,
+      "lon": 126.703954886589,
+      "child_collection": 25624,
+      "child_borrowers": 214
+    },
+    {
+      "name": "전북특별자치도교육청무주도서관",
+      "addr": "전라북도 무주군 무주읍 향한로 37",
+      "adm_cd": "35530110",
+      "sgg": "무주군",
+      "adm_nm": "무주읍",
+      "lat": 36.0101464786937,
+      "lon": 127.659961176091,
+      "child_collection": 24024,
+      "child_borrowers": 473
+    },
+    {
+      "name": "전북특별자치도교육청순창도서관",
+      "addr": "전북특별자치도 순창군 순창읍 장류로 379",
+      "adm_cd": "35560110",
+      "sgg": "순창군",
+      "adm_nm": "순창읍",
+      "lat": 35.3766998565002,
+      "lon": 127.14383313941,
+      "child_collection": 22357,
+      "child_borrowers": 1055
+    },
+    {
+      "name": "전북특별자치도교육청완주도서관",
+      "addr": "전라북도 완주군 봉동읍 봉동동서로 109 ",
+      "adm_cd": "35510120",
+      "sgg": "완주군",
+      "adm_nm": "봉동읍",
+      "lat": 35.9381952368182,
+      "lon": 127.164249679911,
+      "child_collection": 23613,
+      "child_borrowers": 171
+    },
+    {
+      "name": "전북특별자치도교육청임실도서관",
+      "addr": "전라북도 임실군 임실읍 봉황로 145",
+      "adm_cd": "35550110",
+      "sgg": "임실군",
+      "adm_nm": "임실읍",
+      "lat": 35.6141023327371,
+      "lon": 127.27857600428,
+      "child_collection": 21493,
+      "child_borrowers": 65
+    },
+    {
+      "name": "전북특별자치도교육청장수도서관",
+      "addr": "전라북도 장수군 장수읍 호비로 58",
+      "adm_cd": "35540110",
+      "sgg": "장수군",
+      "adm_nm": "장수읍",
+      "lat": 35.6513130532347,
+      "lon": 127.521451307358,
+      "child_collection": 17103,
+      "child_borrowers": 549
+    },
+    {
+      "name": "전북특별자치도교육청진안도서관",
+      "addr": "전라북도 진안군 진안읍 대광길 4",
+      "adm_cd": "35520110",
+      "sgg": "진안군",
+      "adm_nm": "진안읍",
+      "lat": 35.789441695128,
+      "lon": 127.422192102793,
+      "child_collection": 20403,
+      "child_borrowers": 101
+    },
+    {
+      "name": "전북특별자치도교육청군산학생교육문화관",
+      "addr": "전라북도 군산시 조촌4길 46 (조촌동)",
+      "adm_cd": "35020650",
+      "sgg": "군산시",
+      "adm_nm": "조촌동",
+      "lat": 35.9711918928456,
+      "lon": 126.736504720136,
+      "child_collection": 44697,
+      "child_borrowers": 9205
+    },
+    {
+      "name": "전북특별자치도교육청김제학생교육문화관",
+      "addr": "전라북도 김제시 요촌북로 72 (요촌동)",
+      "adm_cd": "35060510",
+      "sgg": "김제시",
+      "adm_nm": "요촌동",
+      "lat": 35.8068199671594,
+      "lon": 126.892159914282,
+      "child_collection": 27114,
+      "child_borrowers": 135
+    },
+    {
+      "name": "전북특별자치도교육청남원학생교육문화관",
+      "addr": "전라북도 남원시 용성로 49 (동충동)",
+      "adm_cd": "35050510",
+      "sgg": "남원시",
+      "adm_nm": "동충동",
+      "lat": 35.409877289073,
+      "lon": 127.381585026066,
+      "child_collection": 42193,
+      "child_borrowers": 222
+    },
+    {
+      "name": "전북특별자치도교육청부안학생교육문화관",
+      "addr": "전라북도 부안군 부안읍 남문안길",
+      "adm_cd": "35580110",
+      "sgg": "부안군",
+      "adm_nm": "부안읍",
+      "lat": 35.7309305913002,
+      "lon": 126.735188520035,
+      "child_collection": 23852,
+      "child_borrowers": 48
+    },
+    {
+      "name": "전북특별자치도교육청익산학생교육문화관",
+      "addr": "전라북도 익산시 고봉로 55 (마동)",
+      "adm_cd": "35030580",
+      "sgg": "익산시",
+      "adm_nm": "마동",
+      "lat": 35.9389646516551,
+      "lon": 126.960653802353,
+      "child_collection": 56349,
+      "child_borrowers": 483
+    },
+    {
+      "name": "전북특별자치도교육청전주학생교육문화관",
+      "addr": "전라북도 전주시 덕진구 안덕원로 71 (진북동)",
+      "adm_cd": "35012690",
+      "sgg": "전주시덕진구",
+      "adm_nm": "진북동",
+      "lat": 35.828717435302,
+      "lon": 127.137204798614,
+      "child_collection": 85998,
+      "child_borrowers": 7364
+    },
+    {
+      "name": "전북특별자치도교육청군산학생교육문화관 대야분관",
+      "addr": "전북특별자치도 군산시 대야면 석화로 84",
+      "adm_cd": "35020350",
+      "sgg": "군산시",
+      "adm_nm": "대야면",
+      "lat": 35.9490157971658,
+      "lon": 126.818891422864,
+      "child_collection": 19901,
+      "child_borrowers": 808
+    },
+    {
+      "name": "전북특별자치도교육청김제학생교육문화관 금산분관",
+      "addr": "전북특별자치도 김제시 금산면 원평로 97",
+      "adm_cd": "35060430",
+      "sgg": "김제시",
+      "adm_nm": "금산면",
+      "lat": 35.7173253699164,
+      "lon": 126.994606249972,
+      "child_collection": 20974,
+      "child_borrowers": 25
+    },
+    {
+      "name": "전북특별자치도교육청남원학생교육문화관 운봉분관",
+      "addr": "전북특별자치도 남원시 운봉읍 서하길 7-8 ",
+      "adm_cd": "35050110",
+      "sgg": "남원시",
+      "adm_nm": "운봉읍",
+      "lat": 35.4410027201494,
+      "lon": 127.532040816411,
+      "child_collection": 11392,
+      "child_borrowers": 9
+    },
+    {
+      "name": "전북특별자치도교육청익산학생교육문화관 함열분관",
+      "addr": "전라북도 익산시 함열읍 함열중앙로 53",
+      "adm_cd": "35030110",
+      "sgg": "익산시",
+      "adm_nm": "함열읍",
+      "lat": 36.0786544689669,
+      "lon": 126.963399012237,
+      "child_collection": 29861,
+      "child_borrowers": 41
+    },
+    {
+      "name": "늘푸른도서관",
+      "addr": "전라북도 군산시 하나운로 17 (나운동)",
+      "adm_cd": "35020740",
+      "sgg": "군산시",
+      "adm_nm": "나운3동",
+      "lat": 35.9605176327508,
+      "lon": 126.699052772201,
+      "child_collection": 0,
+      "child_borrowers": 831
+    },
+    {
+      "name": "정읍기적의도서관",
+      "addr": "전라북도 정읍시 수성5로 45-5",
+      "adm_cd": "35040510",
+      "sgg": "정읍시",
+      "adm_nm": "수성동",
+      "lat": 35.5842701639496,
+      "lon": 126.860655252319,
+      "child_collection": 0,
+      "child_borrowers": 2507
+    },
+    {
+      "name": "남원시어린이청소년도서관",
+      "addr": "전라북도 남원시 역재3길 12 (도통동)",
+      "adm_cd": "35050590",
+      "sgg": "남원시",
+      "adm_nm": "도통동",
+      "lat": 35.4203009479104,
+      "lon": 127.399847746825,
+      "child_collection": 0,
+      "child_borrowers": 505
+    }
+  ],
+  "sgg_summary": {
+    "전주시완산구": {
+      "sgg": "전주시완산구",
+      "dong_count": 19,
+      "dead_zone_count": 12,
+      "total_schools": 39,
+      "total_libraries": 7,
+      "dead_zone_dongs": [
+        {
+          "adm_cd": "35011700",
+          "adm_nm": "효자1동",
+          "risk_index": 0.8445,
+          "school_count": 0,
+          "child_pop": 535
+        },
+        {
+          "adm_cd": "35011610",
+          "adm_nm": "서서학동",
+          "risk_index": 0.8217,
+          "school_count": 2,
+          "child_pop": 179
+        },
+        {
+          "adm_cd": "35011620",
+          "adm_nm": "중화산1동",
+          "risk_index": 0.8094,
+          "school_count": 1,
+          "child_pop": 557
+        },
+        {
+          "adm_cd": "35011640",
+          "adm_nm": "평화1동",
+          "risk_index": 0.791,
+          "school_count": 1,
+          "child_pop": 301
+        },
+        {
+          "adm_cd": "35011680",
+          "adm_nm": "삼천2동",
+          "risk_index": 0.7749,
+          "school_count": 1,
+          "child_pop": 419
+        },
+        {
+          "adm_cd": "35011690",
+          "adm_nm": "삼천3동",
+          "risk_index": 0.7724,
+          "school_count": 3,
+          "child_pop": 1086
+        },
+        {
+          "adm_cd": "35011720",
+          "adm_nm": "효자3동",
+          "risk_index": 0.7662,
+          "school_count": 2,
+          "child_pop": 568
+        },
+        {
+          "adm_cd": "35011740",
+          "adm_nm": "중앙동",
+          "risk_index": 0.7512,
+          "school_count": 1,
+          "child_pop": 373
+        },
+        {
+          "adm_cd": "35011710",
+          "adm_nm": "효자2동",
+          "risk_index": 0.7508,
+          "school_count": 2,
+          "child_pop": 315
+        },
+        {
+          "adm_cd": "35011760",
+          "adm_nm": "노송동",
+          "risk_index": 0.743,
+          "school_count": 2,
+          "child_pop": 335
+        },
+        {
+          "adm_cd": "35011750",
+          "adm_nm": "풍남동",
+          "risk_index": 0.7303,
+          "school_count": 1,
+          "child_pop": 65
+        },
+        {
+          "adm_cd": "35011600",
+          "adm_nm": "동서학동",
+          "risk_index": 0.6654,
+          "school_count": 1,
+          "child_pop": 164
+        }
+      ],
+      "avg_risk": 0.6867
+    },
+    "전주시덕진구": {
+      "sgg": "전주시덕진구",
+      "dong_count": 15,
+      "dead_zone_count": 7,
+      "total_schools": 36,
+      "total_libraries": 8,
+      "dead_zone_dongs": [
+        {
+          "adm_cd": "35012600",
+          "adm_nm": "팔복동",
+          "risk_index": 0.8685,
+          "school_count": 0,
+          "child_pop": 191
+        },
+        {
+          "adm_cd": "35012660",
+          "adm_nm": "송천2동",
+          "risk_index": 0.7957,
+          "school_count": 4,
+          "child_pop": 1410
+        },
+        {
+          "adm_cd": "35012570",
+          "adm_nm": "덕진동",
+          "risk_index": 0.7931,
+          "school_count": 3,
+          "child_pop": 1230
+        },
+        {
+          "adm_cd": "35012610",
+          "adm_nm": "우아1동",
+          "risk_index": 0.7899,
+          "school_count": 1,
+          "child_pop": 560
+        },
+        {
+          "adm_cd": "35012700",
+          "adm_nm": "혁신동",
+          "risk_index": 0.7709,
+          "school_count": 3,
+          "child_pop": 3915
+        },
+        {
+          "adm_cd": "35012670",
+          "adm_nm": "조촌동",
+          "risk_index": 0.7683,
+          "school_count": 3,
+          "child_pop": 493
+        },
+        {
+          "adm_cd": "35012550",
+          "adm_nm": "인후2동",
+          "risk_index": 0.7326,
+          "school_count": 2,
+          "child_pop": 320
+        }
+      ],
+      "avg_risk": 0.6462
+    },
+    "군산시": {
+      "sgg": "군산시",
+      "dong_count": 27,
+      "dead_zone_count": 20,
+      "total_schools": 50,
+      "total_libraries": 8,
+      "dead_zone_dongs": [
+        {
+          "adm_cd": "35020530",
+          "adm_nm": "월명동",
+          "risk_index": 0.8519,
+          "school_count": 0,
+          "child_pop": 114
+        },
+        {
+          "adm_cd": "35020680",
+          "adm_nm": "개정동",
+          "risk_index": 0.8398,
+          "school_count": 0,
+          "child_pop": 68
+        },
+        {
+          "adm_cd": "35020510",
+          "adm_nm": "해신동",
+          "risk_index": 0.8217,
+          "school_count": 1,
+          "child_pop": 56
+        },
+        {
+          "adm_cd": "35020600",
+          "adm_nm": "중앙동",
+          "risk_index": 0.8061,
+          "school_count": 1,
+          "child_pop": 104
+        },
+        {
+          "adm_cd": "35020710",
+          "adm_nm": "나운2동",
+          "risk_index": 0.8031,
+          "school_count": 2,
+          "child_pop": 1062
+        },
+        {
+          "adm_cd": "35020640",
+          "adm_nm": "흥남동",
+          "risk_index": 0.7981,
+          "school_count": 3,
+          "child_pop": 533
+        },
+        {
+          "adm_cd": "35020700",
+          "adm_nm": "나운1동",
+          "risk_index": 0.793,
+          "school_count": 2,
+          "child_pop": 466
+        },
+        {
+          "adm_cd": "35020550",
+          "adm_nm": "신풍동",
+          "risk_index": 0.7882,
+          "school_count": 2,
+          "child_pop": 251
+        },
+        {
+          "adm_cd": "35020560",
+          "adm_nm": "삼학동",
+          "risk_index": 0.7878,
+          "school_count": 1,
+          "child_pop": 96
+        },
+        {
+          "adm_cd": "35020670",
+          "adm_nm": "구암동",
+          "risk_index": 0.7838,
+          "school_count": 1,
+          "child_pop": 457
+        },
+        {
+          "adm_cd": "35020660",
+          "adm_nm": "경암동",
+          "risk_index": 0.7805,
+          "school_count": 1,
+          "child_pop": 239
+        },
+        {
+          "adm_cd": "35020730",
+          "adm_nm": "미성동",
+          "risk_index": 0.7788,
+          "school_count": 4,
+          "child_pop": 379
+        },
+        {
+          "adm_cd": "35020320",
+          "adm_nm": "회현면",
+          "risk_index": 0.7716,
+          "school_count": 2,
+          "child_pop": 141
+        },
+        {
+          "adm_cd": "35020370",
+          "adm_nm": "성산면",
+          "risk_index": 0.7008,
+          "school_count": 2,
+          "child_pop": 44
+        },
+        {
+          "adm_cd": "35020310",
+          "adm_nm": "옥산면",
+          "risk_index": 0.6983,
+          "school_count": 2,
+          "child_pop": 336
+        },
+        {
+          "adm_cd": "35020390",
+          "adm_nm": "옥도면",
+          "risk_index": 0.6867,
+          "school_count": 1,
+          "child_pop": 44
+        },
+        {
+          "adm_cd": "35020340",
+          "adm_nm": "서수면",
+          "risk_index": 0.6856,
+          "school_count": 1,
+          "child_pop": 45
+        },
+        {
+          "adm_cd": "35020380",
+          "adm_nm": "나포면",
+          "risk_index": 0.6826,
+          "school_count": 1,
+          "child_pop": 20
+        },
+        {
+          "adm_cd": "35020400",
+          "adm_nm": "옥서면",
+          "risk_index": 0.6732,
+          "school_count": 1,
+          "child_pop": 41
+        },
+        {
+          "adm_cd": "35020360",
+          "adm_nm": "개정면",
+          "risk_index": 0.6666,
+          "school_count": 2,
+          "child_pop": 46
+        }
+      ],
+      "avg_risk": 0.7021
+    },
+    "익산시": {
+      "sgg": "익산시",
+      "dong_count": 29,
+      "dead_zone_count": 21,
+      "total_schools": 60,
+      "total_libraries": 9,
+      "dead_zone_dongs": [
+        {
+          "adm_cd": "35030550",
+          "adm_nm": "인화동",
+          "risk_index": 0.8645,
+          "school_count": 0,
+          "child_pop": 156
+        },
+        {
+          "adm_cd": "35030310",
+          "adm_nm": "오산면",
+          "risk_index": 0.8178,
+          "school_count": 3,
+          "child_pop": 306
+        },
+        {
+          "adm_cd": "35030720",
+          "adm_nm": "어양동",
+          "risk_index": 0.8155,
+          "school_count": 2,
+          "child_pop": 1356
+        },
+        {
+          "adm_cd": "35030660",
+          "adm_nm": "영등1동",
+          "risk_index": 0.8071,
+          "school_count": 3,
+          "child_pop": 975
+        },
+        {
+          "adm_cd": "35030590",
+          "adm_nm": "남중동",
+          "risk_index": 0.7995,
+          "school_count": 3,
+          "child_pop": 242
+        },
+        {
+          "adm_cd": "35030510",
+          "adm_nm": "중앙동",
+          "risk_index": 0.7934,
+          "school_count": 1,
+          "child_pop": 60
+        },
+        {
+          "adm_cd": "35030390",
+          "adm_nm": "여산면",
+          "risk_index": 0.7717,
+          "school_count": 1,
+          "child_pop": 80
+        },
+        {
+          "adm_cd": "35030690",
+          "adm_nm": "팔봉동",
+          "risk_index": 0.7625,
+          "school_count": 2,
+          "child_pop": 333
+        },
+        {
+          "adm_cd": "35030650",
+          "adm_nm": "신동",
+          "risk_index": 0.7596,
+          "school_count": 3,
+          "child_pop": 350
+        },
+        {
+          "adm_cd": "35030380",
+          "adm_nm": "망성면",
+          "risk_index": 0.7579,
+          "school_count": 2,
+          "child_pop": 50
+        },
+        {
+          "adm_cd": "35030620",
+          "adm_nm": "송학동",
+          "risk_index": 0.7534,
+          "school_count": 1,
+          "child_pop": 640
+        },
+        {
+          "adm_cd": "35030410",
+          "adm_nm": "왕궁면",
+          "risk_index": 0.7518,
+          "school_count": 3,
+          "child_pop": 135
+        },
+        {
+          "adm_cd": "35030420",
+          "adm_nm": "춘포면",
+          "risk_index": 0.74,
+          "school_count": 2,
+          "child_pop": 87
+        },
+        {
+          "adm_cd": "35030430",
+          "adm_nm": "삼기면",
+          "risk_index": 0.7379,
+          "school_count": 2,
+          "child_pop": 30
+        },
+        {
+          "adm_cd": "35030440",
+          "adm_nm": "용동면",
+          "risk_index": 0.7207,
+          "school_count": 1,
+          "child_pop": 10
+        },
+        {
+          "adm_cd": "35030350",
+          "adm_nm": "성당면",
+          "risk_index": 0.7175,
+          "school_count": 1,
+          "child_pop": 0
+        },
+        {
+          "adm_cd": "35030330",
+          "adm_nm": "함라면",
+          "risk_index": 0.7165,
+          "school_count": 1,
+          "child_pop": 20
+        },
+        {
+          "adm_cd": "35030530",
+          "adm_nm": "평화동",
+          "risk_index": 0.696,
+          "school_count": 1,
+          "child_pop": 168
+        },
+        {
+          "adm_cd": "35030370",
+          "adm_nm": "낭산면",
+          "risk_index": 0.6581,
+          "school_count": 2,
+          "child_pop": 61
+        },
+        {
+          "adm_cd": "35030360",
+          "adm_nm": "용안면",
+          "risk_index": 0.6324,
+          "school_count": 3,
+          "child_pop": 34
+        },
+        {
+          "adm_cd": "35030340",
+          "adm_nm": "웅포면",
+          "risk_index": 0.6119,
+          "school_count": 1,
+          "child_pop": 16
+        }
+      ],
+      "avg_risk": 0.6904
+    },
+    "정읍시": {
+      "sgg": "정읍시",
+      "dong_count": 23,
+      "dead_zone_count": 19,
+      "total_schools": 33,
+      "total_libraries": 5,
+      "dead_zone_dongs": [
+        {
+          "adm_cd": "35040540",
+          "adm_nm": "시기동",
+          "risk_index": 0.8476,
+          "school_count": 0,
+          "child_pop": 91
+        },
+        {
+          "adm_cd": "35040360",
+          "adm_nm": "덕천면",
+          "risk_index": 0.8157,
+          "school_count": 1,
+          "child_pop": 8
+        },
+        {
+          "adm_cd": "35040310",
+          "adm_nm": "북면",
+          "risk_index": 0.8148,
+          "school_count": 2,
+          "child_pop": 99
+        },
+        {
+          "adm_cd": "35040590",
+          "adm_nm": "상교동",
+          "risk_index": 0.7899,
+          "school_count": 2,
+          "child_pop": 94
+        },
+        {
+          "adm_cd": "35040520",
+          "adm_nm": "장명동",
+          "risk_index": 0.7709,
+          "school_count": 1,
+          "child_pop": 103
+        },
+        {
+          "adm_cd": "35040420",
+          "adm_nm": "칠보면",
+          "risk_index": 0.7585,
+          "school_count": 3,
+          "child_pop": 36
+        },
+        {
+          "adm_cd": "35040570",
+          "adm_nm": "연지동",
+          "risk_index": 0.7583,
+          "school_count": 1,
+          "child_pop": 277
+        },
+        {
+          "adm_cd": "35040580",
+          "adm_nm": "농소동",
+          "risk_index": 0.7538,
+          "school_count": 2,
+          "child_pop": 133
+        },
+        {
+          "adm_cd": "35040600",
+          "adm_nm": "초산동",
+          "risk_index": 0.7528,
+          "school_count": 1,
+          "child_pop": 617
+        },
+        {
+          "adm_cd": "35040410",
+          "adm_nm": "옹동면",
+          "risk_index": 0.7506,
+          "school_count": 1,
+          "child_pop": 21
+        },
+        {
+          "adm_cd": "35040370",
+          "adm_nm": "이평면",
+          "risk_index": 0.7427,
+          "school_count": 1,
+          "child_pop": 27
+        },
+        {
+          "adm_cd": "35040330",
+          "adm_nm": "소성면",
+          "risk_index": 0.7354,
+          "school_count": 1,
+          "child_pop": 15
+        },
+        {
+          "adm_cd": "35040380",
+          "adm_nm": "정우면",
+          "risk_index": 0.7261,
+          "school_count": 2,
+          "child_pop": 32
+        },
+        {
+          "adm_cd": "35040340",
+          "adm_nm": "고부면",
+          "risk_index": 0.7204,
+          "school_count": 1,
+          "child_pop": 25
+        },
+        {
+          "adm_cd": "35040400",
+          "adm_nm": "감곡면",
+          "risk_index": 0.7193,
+          "school_count": 1,
+          "child_pop": 24
+        },
+        {
+          "adm_cd": "35040350",
+          "adm_nm": "영원면",
+          "risk_index": 0.7067,
+          "school_count": 1,
+          "child_pop": 16
+        },
+        {
+          "adm_cd": "35040430",
+          "adm_nm": "산내면",
+          "risk_index": 0.6834,
+          "school_count": 1,
+          "child_pop": 6
+        },
+        {
+          "adm_cd": "35040320",
+          "adm_nm": "입암면",
+          "risk_index": 0.6774,
+          "school_count": 2,
+          "child_pop": 31
+        },
+        {
+          "adm_cd": "35040440",
+          "adm_nm": "산외면",
+          "risk_index": 0.6384,
+          "school_count": 1,
+          "child_pop": 13
+        }
+      ],
+      "avg_risk": 0.7154
+    },
+    "남원시": {
+      "sgg": "남원시",
+      "dong_count": 23,
+      "dead_zone_count": 18,
+      "total_schools": 26,
+      "total_libraries": 5,
+      "dead_zone_dongs": [
+        {
+          "adm_cd": "35050560",
+          "adm_nm": "왕정동",
+          "risk_index": 0.8664,
+          "school_count": 0,
+          "child_pop": 224
+        },
+        {
+          "adm_cd": "35050540",
+          "adm_nm": "노암동",
+          "risk_index": 0.8615,
+          "school_count": 1,
+          "child_pop": 310
+        },
+        {
+          "adm_cd": "35050370",
+          "adm_nm": "대산면",
+          "risk_index": 0.8575,
+          "school_count": 2,
+          "child_pop": 27
+        },
+        {
+          "adm_cd": "35050430",
+          "adm_nm": "인월면",
+          "risk_index": 0.8456,
+          "school_count": 1,
+          "child_pop": 77
+        },
+        {
+          "adm_cd": "35050440",
+          "adm_nm": "아영면",
+          "risk_index": 0.8358,
+          "school_count": 1,
+          "child_pop": 45
+        },
+        {
+          "adm_cd": "35050380",
+          "adm_nm": "사매면",
+          "risk_index": 0.8258,
+          "school_count": 1,
+          "child_pop": 40
+        },
+        {
+          "adm_cd": "35050340",
+          "adm_nm": "주생면",
+          "risk_index": 0.8003,
+          "school_count": 1,
+          "child_pop": 45
+        },
+        {
+          "adm_cd": "35050420",
+          "adm_nm": "이백면",
+          "risk_index": 0.7945,
+          "school_count": 2,
+          "child_pop": 55
+        },
+        {
+          "adm_cd": "35050390",
+          "adm_nm": "덕과면",
+          "risk_index": 0.7894,
+          "school_count": 1,
+          "child_pop": 5
+        },
+        {
+          "adm_cd": "35050450",
+          "adm_nm": "산내면",
+          "risk_index": 0.7885,
+          "school_count": 1,
+          "child_pop": 70
+        },
+        {
+          "adm_cd": "35050570",
+          "adm_nm": "향교동",
+          "risk_index": 0.7625,
+          "school_count": 2,
+          "child_pop": 254
+        },
+        {
+          "adm_cd": "35050410",
+          "adm_nm": "산동면",
+          "risk_index": 0.7561,
+          "school_count": 1,
+          "child_pop": 24
+        },
+        {
+          "adm_cd": "35050310",
+          "adm_nm": "주천면",
+          "risk_index": 0.7452,
+          "school_count": 1,
+          "child_pop": 53
+        },
+        {
+          "adm_cd": "35050320",
+          "adm_nm": "수지면",
+          "risk_index": 0.7447,
+          "school_count": 1,
+          "child_pop": 14
+        },
+        {
+          "adm_cd": "35050330",
+          "adm_nm": "송동면",
+          "risk_index": 0.7349,
+          "school_count": 1,
+          "child_pop": 16
+        },
+        {
+          "adm_cd": "35050400",
+          "adm_nm": "보절면",
+          "risk_index": 0.7085,
+          "school_count": 1,
+          "child_pop": 16
+        },
+        {
+          "adm_cd": "35050360",
+          "adm_nm": "대강면",
+          "risk_index": 0.6899,
+          "school_count": 1,
+          "child_pop": 0
+        },
+        {
+          "adm_cd": "35050350",
+          "adm_nm": "금지면",
+          "risk_index": 0.6699,
+          "school_count": 1,
+          "child_pop": 11
+        }
+      ],
+      "avg_risk": 0.7333
+    },
+    "김제시": {
+      "sgg": "김제시",
+      "dong_count": 19,
+      "dead_zone_count": 15,
+      "total_schools": 32,
+      "total_libraries": 5,
+      "dead_zone_dongs": [
+        {
+          "adm_cd": "35060580",
+          "adm_nm": "교월동",
+          "risk_index": 0.8447,
+          "school_count": 1,
+          "child_pop": 245
+        },
+        {
+          "adm_cd": "35060540",
+          "adm_nm": "검산동",
+          "risk_index": 0.8248,
+          "school_count": 2,
+          "child_pop": 714
+        },
+        {
+          "adm_cd": "35060440",
+          "adm_nm": "광활면",
+          "risk_index": 0.7724,
+          "school_count": 1,
+          "child_pop": 27
+        },
+        {
+          "adm_cd": "35060320",
+          "adm_nm": "백산면",
+          "risk_index": 0.759,
+          "school_count": 1,
+          "child_pop": 64
+        },
+        {
+          "adm_cd": "35060360",
+          "adm_nm": "공덕면",
+          "risk_index": 0.7548,
+          "school_count": 2,
+          "child_pop": 30
+        },
+        {
+          "adm_cd": "35060520",
+          "adm_nm": "신풍동",
+          "risk_index": 0.7474,
+          "school_count": 2,
+          "child_pop": 604
+        },
+        {
+          "adm_cd": "35060410",
+          "adm_nm": "봉남면",
+          "risk_index": 0.7373,
+          "school_count": 2,
+          "child_pop": 5
+        },
+        {
+          "adm_cd": "35060330",
+          "adm_nm": "용지면",
+          "risk_index": 0.7227,
+          "school_count": 2,
+          "child_pop": 43
+        },
+        {
+          "adm_cd": "35060420",
+          "adm_nm": "황산면",
+          "risk_index": 0.7195,
+          "school_count": 2,
+          "child_pop": 18
+        },
+        {
+          "adm_cd": "35060310",
+          "adm_nm": "죽산면",
+          "risk_index": 0.7186,
+          "school_count": 1,
+          "child_pop": 23
+        },
+        {
+          "adm_cd": "35060340",
+          "adm_nm": "백구면",
+          "risk_index": 0.7092,
+          "school_count": 4,
+          "child_pop": 67
+        },
+        {
+          "adm_cd": "35060390",
+          "adm_nm": "진봉면",
+          "risk_index": 0.6936,
+          "school_count": 1,
+          "child_pop": 6
+        },
+        {
+          "adm_cd": "35060350",
+          "adm_nm": "부량면",
+          "risk_index": 0.6879,
+          "school_count": 1,
+          "child_pop": 14
+        },
+        {
+          "adm_cd": "35060380",
+          "adm_nm": "성덕면",
+          "risk_index": 0.667,
+          "school_count": 1,
+          "child_pop": 5
+        },
+        {
+          "adm_cd": "35060370",
+          "adm_nm": "청하면",
+          "risk_index": 0.6572,
+          "school_count": 1,
+          "child_pop": 21
+        }
+      ],
+      "avg_risk": 0.6868
+    },
+    "완주군": {
+      "sgg": "완주군",
+      "dong_count": 13,
+      "dead_zone_count": 8,
+      "total_schools": 30,
+      "total_libraries": 6,
+      "dead_zone_dongs": [
+        {
+          "adm_cd": "35510370",
+          "adm_nm": "비봉면",
+          "risk_index": 0.8118,
+          "school_count": 1,
+          "child_pop": 30
+        },
+        {
+          "adm_cd": "35510390",
+          "adm_nm": "화산면",
+          "risk_index": 0.7705,
+          "school_count": 1,
+          "child_pop": 110
+        },
+        {
+          "adm_cd": "35510350",
+          "adm_nm": "구이면",
+          "risk_index": 0.7407,
+          "school_count": 4,
+          "child_pop": 115
+        },
+        {
+          "adm_cd": "35510340",
+          "adm_nm": "소양면",
+          "risk_index": 0.7344,
+          "school_count": 4,
+          "child_pop": 147
+        },
+        {
+          "adm_cd": "35510380",
+          "adm_nm": "운주면",
+          "risk_index": 0.7257,
+          "school_count": 1,
+          "child_pop": 20
+        },
+        {
+          "adm_cd": "35510400",
+          "adm_nm": "동상면",
+          "risk_index": 0.72,
+          "school_count": 1,
+          "child_pop": 6
+        },
+        {
+          "adm_cd": "35510320",
+          "adm_nm": "상관면",
+          "risk_index": 0.6752,
+          "school_count": 2,
+          "child_pop": 156
+        },
+        {
+          "adm_cd": "35510410",
+          "adm_nm": "경천면",
+          "risk_index": 0.665,
+          "school_count": 1,
+          "child_pop": 0
+        }
+      ],
+      "avg_risk": 0.6623
+    },
+    "진안군": {
+      "sgg": "진안군",
+      "dong_count": 11,
+      "dead_zone_count": 10,
+      "total_schools": 13,
+      "total_libraries": 1,
+      "dead_zone_dongs": [
+        {
+          "adm_cd": "35520340",
+          "adm_nm": "상전면",
+          "risk_index": 0.8302,
+          "school_count": 0,
+          "child_pop": 5
+        },
+        {
+          "adm_cd": "35520330",
+          "adm_nm": "동향면",
+          "risk_index": 0.8274,
+          "school_count": 1,
+          "child_pop": 14
+        },
+        {
+          "adm_cd": "35520370",
+          "adm_nm": "마령면",
+          "risk_index": 0.8229,
+          "school_count": 1,
+          "child_pop": 11
+        },
+        {
+          "adm_cd": "35520380",
+          "adm_nm": "부귀면",
+          "risk_index": 0.7722,
+          "school_count": 2,
+          "child_pop": 32
+        },
+        {
+          "adm_cd": "35520390",
+          "adm_nm": "정천면",
+          "risk_index": 0.7547,
+          "school_count": 1,
+          "child_pop": 44
+        },
+        {
+          "adm_cd": "35520320",
+          "adm_nm": "안천면",
+          "risk_index": 0.7518,
+          "school_count": 1,
+          "child_pop": 5
+        },
+        {
+          "adm_cd": "35520350",
+          "adm_nm": "백운면",
+          "risk_index": 0.7366,
+          "school_count": 1,
+          "child_pop": 16
+        },
+        {
+          "adm_cd": "35520400",
+          "adm_nm": "주천면",
+          "risk_index": 0.7311,
+          "school_count": 1,
+          "child_pop": 0
+        },
+        {
+          "adm_cd": "35520360",
+          "adm_nm": "성수면",
+          "risk_index": 0.723,
+          "school_count": 1,
+          "child_pop": 6
+        },
+        {
+          "adm_cd": "35520310",
+          "adm_nm": "용담면",
+          "risk_index": 0.6426,
+          "school_count": 1,
+          "child_pop": 0
+        }
+      ],
+      "avg_risk": 0.7459
+    },
+    "무주군": {
+      "sgg": "무주군",
+      "dong_count": 6,
+      "dead_zone_count": 5,
+      "total_schools": 9,
+      "total_libraries": 2,
+      "dead_zone_dongs": [
+        {
+          "adm_cd": "35530340",
+          "adm_nm": "안성면",
+          "risk_index": 0.7703,
+          "school_count": 1,
+          "child_pop": 65
+        },
+        {
+          "adm_cd": "35530310",
+          "adm_nm": "무풍면",
+          "risk_index": 0.7382,
+          "school_count": 1,
+          "child_pop": 28
+        },
+        {
+          "adm_cd": "35530320",
+          "adm_nm": "설천면",
+          "risk_index": 0.7202,
+          "school_count": 2,
+          "child_pop": 89
+        },
+        {
+          "adm_cd": "35530330",
+          "adm_nm": "적상면",
+          "risk_index": 0.6728,
+          "school_count": 2,
+          "child_pop": 48
+        },
+        {
+          "adm_cd": "35530350",
+          "adm_nm": "부남면",
+          "risk_index": 0.6439,
+          "school_count": 1,
+          "child_pop": 0
+        }
+      ],
+      "avg_risk": 0.6821
+    },
+    "장수군": {
+      "sgg": "장수군",
+      "dong_count": 7,
+      "dead_zone_count": 5,
+      "total_schools": 9,
+      "total_libraries": 2,
+      "dead_zone_dongs": [
+        {
+          "adm_cd": "35540350",
+          "adm_nm": "계남면",
+          "risk_index": 0.7598,
+          "school_count": 1,
+          "child_pop": 39
+        },
+        {
+          "adm_cd": "35540310",
+          "adm_nm": "산서면",
+          "risk_index": 0.7544,
+          "school_count": 1,
+          "child_pop": 29
+        },
+        {
+          "adm_cd": "35540360",
+          "adm_nm": "계북면",
+          "risk_index": 0.7389,
+          "school_count": 1,
+          "child_pop": 22
+        },
+        {
+          "adm_cd": "35540320",
+          "adm_nm": "번암면",
+          "risk_index": 0.7239,
+          "school_count": 2,
+          "child_pop": 37
+        },
+        {
+          "adm_cd": "35540340",
+          "adm_nm": "천천면",
+          "risk_index": 0.6916,
+          "school_count": 1,
+          "child_pop": 5
+        }
+      ],
+      "avg_risk": 0.6786
+    },
+    "임실군": {
+      "sgg": "임실군",
+      "dong_count": 12,
+      "dead_zone_count": 10,
+      "total_schools": 14,
+      "total_libraries": 3,
+      "dead_zone_dongs": [
+        {
+          "adm_cd": "35550360",
+          "adm_nm": "신덕면",
+          "risk_index": 0.9532,
+          "school_count": 0,
+          "child_pop": 10
+        },
+        {
+          "adm_cd": "35550380",
+          "adm_nm": "관촌면",
+          "risk_index": 0.8316,
+          "school_count": 1,
+          "child_pop": 80
+        },
+        {
+          "adm_cd": "35550410",
+          "adm_nm": "지사면",
+          "risk_index": 0.7749,
+          "school_count": 1,
+          "child_pop": 23
+        },
+        {
+          "adm_cd": "35550370",
+          "adm_nm": "삼계면",
+          "risk_index": 0.7475,
+          "school_count": 1,
+          "child_pop": 5
+        },
+        {
+          "adm_cd": "35550330",
+          "adm_nm": "신평면",
+          "risk_index": 0.7285,
+          "school_count": 2,
+          "child_pop": 17
+        },
+        {
+          "adm_cd": "35550340",
+          "adm_nm": "성수면",
+          "risk_index": 0.7194,
+          "school_count": 1,
+          "child_pop": 0
+        },
+        {
+          "adm_cd": "35550400",
+          "adm_nm": "덕치면",
+          "risk_index": 0.6973,
+          "school_count": 1,
+          "child_pop": 6
+        },
+        {
+          "adm_cd": "35550390",
+          "adm_nm": "강진면",
+          "risk_index": 0.6764,
+          "school_count": 1,
+          "child_pop": 0
+        },
+        {
+          "adm_cd": "35550320",
+          "adm_nm": "운암면",
+          "risk_index": 0.6388,
+          "school_count": 2,
+          "child_pop": 0
+        },
+        {
+          "adm_cd": "35550310",
+          "adm_nm": "청웅면",
+          "risk_index": 0.6272,
+          "school_count": 1,
+          "child_pop": 13
+        }
+      ],
+      "avg_risk": 0.7046
+    },
+    "순창군": {
+      "sgg": "순창군",
+      "dong_count": 11,
+      "dead_zone_count": 10,
+      "total_schools": 15,
+      "total_libraries": 2,
+      "dead_zone_dongs": [
+        {
+          "adm_cd": "35560370",
+          "adm_nm": "팔덕면",
+          "risk_index": 0.8336,
+          "school_count": 1,
+          "child_pop": 32
+        },
+        {
+          "adm_cd": "35560380",
+          "adm_nm": "복흥면",
+          "risk_index": 0.8267,
+          "school_count": 2,
+          "child_pop": 63
+        },
+        {
+          "adm_cd": "35560350",
+          "adm_nm": "풍산면",
+          "risk_index": 0.7402,
+          "school_count": 1,
+          "child_pop": 11
+        },
+        {
+          "adm_cd": "35560320",
+          "adm_nm": "동계면",
+          "risk_index": 0.7056,
+          "school_count": 1,
+          "child_pop": 16
+        },
+        {
+          "adm_cd": "35560390",
+          "adm_nm": "쌍치면",
+          "risk_index": 0.6982,
+          "school_count": 2,
+          "child_pop": 39
+        },
+        {
+          "adm_cd": "35560310",
+          "adm_nm": "인계면",
+          "risk_index": 0.675,
+          "school_count": 1,
+          "child_pop": 16
+        },
+        {
+          "adm_cd": "35560330",
+          "adm_nm": "적성면",
+          "risk_index": 0.6735,
+          "school_count": 1,
+          "child_pop": 31
+        },
+        {
+          "adm_cd": "35560360",
+          "adm_nm": "금과면",
+          "risk_index": 0.6734,
+          "school_count": 1,
+          "child_pop": 0
+        },
+        {
+          "adm_cd": "35560400",
+          "adm_nm": "구림면",
+          "risk_index": 0.6495,
+          "school_count": 1,
+          "child_pop": 13
+        },
+        {
+          "adm_cd": "35560340",
+          "adm_nm": "유등면",
+          "risk_index": 0.6401,
+          "school_count": 1,
+          "child_pop": 0
+        }
+      ],
+      "avg_risk": 0.7004
+    },
+    "고창군": {
+      "sgg": "고창군",
+      "dong_count": 14,
+      "dead_zone_count": 13,
+      "total_schools": 20,
+      "total_libraries": 3,
+      "dead_zone_dongs": [
+        {
+          "adm_cd": "35570390",
+          "adm_nm": "심원면",
+          "risk_index": 0.8133,
+          "school_count": 1,
+          "child_pop": 47
+        },
+        {
+          "adm_cd": "35570380",
+          "adm_nm": "대산면",
+          "risk_index": 0.7779,
+          "school_count": 2,
+          "child_pop": 42
+        },
+        {
+          "adm_cd": "35570420",
+          "adm_nm": "신림면",
+          "risk_index": 0.7735,
+          "school_count": 2,
+          "child_pop": 29
+        },
+        {
+          "adm_cd": "35570370",
+          "adm_nm": "성송면",
+          "risk_index": 0.7515,
+          "school_count": 1,
+          "child_pop": 5
+        },
+        {
+          "adm_cd": "35570360",
+          "adm_nm": "해리면",
+          "risk_index": 0.7468,
+          "school_count": 2,
+          "child_pop": 41
+        },
+        {
+          "adm_cd": "35570310",
+          "adm_nm": "고수면",
+          "risk_index": 0.7358,
+          "school_count": 1,
+          "child_pop": 25
+        },
+        {
+          "adm_cd": "35570330",
+          "adm_nm": "무장면",
+          "risk_index": 0.735,
+          "school_count": 1,
+          "child_pop": 62
+        },
+        {
+          "adm_cd": "35570350",
+          "adm_nm": "상하면",
+          "risk_index": 0.7177,
+          "school_count": 1,
+          "child_pop": 33
+        },
+        {
+          "adm_cd": "35570400",
+          "adm_nm": "흥덕면",
+          "risk_index": 0.7172,
+          "school_count": 1,
+          "child_pop": 58
+        },
+        {
+          "adm_cd": "35570320",
+          "adm_nm": "아산면",
+          "risk_index": 0.7048,
+          "school_count": 2,
+          "child_pop": 47
+        },
+        {
+          "adm_cd": "35570430",
+          "adm_nm": "부안면",
+          "risk_index": 0.6915,
+          "school_count": 2,
+          "child_pop": 81
+        },
+        {
+          "adm_cd": "35570340",
+          "adm_nm": "공음면",
+          "risk_index": 0.6807,
+          "school_count": 1,
+          "child_pop": 16
+        },
+        {
+          "adm_cd": "35570410",
+          "adm_nm": "성내면",
+          "risk_index": 0.6724,
+          "school_count": 1,
+          "child_pop": 17
+        }
+      ],
+      "avg_risk": 0.7199
+    },
+    "부안군": {
+      "sgg": "부안군",
+      "dong_count": 13,
+      "dead_zone_count": 12,
+      "total_schools": 18,
+      "total_libraries": 2,
+      "dead_zone_dongs": [
+        {
+          "adm_cd": "35580330",
+          "adm_nm": "행안면",
+          "risk_index": 0.8557,
+          "school_count": 1,
+          "child_pop": 35
+        },
+        {
+          "adm_cd": "35580360",
+          "adm_nm": "변산면",
+          "risk_index": 0.7925,
+          "school_count": 2,
+          "child_pop": 104
+        },
+        {
+          "adm_cd": "35580410",
+          "adm_nm": "줄포면",
+          "risk_index": 0.7864,
+          "school_count": 1,
+          "child_pop": 30
+        },
+        {
+          "adm_cd": "35580370",
+          "adm_nm": "진서면",
+          "risk_index": 0.7561,
+          "school_count": 1,
+          "child_pop": 27
+        },
+        {
+          "adm_cd": "35580350",
+          "adm_nm": "보안면",
+          "risk_index": 0.7173,
+          "school_count": 1,
+          "child_pop": 5
+        },
+        {
+          "adm_cd": "35580310",
+          "adm_nm": "주산면",
+          "risk_index": 0.712,
+          "school_count": 1,
+          "child_pop": 6
+        },
+        {
+          "adm_cd": "35580380",
+          "adm_nm": "백산면",
+          "risk_index": 0.7095,
+          "school_count": 2,
+          "child_pop": 12
+        },
+        {
+          "adm_cd": "35580340",
+          "adm_nm": "계화면",
+          "risk_index": 0.7091,
+          "school_count": 1,
+          "child_pop": 32
+        },
+        {
+          "adm_cd": "35580400",
+          "adm_nm": "하서면",
+          "risk_index": 0.6867,
+          "school_count": 1,
+          "child_pop": 22
+        },
+        {
+          "adm_cd": "35580320",
+          "adm_nm": "동진면",
+          "risk_index": 0.6615,
+          "school_count": 2,
+          "child_pop": 16
+        },
+        {
+          "adm_cd": "35580390",
+          "adm_nm": "상서면",
+          "risk_index": 0.6538,
+          "school_count": 1,
+          "child_pop": 19
+        },
+        {
+          "adm_cd": "35580420",
+          "adm_nm": "위도면",
+          "risk_index": 0.6406,
+          "school_count": 1,
+          "child_pop": 5
+        }
+      ],
+      "avg_risk": 0.7111
     }
   }
 }
